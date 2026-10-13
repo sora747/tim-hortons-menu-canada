@@ -3944,21 +3944,22 @@
       const itemEmoji = getItemEmoji(item);
       const hasSizes = Array.isArray(item.sizes) && item.sizes.length > 0;
       const isMerchandise = item.category === 'merchandise';
+      const resolvedImagePath = getItemImagePath(item);
 
-      // Media container: Real image if available, else item emoji
-      const mediaHtml = item.image ? `
-        <div class="relative h-44 w-full bg-gradient-to-b from-stone-50 to-stone-100/60 flex items-center justify-center p-3 border-b border-stone-100 overflow-hidden">
+      // Media container: Centered real image if available with fallback to natural emoji
+      const mediaHtml = resolvedImagePath ? `
+        <div class="relative h-44 w-full bg-gradient-to-b from-stone-50 via-white to-stone-100/70 flex items-center justify-center p-3 border-b border-stone-100 overflow-hidden">
           <img 
-            src="${item.image}" 
+            src="${resolvedImagePath}" 
             alt="${item.name}" 
             loading="lazy"
-            class="max-h-full max-w-full object-contain mx-auto my-auto block group-hover:scale-105 transition-transform duration-300 drop-shadow-sm"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\\'text-6xl filter drop-shadow-sm group-hover:scale-110 transition-transform duration-300\\'>${itemEmoji}</span>';"
+            class="max-h-full max-w-full object-contain mx-auto my-auto block group-hover:scale-105 transition-transform duration-300 drop-shadow-sm select-none"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\\'text-6xl filter drop-shadow-sm group-hover:scale-110 transition-transform duration-300 select-none\\'>${itemEmoji}</span>';"
           />
         </div>
       ` : `
         <div class="relative h-36 bg-gradient-to-br from-stone-100 via-stone-50 to-stone-200 flex items-center justify-center border-b border-stone-100">
-          <span class="text-6xl filter drop-shadow-sm group-hover:scale-110 transition-transform duration-300">
+          <span class="text-6xl filter drop-shadow-sm group-hover:scale-110 transition-transform duration-300 select-none">
             ${itemEmoji}
           </span>
         </div>
