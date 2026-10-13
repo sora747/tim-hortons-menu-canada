@@ -3947,12 +3947,12 @@
 
       // Media container: Real image if available, else item emoji
       const mediaHtml = item.image ? `
-        <div class="relative h-44 bg-stone-100 flex items-center justify-center border-b border-stone-100 overflow-hidden">
+        <div class="relative h-44 w-full bg-gradient-to-b from-stone-50 to-stone-100/60 flex items-center justify-center p-3 border-b border-stone-100 overflow-hidden">
           <img 
             src="${item.image}" 
             alt="${item.name}" 
             loading="lazy"
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            class="max-h-full max-w-full object-contain mx-auto my-auto block group-hover:scale-105 transition-transform duration-300 drop-shadow-sm"
             onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\\'text-6xl filter drop-shadow-sm group-hover:scale-110 transition-transform duration-300\\'>${itemEmoji}</span>';"
           />
         </div>
