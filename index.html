@@ -224,7 +224,7 @@
                   🔥
                 </span>
                 <div>
-                  <h3 class="font-display font-extrabold text-base text-tims-coffee leading-tight">Popular Favorites</h3>
+                  <div class="font-display font-extrabold text-base text-tims-coffee leading-tight">Popular Favorites</div>
                   <p class="text-[11px] text-stone-400 font-medium">Most ordered items across Canada</p>
                 </div>
               </div>
@@ -378,21 +378,6 @@
 
   <!-- Main Menu Catalog Section (Restored Grid Container) -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full flex-1">
-    <!-- Active Category Header Title -->
-    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 gap-2 border-b border-stone-200 mb-8">
-      <div>
-        <h2 id="currentCategoryHeading" class="font-display font-extrabold text-2xl sm:text-3xl text-tims-coffee">
-          Full Tim Hortons Menu Catalog
-        </h2>
-        <p class="text-xs sm:text-sm text-stone-500 mt-1">
-          Explore complete Canadian prices, sizes, and nutrition specifications.
-        </p>
-      </div>
-      <div class="text-xs text-stone-400 font-medium">
-        All prices in CAD
-      </div>
-    </div>
-
     <!-- Dynamic Menu Items Injected Here by JavaScript -->
     <div id="menuItemsGrid" class="space-y-16"></div>
 
@@ -4553,22 +4538,6 @@
 
     function filterCategory(cat) {
       currentCategory = cat;
-      const headingEl = document.getElementById('currentCategoryHeading');
-      const catNames = {
-        'all': 'Full Tim Hortons Menu Catalog',
-        'harry-potter': 'Harry Potter Special Edition Collection',
-        'featured': 'Featured & Seasonal Items',
-        'breakfast': 'Breakfast Sandwiches, Wraps & Sides',
-        'lunch-dinner': 'Lunch, Crave Burgers, Nuggets & Bowls',
-        'hot-drinks': 'Hot Drinks, Brewed Coffees & Lattes',
-        'cold-drinks': 'Cold Drinks, Iced Capps & Refreshers',
-        'baked-goods': 'Fresh Baked Goods, Donuts & Timbits®',
-        'tims-home': 'Tims at Home K-Cups & Packaged Goods',
-        'merchandise': 'Official Merchandise & Collectibles'
-      };
-      if (headingEl && catNames[cat]) {
-        headingEl.innerText = catNames[cat];
-      }
 
       document.querySelectorAll('.cat-pill').forEach(btn => {
         if (btn.getAttribute('data-cat') === cat) {
