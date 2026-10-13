@@ -595,42 +595,6 @@
   </footer>
   </div>
 
-  <!-- Item Detail Modal -->
-  <div id="itemDetailModal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
-    <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-stone-200 transform transition-all">
-      <div id="modalHeaderBg" class="relative bg-gradient-to-r from-stone-900 to-stone-800 p-6 flex justify-between items-start text-white">
-        <div class="flex items-center gap-4">
-          <div id="modalEmojiPic" class="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-4xl shadow-inner border border-white/20">
-            ⚡
-          </div>
-          <div>
-            <span id="modalCategoryBadge" class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-tims-red uppercase tracking-wider text-white">Category</span>
-            <h3 id="modalTitle" class="font-display font-extrabold text-xl sm:text-2xl mt-1 text-white">Item Title</h3>
-          </div>
-        </div>
-        <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm flex items-center justify-center text-white text-sm">✕</button>
-      </div>
-
-      <div class="p-6 space-y-4">
-        <p id="modalDescription" class="text-stone-600 text-sm leading-relaxed">
-          Product description goes here.
-        </p>
-
-        <!-- Sizing Table or Single Spec injected dynamically -->
-        <div id="modalPricingContainer"></div>
-
-        <div class="pt-2 flex gap-3">
-          <button id="modalAddButton" class="flex-1 py-3 bg-tims-red hover:bg-tims-darkRed text-white font-bold rounded-xl shadow transition text-sm">
-            + Add to Calorie Tracker
-          </button>
-          <button onclick="closeModal()" class="px-5 py-3 bg-stone-100 hover:bg-stone-200 text-stone-700 font-semibold rounded-xl transition text-sm">
-            Close
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Toast Notification Box (Never uses alert()) -->
   <div id="toastNotification" class="fixed bottom-5 right-5 z-50 hidden bg-stone-900 text-white px-4 py-3 rounded-2xl shadow-xl border border-stone-700 flex items-center gap-3 transition-all duration-300">
     <span class="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center text-white text-xs font-bold">✓</span>
@@ -673,6 +637,7 @@
         category: 'harry-potter',
         price: 2.79,
         cals: 290,
+        image: './images/gryffindor-strawberry-cheesecake-donut.jpg',
         description: 'Harry Potter Collection: Rich yeast donut with strawberry cheesecake filling, crimson glaze, and golden sprinkles.',
         badge: '⚡ Wizard Special',
         badgeColor: 'bg-amber-600',
@@ -3979,6 +3944,25 @@
       const hasSizes = Array.isArray(item.sizes) && item.sizes.length > 0;
       const isMerchandise = item.category === 'merchandise';
 
+      // Media container: Real image if available, else item emoji
+      const mediaHtml = item.image ? `
+        <div class="relative h-44 bg-stone-100 flex items-center justify-center border-b border-stone-100 overflow-hidden">
+          <img 
+            src="${item.image}" 
+            alt="${item.name}" 
+            loading="lazy"
+            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\\'text-6xl filter drop-shadow-sm group-hover:scale-110 transition-transform duration-300\\'>${itemEmoji}</span>';"
+          />
+        </div>
+      ` : `
+        <div class="relative h-36 bg-gradient-to-br from-stone-100 via-stone-50 to-stone-200 flex items-center justify-center border-b border-stone-100">
+          <span class="text-6xl filter drop-shadow-sm group-hover:scale-110 transition-transform duration-300">
+            ${itemEmoji}
+          </span>
+        </div>
+      `;
+
       // Elegant 3-column size table: Size | Price | Calories
       let sizeTableHtml = '';
       if (hasSizes) {
@@ -4023,17 +4007,13 @@
       return `
         <div class="bg-white rounded-2xl border border-stone-200 shadow-card hover:shadow-cardHover hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between overflow-hidden group">
           
-          <!-- Specific Menu Item Emoji Container -->
-          <div class="relative h-36 bg-gradient-to-br from-stone-100 via-stone-50 to-stone-200 flex items-center justify-center cursor-pointer border-b border-stone-100" onclick="openModal('${item.id}')">
-            <span class="text-6xl filter drop-shadow-sm group-hover:scale-110 transition-transform duration-300">
-              ${itemEmoji}
-            </span>
-          </div>
+          <!-- Menu Item Media Container (Image or Emoji) -->
+          ${mediaHtml}
 
           <!-- Card Body Details -->
           <div class="p-5 flex-1 flex flex-col justify-between">
             <div>
-              <div class="font-display font-bold text-base sm:text-lg text-tims-coffee leading-snug group-hover:text-tims-red transition-colors cursor-pointer" onclick="openModal('${item.id}')">
+              <div class="font-display font-bold text-base sm:text-lg text-tims-coffee leading-snug group-hover:text-tims-red transition-colors">
                 ${item.name}
               </div>
 
@@ -4293,106 +4273,6 @@
       }
     }
 
-    // Modal Control with Size Selection & Table
-    function openModal(itemId) {
-      const item = menuDatabase.find(i => i.id === itemId);
-      if (!item) return;
-
-      const itemEmoji = getItemEmoji(item);
-      const modalEmojiEl = document.getElementById('modalEmojiPic');
-      if (modalEmojiEl) {
-        modalEmojiEl.innerText = itemEmoji;
-      }
-
-      const modalTitleEl = document.getElementById('modalTitle');
-      if (modalTitleEl) modalTitleEl.innerText = item.name;
-
-      const modalCatBadgeEl = document.getElementById('modalCategoryBadge');
-      if (modalCatBadgeEl) modalCatBadgeEl.innerText = item.category.replace('-', ' ');
-
-      const modalDescEl = document.getElementById('modalDescription');
-      if (modalDescEl) modalDescEl.innerText = item.description;
-      
-      const pricingContainer = document.getElementById('modalPricingContainer');
-      const addBtn = document.getElementById('modalAddButton');
-
-      if (!pricingContainer || !addBtn) return;
-
-      if (Array.isArray(item.sizes) && item.sizes.length > 0) {
-        let selectedSizeIndex = 0;
-        pricingContainer.innerHTML = `
-          <div class="space-y-3">
-            <span class="text-xs font-bold text-stone-700 block">Select Cup / Serving Size:</span>
-            <div class="rounded-2xl border border-stone-200 overflow-hidden bg-stone-50">
-              <table class="w-full text-xs">
-                <thead>
-                  <tr class="bg-stone-200/70 text-stone-700 font-bold border-b border-stone-200 text-left">
-                    <th class="px-3 py-2">Size Option</th>
-                    <th class="px-3 py-2 text-right">Price &amp; Calories</th>
-                  </tr>
-                </thead>
-                <tbody class="divide-y divide-stone-200/60" id="modalSizeRadioTable">
-                  ${item.sizes.map((s, idx) => `
-                    <tr class="cursor-pointer hover:bg-white transition p-1" onclick="selectModalSize(${idx})">
-                      <td class="px-3 py-2.5 font-semibold text-stone-800 flex items-center gap-2">
-                        <input type="radio" name="modalSizePick" id="sizeOpt_${idx}" value="${idx}" ${idx === 0 ? 'checked' : ''} class="text-tims-red focus:ring-tims-red">
-                        <label for="sizeOpt_${idx}" class="cursor-pointer">${s.size}</label>
-                      </td>
-                      <td class="px-3 py-2.5 text-right font-bold text-tims-darkRed">
-                        $${s.price.toFixed(2)} <span class="text-stone-400 font-normal">(${s.cals} cal)</span>
-                      </td>
-                    </tr>
-                  `).join('')}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        `;
-
-        window.selectModalSize = function(index) {
-          selectedSizeIndex = index;
-          const radio = document.getElementById(`sizeOpt_${index}`);
-          if (radio) radio.checked = true;
-        };
-
-        addBtn.onclick = () => {
-          const checkedRadio = document.querySelector('input[name="modalSizePick"]:checked');
-          const finalIndex = checkedRadio ? parseInt(checkedRadio.value) : selectedSizeIndex;
-          const chosenSize = item.sizes[finalIndex];
-          
-          addToCart(item.id, chosenSize);
-          closeModal();
-        };
-
-      } else {
-        const calText = item.cals !== null ? `${item.cals} kcal` : '—';
-        pricingContainer.innerHTML = `
-          <div class="grid grid-cols-3 gap-3 bg-stone-50 p-3 rounded-2xl border border-stone-200 text-center text-xs">
-            <div>
-            <span id="modalCategoryBadge" class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-tims-red uppercase tracking-wider text-white">Category</span>
-            <div id="modalTitle" class="font-display font-extrabold text-xl sm:text-2xl mt-1 text-white">Item Title</div>
-          </div>
-        </div>
-        <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm flex items-center justify-center text-white text-sm">✕</button>
-              <div class="font-display font-bold text-base text-tims-red">$${item.price.toFixed(2)}</div>
-            </div>
-            <div>
-              <span class="text-stone-400 font-semibold uppercase">Availability</span>
-              <div class="font-display font-bold text-base text-emerald-600">Available</div>
-            </div>
-          </div>
-        `;
-
-        addBtn.onclick = () => {
-          addToCart(item.id);
-          closeModal();
-        };
-      }
-
-      const modalEl = document.getElementById('itemDetailModal');
-      if (modalEl) modalEl.classList.remove('hidden');
-    }
-
     // Add To Cart supporting custom sized selections
     function addToCart(itemId, sizeOption = null) {
       const item = menuDatabase.find(i => i.id === itemId);
@@ -4555,11 +4435,6 @@
       currentCategory = 'all';
       searchQuery = '';
       filterCategory('all');
-    }
-
-    function closeModal() {
-      const modal = document.getElementById('itemDetailModal');
-      if (modal) modal.classList.add('hidden');
     }
 
     // Dynamic Page View Handler
