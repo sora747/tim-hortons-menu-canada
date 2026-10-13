@@ -1,0 +1,4742 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tim Hortons Menu With Prices Canada 2026 | TimsMenu.ca</title>
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            tims: {
+              red: '#C8102E',
+              darkRed: '#99001A',
+              coffee: '#361D15',
+              darkCoffee: '#23120C',
+              cream: '#FDFBF7',
+              latte: '#F5EBE1',
+              gold: '#D97706',
+              warmGray: '#8C7A70',
+            }
+          },
+          boxShadow: {
+            card: '0 4px 20px -2px rgba(54, 29, 21, 0.08), 0 2px 6px -1px rgba(54, 29, 21, 0.04)',
+            cardHover: '0 12px 28px -4px rgba(200, 16, 46, 0.15), 0 4px 12px -2px rgba(54, 29, 21, 0.06)',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom Scrollbar for Pill Categories */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .hero-pattern {
+      background-color: #361D15;
+      background-image: radial-gradient(rgba(200, 16, 46, 0.28) 1.5px, transparent 1.5px), radial-gradient(rgba(245, 235, 225, 0.05) 1.5px, #361D15 1.5px);
+      background-size: 36px 36px;
+      background-position: 0 0, 18px 18px;
+    }
+    .gradient-badge {
+      background: linear-gradient(135deg, #C8102E 0%, #e02444 100%);
+    }
+  </style>
+</head>
+<body class="bg-tims-cream text-stone-800 font-sans antialiased min-h-screen flex flex-col">
+
+  <!-- Top Banner / Alert -->
+  <aside class="bg-stone-900 text-stone-300 text-xs py-2 px-4 text-center border-b border-stone-800 flex items-center justify-center gap-2">
+    <span>Unofficial fan guide for informational and educational purposes only. Not affiliated with Tim Hortons Canada.</span>
+  </aside>
+
+  <!-- Sticky Navbar -->
+  <header class="bg-white border-b border-stone-200 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between gap-4 py-3">
+      
+      <!-- Brand Logo -->
+      <a href="#" onclick="showPageView('home'); return false;" class="flex items-center gap-3 group focus:outline-none">
+        <div class="w-10 h-10 rounded-xl bg-tims-red flex items-center justify-center text-white shadow-md shadow-red-500/20 group-hover:scale-105 transition-transform">
+          <!-- Maple Cup Icon -->
+          <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+            <line x1="6" y1="1" x2="6" y2="4"/>
+            <line x1="10" y1="1" x2="10" y2="4"/>
+            <line x1="14" y1="1" x2="14" y2="4"/>
+          </svg>
+        </div>
+        <div>
+          <span class="font-display font-extrabold text-2xl tracking-tight text-tims-coffee">Tim Hortons <span class="text-tims-red">Menu</span></span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links (Search removed, new pages added) -->
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-stone-700">
+        <a href="#categories-nav" onclick="showPageView('home')" class="hover:text-tims-red transition-colors flex items-center gap-1.5">
+          <span>All Menus</span>
+        </a>
+        <button onclick="showPageView('allergens')" class="hover:text-tims-red transition-colors font-semibold">
+          Allergens
+        </button>
+        <button onclick="showPageView('hours')" class="hover:text-tims-red transition-colors font-semibold">
+          Hours
+        </button>
+        <button onclick="showPageView('locations')" class="hover:text-tims-red transition-colors font-semibold">
+          Locations
+        </button>
+
+        <!-- Legal Pages Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 py-2 text-stone-700 group-hover:text-tims-red font-semibold transition-colors focus:outline-none">
+            <span>Legal Pages</span>
+            <svg class="w-4 h-4 text-stone-400 group-hover:text-tims-red transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          
+          <!-- Dropdown Menu -->
+          <div class="absolute right-0 top-full hidden group-hover:block w-56 pt-2 z-50">
+            <div class="bg-white rounded-2xl shadow-xl border border-stone-200 py-2 divide-y divide-stone-100">
+              <div class="py-1">
+                <button onclick="showPageView('disclaimer')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition flex items-center justify-between">
+                  <span>Disclaimer</span>
+                  <span class="text-[10px] bg-red-100 text-tims-red px-1.5 py-0.5 rounded font-bold">Important</span>
+                </button>
+                <button onclick="showPageView('privacy')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
+                  Privacy Policy
+                </button>
+                <button onclick="showPageView('terms')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
+                  Terms of Use
+                </button>
+                <button onclick="showPageView('cookie')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
+                  Cookie Policy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <div class="flex items-center gap-2 lg:hidden">
+        <button onclick="toggleMobileMenu()" class="p-2 text-stone-600 hover:text-stone-900 rounded-lg bg-stone-100">
+          <svg id="hamburgerIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Links -->
+    <div id="mobileMenuLinks" class="hidden lg:hidden border-t border-stone-200 bg-white px-4 py-3 space-y-2">
+      <a href="#categories-nav" onclick="showPageView('home'); toggleMobileMenu()" class="block py-2 text-stone-700 font-semibold hover:text-tims-red">All Menus</a>
+      <button onclick="showPageView('allergens'); toggleMobileMenu()" class="block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Allergens Guide</button>
+      <button onclick="showPageView('hours'); toggleMobileMenu()" class="block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Breakfast & Store Hours</button>
+      <button onclick="showPageView('locations'); toggleMobileMenu()" class="block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Canada Locations</button>
+      
+      <div class="pt-2 border-t border-stone-100 space-y-1">
+        <span class="text-[11px] font-bold text-stone-400 uppercase tracking-wider block px-1">Legal Pages</span>
+        <button onclick="showPageView('disclaimer'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-xs text-tims-red font-bold hover:underline">● Disclaimer</button>
+        <button onclick="showPageView('privacy'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-xs text-stone-600 hover:text-stone-900">Privacy Policy</button>
+        <button onclick="showPageView('terms'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-xs text-stone-600 hover:text-stone-900">Terms of Use</button>
+        <button onclick="showPageView('cookie'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-xs text-stone-600 hover:text-stone-900">Cookie Policy</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Interactive Static Page Overlays / Views (Allergens, Hours, Locations, Disclaimer, Legal) -->
+  <section id="customPageViewContainer" class="hidden max-w-5xl mx-auto px-4 sm:px-6 py-10 w-full">
+    <div class="bg-white rounded-3xl p-6 sm:p-10 border border-stone-200 shadow-xl">
+      <div class="flex items-center justify-between pb-6 border-b border-stone-200">
+        <button onclick="showPageView('home')" class="inline-flex items-center gap-2 text-xs font-bold text-stone-500 hover:text-tims-red bg-stone-100 hover:bg-stone-200 px-3 py-1.5 rounded-lg transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+          Back to Menu Home
+        </button>
+        <span id="pageViewBadge" class="text-xs uppercase font-bold text-tims-red bg-red-50 border border-red-200 px-3 py-1 rounded-full">Guide</span>
+      </div>
+
+      <div id="pageViewContent" class="mt-8 space-y-6 text-stone-700">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <div id="homePageSections">
+  <!-- Hero Section -->
+  <section class="hero-pattern text-white py-12 lg:py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden border-b-4 border-tims-red">
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="grid lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-8 space-y-5 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 text-xs font-semibold text-amber-200">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            Canadian Prices Updated October 2026
+          </div>
+          
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold tracking-tight text-white leading-tight">
+            Tim Hortons Menu <br class="hidden sm:inline"/>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-rose-300 to-amber-200">With Prices & Calories Canada</span>
+          </h1>
+
+          <p class="text-stone-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal">
+            Your definitive guide to Tim Hortons Canada. Explore <strong>470+ verified menu items</strong>, cup sizes, nutritional calories, breakfast timings, and provincial pricing comparisons.
+          </p>
+
+          <!-- Quick Stat Counters -->
+          <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-4 sm:gap-6 text-sm">
+            <div class="flex items-center gap-2 bg-stone-900/60 backdrop-blur px-3 py-2 rounded-xl border border-stone-700">
+              <span class="text-xl font-extrabold text-tims-red font-display">470+</span>
+              <span class="text-xs text-stone-300 leading-tight text-left">Menu Items<br/>Cataloged</span>
+            </div>
+            <div class="flex items-center gap-2 bg-stone-900/60 backdrop-blur px-3 py-2 rounded-xl border border-stone-700">
+              <span class="text-xl font-extrabold text-amber-400 font-display">9</span>
+              <span class="text-xs text-stone-300 leading-tight text-left">Full Food & Drink<br/>Categories</span>
+            </div>
+            <div class="flex items-center gap-2 bg-stone-900/60 backdrop-blur px-3 py-2 rounded-xl border border-stone-700">
+              <span class="text-xl">✅</span>
+              <span class="text-xs text-stone-300 font-bold leading-tight text-left">Verified<br/>Prices</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Quick Widget: Replaced with Popular Favorites -->
+        <div class="lg:col-span-4">
+          <div class="bg-white/95 backdrop-blur-md text-stone-800 rounded-3xl p-5 shadow-2xl border border-stone-100/80">
+            <!-- Header -->
+            <div class="flex items-center justify-between pb-3 border-b border-stone-200/80">
+              <div class="flex items-center gap-2.5">
+                <span class="w-8 h-8 rounded-xl bg-red-100 text-tims-red flex items-center justify-center text-base shadow-xs">
+                  🔥
+                </span>
+                <div>
+                  <h3 class="font-display font-extrabold text-base text-tims-coffee leading-tight">Popular Favorites</h3>
+                  <p class="text-[11px] text-stone-400 font-medium">Most ordered items across Canada</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-bold uppercase tracking-wider bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full border border-amber-200/60">
+                Top Picks
+              </span>
+            </div>
+            
+            <!-- 6 Menu Items List -->
+            <div class="mt-3 divide-y divide-stone-100 text-xs">
+              <!-- Item 1 -->
+              <div class="py-2.5 flex items-center justify-between hover:bg-stone-50/80 px-2 rounded-xl transition-colors group">
+                <span class="font-semibold text-stone-800 group-hover:text-tims-red transition-colors">Double Double Coffee</span>
+                <span class="font-display font-extrabold text-white bg-tims-red px-2.5 py-1 rounded-lg text-xs shadow-xs tracking-tight">
+                  $1.83
+                </span>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="py-2.5 flex items-center justify-between hover:bg-stone-50/80 px-2 rounded-xl transition-colors group">
+                <span class="font-semibold text-stone-800 group-hover:text-tims-red transition-colors">Apple Fritter Donut</span>
+                <span class="font-display font-extrabold text-white bg-tims-red px-2.5 py-1 rounded-lg text-xs shadow-xs tracking-tight">
+                  $1.79
+                </span>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="py-2.5 flex items-center justify-between hover:bg-stone-50/80 px-2 rounded-xl transition-colors group">
+                <span class="font-semibold text-stone-800 group-hover:text-tims-red transition-colors">Chocolate Glazed Timbits</span>
+                <span class="font-display font-extrabold text-white bg-tims-red px-2.5 py-1 rounded-lg text-xs shadow-xs tracking-tight">
+                  $0.49
+                </span>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="py-2.5 flex items-center justify-between hover:bg-stone-50/80 px-2 rounded-xl transition-colors group">
+                <span class="font-semibold text-stone-800 group-hover:text-tims-red transition-colors">Iced Capps</span>
+                <span class="font-display font-extrabold text-white bg-tims-red px-2.5 py-1 rounded-lg text-xs shadow-xs tracking-tight">
+                  $4.69
+                </span>
+              </div>
+
+              <!-- Item 5 -->
+              <div class="py-2.5 flex items-center justify-between hover:bg-stone-50/80 px-2 rounded-xl transition-colors group">
+                <span class="font-semibold text-stone-800 group-hover:text-tims-red transition-colors">Bacon Breakfast Sandwich</span>
+                <span class="font-display font-extrabold text-white bg-tims-red px-2.5 py-1 rounded-lg text-xs shadow-xs tracking-tight">
+                  $4.49
+                </span>
+              </div>
+
+              <!-- Item 6 -->
+              <div class="py-2.5 flex items-center justify-between hover:bg-stone-50/80 px-2 rounded-xl transition-colors group">
+                <span class="font-semibold text-stone-800 group-hover:text-tims-red transition-colors">Soup</span>
+                <span class="font-display font-extrabold text-white bg-tims-red px-2.5 py-1 rounded-lg text-xs shadow-xs tracking-tight">
+                  $3.99
+                </span>
+              </div>
+            </div>
+
+            <!-- Bottom CTA -->
+            <div class="mt-4 pt-3 border-t border-stone-200/80">
+              <a href="#categories-nav" class="w-full text-center py-2.5 px-4 bg-stone-900 hover:bg-tims-red text-white text-xs font-bold rounded-xl shadow transition-colors flex items-center justify-center gap-2 group">
+                <span>Explore Full Menu Catalog</span>
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Selector Sticky Bar (Always stuck to the top on both Mobile and Laptop) -->
+  <section id="categories-nav" class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-md py-2.5 px-2 sm:px-4 transition-all">
+    <div class="max-w-7xl mx-auto relative flex items-center">
+      
+      <!-- Left Scroll Arrow Button for slider -->
+      <button 
+        type="button"
+        onclick="scrollCategories(-220)" 
+        aria-label="Scroll categories left" 
+        class="hidden sm:flex flex-shrink-0 z-10 mr-1.5 w-8 h-8 rounded-full bg-white/95 hover:bg-white text-stone-700 shadow border border-stone-200 items-center justify-center transition active:scale-95 focus:outline-none"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
+      <!-- Scrollable Enhanced Category Buttons (Touch-friendly & Smooth Slider) -->
+      <div 
+        id="categoryTabsContainer" 
+        onscroll="updateCategoryScrollTrack()"
+        class="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth py-1 px-1 text-xs font-semibold flex-1 select-none active:cursor-grabbing touch-pan-x"
+      >
+        <button onclick="filterCategory('all')" data-cat="all" class="cat-pill active px-3.5 py-2 lg:px-3 lg:py-1.5 rounded-xl whitespace-nowrap transition-all duration-150 bg-tims-red text-white shadow-sm text-xs md:text-sm font-semibold touch-manipulation">
+          All Items
+        </button>
+        <button onclick="filterCategory('harry-potter')" data-cat="harry-potter" class="cat-pill px-3.5 py-2 lg:px-3 lg:py-1.5 rounded-xl whitespace-nowrap transition-all duration-150 bg-white text-stone-700 hover:bg-stone-50 border border-stone-200 text-xs md:text-sm font-semibold shadow-xs touch-manipulation">
+          Harry Potter
+        </button>
+        <button onclick="filterCategory('featured')" data-cat="featured" class="cat-pill px-3.5 py-2 lg:px-3 lg:py-1.5 rounded-xl whitespace-nowrap transition-all duration-150 bg-white text-stone-700 hover:bg-stone-50 border border-stone-200 text-xs md:text-sm font-semibold shadow-xs touch-manipulation">
+          Featured
+        </button>
+        <button onclick="filterCategory('breakfast')" data-cat="breakfast" class="cat-pill px-3.5 py-2 lg:px-3 lg:py-1.5 rounded-xl whitespace-nowrap transition-all duration-150 bg-white text-stone-700 hover:bg-stone-50 border border-stone-200 text-xs md:text-sm font-semibold shadow-xs touch-manipulation">
+          Breakfast
+        </button>
+        <button onclick="filterCategory('lunch-dinner')" data-cat="lunch-dinner" class="cat-pill px-3.5 py-2 lg:px-3 lg:py-1.5 rounded-xl whitespace-nowrap transition-all duration-150 bg-white text-stone-700 hover:bg-stone-50 border border-stone-200 text-xs md:text-sm font-semibold shadow-xs touch-manipulation">
+          Lunch &amp; Dinner
+        </button>
+        <button onclick="filterCategory('hot-drinks')" data-cat="hot-drinks" class="cat-pill px-3.5 py-2 lg:px-3 lg:py-1.5 rounded-xl whitespace-nowrap transition-all duration-150 bg-white text-stone-700 hover:bg-stone-50 border border-stone-200 text-xs md:text-sm font-semibold shadow-xs touch-manipulation">
+          Hot Drinks
+        </button>
+        <button onclick="filterCategory('cold-drinks')" data-cat="cold-drinks" class="cat-pill px-3.5 py-2 lg:px-3 lg:py-1.5 rounded-xl whitespace-nowrap transition-all duration-150 bg-white text-stone-700 hover:bg-stone-50 border border-stone-200 text-xs md:text-sm font-semibold shadow-xs touch-manipulation">
+          Cold Drinks
+        </button>
+        <button onclick="filterCategory('baked-goods')" data-cat="baked-goods" class="cat-pill px-3.5 py-2 lg:px-3 lg:py-1.5 rounded-xl whitespace-nowrap transition-all duration-150 bg-white text-stone-700 hover:bg-stone-50 border border-stone-200 text-xs md:text-sm font-semibold shadow-xs touch-manipulation">
+          Baked Goods
+        </button>
+        <button onclick="filterCategory('tims-home')" data-cat="tims-home" class="cat-pill px-3.5 py-2 lg:px-3 lg:py-1.5 rounded-xl whitespace-nowrap transition-all duration-150 bg-white text-stone-700 hover:bg-stone-50 border border-stone-200 text-xs md:text-sm font-semibold shadow-xs touch-manipulation">
+          Tims at Home
+        </button>
+        <button onclick="filterCategory('merchandise')" data-cat="merchandise" class="cat-pill px-3.5 py-2 lg:px-3 lg:py-1.5 rounded-xl whitespace-nowrap transition-all duration-150 bg-white text-stone-700 hover:bg-stone-50 border border-stone-200 text-xs md:text-sm font-semibold shadow-xs touch-manipulation">
+          Merchandise
+        </button>
+      </div>
+
+      <!-- Right Scroll Arrow Button for slider -->
+      <button 
+        type="button"
+        onclick="scrollCategories(220)" 
+        aria-label="Scroll categories right" 
+        class="hidden sm:flex flex-shrink-0 z-10 ml-1.5 w-8 h-8 rounded-full bg-white/95 hover:bg-white text-stone-700 shadow border border-stone-200 items-center justify-center transition active:scale-95 focus:outline-none"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+    </div>
+
+    <!-- Mobile Slider Progress Track -->
+    <div class="sm:hidden max-w-xs mx-auto mt-2 px-4">
+      <div class="h-1 w-full bg-stone-200 rounded-full overflow-hidden">
+        <div id="categoryScrollIndicator" class="h-full bg-tims-red rounded-full transition-all duration-150" style="width: 25%; transform: translateX(0%);"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Menu Catalog Section (Restored Grid Container) -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 w-full flex-1">
+    <!-- Active Category Header Title -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between pb-6 gap-2 border-b border-stone-200 mb-8">
+      <div>
+        <h2 id="currentCategoryHeading" class="font-display font-extrabold text-2xl sm:text-3xl text-tims-coffee">
+          Full Tim Hortons Menu Catalog
+        </h2>
+        <p class="text-xs sm:text-sm text-stone-500 mt-1">
+          Explore complete Canadian prices, sizes, and nutrition specifications.
+        </p>
+      </div>
+      <div class="text-xs text-stone-400 font-medium">
+        All prices in CAD
+      </div>
+    </div>
+
+    <!-- Dynamic Menu Items Injected Here by JavaScript -->
+    <div id="menuItemsGrid" class="space-y-16"></div>
+
+    <!-- Empty State Fallback -->
+    <div id="noResultsState" class="hidden text-center py-16 bg-white rounded-3xl border border-dashed border-stone-300 my-8">
+      <span class="text-5xl block mb-3">☕</span>
+      <h3 class="font-display font-bold text-xl text-stone-700">No menu items found</h3>
+      <p class="text-sm text-stone-500 mt-1">Try resetting your filter or browsing another category.</p>
+      <button onclick="resetFilters()" class="mt-4 px-5 py-2.5 bg-tims-red text-white text-xs font-bold rounded-xl shadow hover:bg-tims-darkRed transition">
+        Reset to All Items
+      </button>
+    </div>
+  </main>
+
+  <!-- Calorie & Order Calculator Section -->
+  <section id="calculator" class="py-12 bg-white border-y border-stone-200 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left: Cart Items List -->
+        <div class="lg:col-span-7 bg-stone-50 rounded-3xl p-6 border border-stone-200">
+          <div class="flex items-center justify-between pb-4 border-b border-stone-200">
+            <div>
+              <h3 class="font-display font-extrabold text-xl text-tims-coffee">Meal & Calorie Builder</h3>
+              <p class="text-xs text-stone-500">Track total calories and estimated order costs</p>
+            </div>
+            <button onclick="clearCart()" class="text-xs text-stone-400 hover:text-red-600 font-semibold transition">
+              Clear All
+            </button>
+          </div>
+
+          <!-- Dynamic Items in Cart -->
+          <div id="cartItemsList" class="divide-y divide-stone-200 mt-2 min-h-[140px]">
+            <div class="py-8 text-center text-stone-400 text-sm">
+              No items selected yet. Click any item card to customize and add!
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Summary Totals & Daily Calorie Gauge -->
+        <div class="lg:col-span-5 bg-stone-900 text-white rounded-3xl p-6 border border-stone-800 space-y-5">
+          <div class="flex items-center justify-between pb-3 border-b border-stone-800">
+            <span class="font-display font-bold text-base text-amber-200">Order & Nutrition Summary</span>
+            <span class="text-[10px] bg-stone-800 text-stone-300 px-2 py-0.5 rounded-full">Ontario 13% HST Est.</span>
+          </div>
+
+          <!-- Daily Calorie Allowance Progress Bar (2,000 kcal standard) -->
+          <div>
+            <div class="flex justify-between text-xs font-medium text-stone-300 mb-1.5">
+              <span>Daily Calorie Impact (2,000 kcal base)</span>
+              <span id="caloriePercentage" class="font-bold text-amber-400">0%</span>
+            </div>
+            <div class="h-2.5 w-full bg-stone-800 rounded-full overflow-hidden">
+              <div id="calorieProgressBar" class="h-full bg-gradient-to-r from-amber-400 to-tims-red rounded-full transition-all duration-300" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <!-- Totals Breakdown -->
+          <div class="space-y-2 pt-2 border-t border-stone-800 text-sm">
+            <div class="flex justify-between text-stone-400">
+              <span>Total Calories:</span>
+              <span id="summaryTotalCals" class="font-bold text-white">0 kcal</span>
+            </div>
+            <div class="flex justify-between text-stone-400">
+              <span>Subtotal:</span>
+              <span id="summarySubtotal" class="font-bold text-white">$0.00</span>
+            </div>
+            <div class="flex justify-between text-base font-extrabold text-white pt-2 border-t border-stone-800">
+              <span>Est. Total (CAD):</span>
+              <span id="summaryTotalWithTax" class="font-display text-xl text-amber-300">$0.00</span>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button onclick="copyOrderSummary()" class="w-full py-3 bg-tims-red hover:bg-tims-darkRed text-white text-xs font-bold rounded-xl shadow transition flex items-center justify-center gap-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+              <span>Copy Order Breakdown</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section id="faq" class="py-14 bg-stone-50 border-b border-stone-200 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-tims-coffee">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-stone-500 text-sm mt-1">Everything you need to know about ordering at Tim Hortons in Canada.</p>
+      </div>
+
+      <div class="space-y-3" id="faqAccordion">
+        <!-- FAQ item 1 -->
+        <div class="bg-white rounded-xl border border-stone-200 overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(1)" class="w-full px-5 py-4 text-left font-display font-bold text-stone-800 flex justify-between items-center hover:bg-stone-50">
+            <span>What time does Tim Hortons stop serving breakfast in Canada?</span>
+            <svg id="faqIcon-1" class="w-5 h-5 text-stone-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="faqAnswer-1" class="hidden px-5 pb-4 text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
+            At most Canadian locations, Tim Hortons serves the classic breakfast menu until <strong>11:00 AM</strong> or <strong>12:00 PM</strong>. However, many locations now offer an "All-Day Breakfast" format featuring selected Breakfast Sandwiches and Farmer’s Wraps subject to bakery availability.
+          </div>
+        </div>
+
+        <!-- FAQ item 2 -->
+        <div class="bg-white rounded-xl border border-stone-200 overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(2)" class="w-full px-5 py-4 text-left font-display font-bold text-stone-800 flex justify-between items-center hover:bg-stone-50">
+            <span>What does "Double Double" mean when ordering coffee?</span>
+            <svg id="faqIcon-2" class="w-5 h-5 text-stone-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="faqAnswer-2" class="hidden px-5 pb-4 text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
+            In Canadian vernacular, a "Double Double" designates a brewed coffee ordered with two shots of dairy cream and two teaspoons of sugar. "Triple Triple" is three of each, and "Regular" is one cream and one sugar.
+          </div>
+        </div>
+
+        <!-- FAQ item 3 -->
+        <div class="bg-white rounded-xl border border-stone-200 overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(3)" class="w-full px-5 py-4 text-left font-display font-bold text-stone-800 flex justify-between items-center hover:bg-stone-50">
+            <span>Are listed menu prices before or after Canadian sales taxes?</span>
+            <svg id="faqIcon-3" class="w-5 h-5 text-stone-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="faqAnswer-3" class="hidden px-5 pb-4 text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
+            In accordance with Canadian retail standards, menu board prices are strictly before taxes. Your final checkout price will include applicable Canadian sales tax. Note: purchasing 6 or more donuts/baked pastries qualifies as groceries in certain provinces, exempting them from provincial tax!
+          </div>
+        </div>
+
+        <!-- FAQ item 4 -->
+        <div class="bg-white rounded-xl border border-stone-200 overflow-hidden shadow-sm">
+          <button onclick="toggleFaq(4)" class="w-full px-5 py-4 text-left font-display font-bold text-stone-800 flex justify-between items-center hover:bg-stone-50">
+            <span>What are the cup sizes for Tim Hortons hot & cold drinks?</span>
+            <svg id="faqIcon-4" class="w-5 h-5 text-stone-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="faqAnswer-4" class="hidden px-5 pb-4 text-sm text-stone-600 leading-relaxed border-t border-stone-100 pt-3">
+            Canadian sizes are: <strong>Small (10 oz / 284 ml)</strong>, <strong>Medium (14 oz / 414 ml)</strong>, <strong>Large (20 oz / 591 ml)</strong>, and <strong>Extra Large (24 oz / 710 ml)</strong>.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-tims-darkCoffee text-stone-300 pt-12 pb-8 border-t-4 border-tims-red">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-10 border-b border-stone-800">
+        
+        <!-- Col 1: About Brand -->
+        <div class="lg:col-span-2 space-y-3">
+          <div class="flex items-center gap-2">
+            <span class="w-8 h-8 rounded-lg bg-tims-red flex items-center justify-center text-white font-bold">🍁</span>
+            <span class="font-display font-extrabold text-xl text-white">Tim Hortons Menu</span>
+          </div>
+          <p class="text-xs text-stone-400 leading-relaxed pr-6">
+            Tim Hortons Menu is an independent, community-driven informational menu portal. We provide Canadian consumers with up-to-date prices, calories, breakfast hours, allergen details, and full category selections.
+          </p>
+          <div class="text-xs text-stone-400">
+            <span class="text-amber-400">●</span> Status: Verified Canadian Price Database
+          </div>
+        </div>
+
+        <!-- Col 2: Drinks Navigation -->
+        <div>
+          <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-3">Menu Directory</h4>
+          <ul class="text-xs space-y-2 text-stone-400">
+            <li><a href="#categories-nav" onclick="showPageView('home'); filterCategory('hot-drinks')" class="hover:text-white transition">Brewed Coffee & Roasts</a></li>
+            <li><a href="#categories-nav" onclick="showPageView('home'); filterCategory('hot-drinks')" class="hover:text-white transition">French Vanilla & Specialty</a></li>
+            <li><a href="#categories-nav" onclick="showPageView('home'); filterCategory('cold-drinks')" class="hover:text-white transition">Iced Capps & Cold Brews</a></li>
+            <li><a href="#categories-nav" onclick="showPageView('home'); filterCategory('baked-goods')" class="hover:text-white transition">Donuts & Timbits® Packs</a></li>
+            <li><a href="#categories-nav" onclick="showPageView('home'); filterCategory('lunch-dinner')" class="hover:text-white transition">Crave Burgers & Nuggets</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Pages Navigation -->
+        <div>
+          <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-3">Quick Pages</h4>
+          <ul class="text-xs space-y-2 text-stone-400">
+            <li><button onclick="showPageView('allergens')" class="hover:text-white transition">Allergens & Dietary</button></li>
+            <li><button onclick="showPageView('hours')" class="hover:text-white transition">Store & Breakfast Hours</button></li>
+            <li><button onclick="showPageView('locations')" class="hover:text-white transition">Canada Locations</button></li>
+            <li><a href="#calculator" onclick="showPageView('home')" class="hover:text-white transition">Calorie Calculator</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Legal Pages -->
+        <div>
+          <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-3">Legal & Compliance</h4>
+          <ul class="text-xs space-y-2 text-stone-400">
+            <li><button onclick="showPageView('disclaimer')" class="text-amber-300 hover:text-white font-semibold transition flex items-center gap-1.5"><span>●</span> Disclaimer Notice</button></li>
+            <li><button onclick="showPageView('privacy')" class="hover:text-white transition">Privacy Policy</button></li>
+            <li><button onclick="showPageView('terms')" class="hover:text-white transition">Terms of Service</button></li>
+            <li><button onclick="showPageView('cookie')" class="hover:text-white transition">Cookie Policy</button></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Legal Disclaimer Bar -->
+      <div class="pt-6 text-[11px] text-stone-400 space-y-3">
+        <p>
+          <strong>Legal Disclaimer:</strong> This website is an independent fan resource published strictly for educational and consumer reference purposes. We are <strong>not affiliated, endorsed, authorized, or associated with Tim Hortons®</strong>, The TDL Group Corp., or Restaurant Brands International Inc. All trade names, product marks, and company names are trademarks™ or registered® trademarks of their respective holders.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-between items-center text-stone-400 text-[11px] pt-2 border-t border-stone-800">
+          <span>© 2026 Tim Hortons Menu Guide Canada. All rights reserved.</span>
+          <div class="flex flex-wrap gap-4 mt-2 sm:mt-0 font-medium">
+            <button onclick="showPageView('disclaimer')" class="text-amber-400 hover:underline">Disclaimer</button>
+            <button onclick="showPageView('privacy')" class="hover:text-stone-300">Privacy Policy</button>
+            <button onclick="showPageView('terms')" class="hover:text-stone-300">Terms of Use</button>
+            <button onclick="showPageView('cookie')" class="hover:text-stone-300">Cookie Settings</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <!-- Item Detail Modal -->
+  <div id="itemDetailModal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full overflow-hidden shadow-2xl border border-stone-200 transform transition-all">
+      <div id="modalHeaderBg" class="relative bg-gradient-to-r from-stone-900 to-stone-800 p-6 flex justify-between items-start text-white">
+        <div class="flex items-center gap-4">
+          <div id="modalEmojiPic" class="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-4xl shadow-inner border border-white/20">
+            ⚡
+          </div>
+          <div>
+            <span id="modalCategoryBadge" class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-tims-red uppercase tracking-wider text-white">Category</span>
+            <h3 id="modalTitle" class="font-display font-extrabold text-xl sm:text-2xl mt-1 text-white">Item Title</h3>
+          </div>
+        </div>
+        <button onclick="closeModal()" class="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm flex items-center justify-center text-white text-sm">✕</button>
+      </div>
+
+      <div class="p-6 space-y-4">
+        <p id="modalDescription" class="text-stone-600 text-sm leading-relaxed">
+          Product description goes here.
+        </p>
+
+        <!-- Sizing Table or Single Spec injected dynamically -->
+        <div id="modalPricingContainer"></div>
+
+        <div class="pt-2 flex gap-3">
+          <button id="modalAddButton" class="flex-1 py-3 bg-tims-red hover:bg-tims-darkRed text-white font-bold rounded-xl shadow transition text-sm">
+            + Add to Calorie Tracker
+          </button>
+          <button onclick="closeModal()" class="px-5 py-3 bg-stone-100 hover:bg-stone-200 text-stone-700 font-semibold rounded-xl transition text-sm">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Box (Never uses alert()) -->
+  <div id="toastNotification" class="fixed bottom-5 right-5 z-50 hidden bg-stone-900 text-white px-4 py-3 rounded-2xl shadow-xl border border-stone-700 flex items-center gap-3 transition-all duration-300">
+    <span class="w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center text-white text-xs font-bold">✓</span>
+    <span id="toastMessage" class="text-xs font-medium">Notification message here</span>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button 
+    id="backToTopBtn" 
+    onclick="scrollToTop()" 
+    aria-label="Scroll to top"
+    title="Back to Top"
+    class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 hidden w-12 h-12 flex items-center justify-center bg-tims-red hover:bg-tims-darkRed text-white rounded-full shadow-2xl hover:shadow-red-600/40 hover:-translate-y-1 transition-all duration-300 border-2 border-white focus:outline-none touch-manipulation active:scale-95"
+  >
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+    </svg>
+  </button>
+
+  <script>
+    // Category emoji mapping - one uniform emoji per category
+    const categoryEmojiMap = {
+      'harry-potter': '⚡',
+      'featured': '⭐',
+      'breakfast': '🍳',
+      'lunch-dinner': '🍔',
+      'hot-drinks': '☕',
+      'cold-drinks': '🧊',
+      'baked-goods': '🍩',
+      'tims-home': '🏠',
+      'merchandise': '🛍️'
+    };
+
+    // Comprehensive Menu Database
+    const menuDatabase = [
+      // Harry Potter Standard / Single-Size Items
+      {
+        id: 'hp-gryffindor-donut',
+        name: 'Gryffindor Strawberry Cheesecake Donut',
+        category: 'harry-potter',
+        price: 2.79,
+        cals: 290,
+        description: 'Harry Potter Collection: Rich yeast donut with strawberry cheesecake filling, crimson glaze, and golden sprinkles.',
+        badge: '⚡ Wizard Special',
+        badgeColor: 'bg-amber-600',
+        diet: ['bakery']
+      },
+      {
+        id: 'hp-slytherin-donut',
+        name: 'Slytherin Chocolate Pistachio Donut',
+        category: 'harry-potter',
+        price: 2.79,
+        cals: 340,
+        description: 'Harry Potter Collection: Glazed ring donut topped with decadent chocolate frosting and crunchy pistachio crumb.',
+        badge: '⚡ Wizard Special',
+        badgeColor: 'bg-emerald-700',
+        diet: ['bakery']
+      },
+      {
+        id: 'hp-ravenclaw-donut',
+        name: 'Ravenclaw Blueberry Donut',
+        category: 'harry-potter',
+        price: 2.79,
+        cals: 300,
+        description: 'Harry Potter Collection: Fluffy yeast donut infused with real Canadian blueberry glaze and shimmer sugar.',
+        badge: '⚡ Wizard Special',
+        badgeColor: 'bg-blue-700',
+        diet: ['bakery']
+      },
+      {
+        id: 'hp-hufflepuff-donut',
+        name: 'Hufflepuff Lemon Meringue Donut',
+        category: 'harry-potter',
+        price: 2.79,
+        cals: 330,
+        description: 'Harry Potter Collection: Tart and sweet lemon filling topped with fluffy toasted meringue topping and yellow glaze.',
+        badge: '⚡ Wizard Special',
+        badgeColor: 'bg-yellow-600',
+        diet: ['bakery']
+      },
+      {
+        id: 'hp-golden-snitch-timbit',
+        name: 'Golden Snitch Caramel Timbit',
+        category: 'harry-potter',
+        price: 0.49,
+        cals: 50,
+        description: 'Harry Potter Collection: Bite-sized golden yeast Timbit dipped in rich buttery caramel glaze with sparkling edible shimmer.',
+        badge: '⚡ Wizard Special',
+        badgeColor: 'bg-amber-600',
+        diet: ['bakery']
+      },
+      {
+        id: 'hp-hogwarts-6-pack',
+        name: 'Hogwarts 6-Pack Donuts',
+        category: 'harry-potter',
+        price: 11.99,
+        cals: null,
+        description: 'Collector box with 6 handcrafted Harry Potter house donuts (Gryffindor, Slytherin, Ravenclaw, and Hufflepuff).',
+        badge: '⚡ Sharing Box',
+        badgeColor: 'bg-purple-700',
+        diet: ['bakery']
+      },
+      {
+        id: 'hp-hogwarts-12-pack',
+        name: 'Hogwarts 12-Pack Donuts',
+        category: 'harry-potter',
+        price: 19.99,
+        cals: null,
+        description: 'Full dozen assorted Harry Potter house donuts presented in an official Hogwarts commemorative gift box.',
+        badge: '⚡ Collector Pack',
+        badgeColor: 'bg-purple-800',
+        diet: ['bakery']
+      },
+      {
+        id: 'hp-snitch-holder-10-timbits',
+        name: 'Golden Snitch Timbits® Holder with 10 Timbits®',
+        category: 'harry-potter',
+        price: 17.99,
+        cals: null,
+        description: 'Collectible keepsake metallic Golden Snitch container filled with 10 assorted Timbits® including Caramel Snitch bites.',
+        badge: '⚡ Collectible + Food',
+        badgeColor: 'bg-amber-700',
+        diet: ['bakery']
+      },
+      {
+        id: 'hp-snitch-holder-only',
+        name: 'Golden Snitch Timbits® Holder (Container Only)',
+        category: 'harry-potter',
+        price: 14.99,
+        cals: null,
+        description: 'Official limited edition Golden Snitch novelty display holder with folding golden wings.',
+        badge: '⚡ Merchandise',
+        badgeColor: 'bg-stone-700',
+        diet: []
+      },
+      {
+        id: 'hp-stir-wand',
+        name: 'Colour Changing Stir Wand',
+        category: 'harry-potter',
+        price: 19.99,
+        cals: null,
+        description: 'Magic wand drink stirrer that activates with temperature changes in iced or hot Tims beverages.',
+        badge: '⚡ Merchandise',
+        badgeColor: 'bg-stone-800',
+        diet: []
+      },
+
+      // Harry Potter Items with Sizes (Small, Medium, Large)
+      {
+        id: 'hp-patronus-sparkling',
+        name: 'Patronus Sparkling Quencher',
+        category: 'harry-potter',
+        price: 3.49,
+        cals: 190,
+        description: 'Luminous sparkling fruit beverage with mystical blue citrus notes and refreshing bubbles.',
+        badge: '⚡ Sized Drink',
+        badgeColor: 'bg-indigo-600',
+        diet: ['beverage'],
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 190 },
+          { size: 'Medium', price: 3.99, cals: 230 },
+          { size: 'Large', price: 4.49, cals: 270 }
+        ]
+      },
+      {
+        id: 'hp-patronus-lemonade',
+        name: 'Patronus Lemonade Quencher',
+        category: 'harry-potter',
+        price: 2.49,
+        cals: 150,
+        description: 'Crisp, sweet-tart mystical lemonade served over ice crystals with a subtle berry infusion.',
+        badge: '⚡ Sized Drink',
+        badgeColor: 'bg-blue-600',
+        diet: ['beverage'],
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 150 },
+          { size: 'Medium', price: 2.99, cals: 210 },
+          { size: 'Large', price: 3.49, cals: 270 }
+        ]
+      },
+      {
+        id: 'hp-patronus-frozen',
+        name: 'Patronus Frozen Quencher',
+        category: 'harry-potter',
+        price: 3.49,
+        cals: 340,
+        description: 'Ice-blended frosted slush quencher with layered tropical and silver blue berry flavors.',
+        badge: '⚡ Sized Frozen',
+        badgeColor: 'bg-cyan-700',
+        diet: ['beverage'],
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 340 },
+          { size: 'Medium', price: 3.99, cals: 400 },
+          { size: 'Large', price: 4.49, cals: 500 }
+        ]
+      },
+      {
+        id: 'hp-forbidden-forest-iced-tea',
+        name: 'Forbidden Forest Iced Tea Quencher',
+        category: 'harry-potter',
+        price: 2.49,
+        cals: 130,
+        description: 'Deep steeped iced black tea blended with blackberry forest syrup and fresh botanical splash.',
+        badge: '⚡ Sized Drink',
+        badgeColor: 'bg-purple-900',
+        diet: ['beverage'],
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 130 },
+          { size: 'Medium', price: 2.99, cals: 190 },
+          { size: 'Large', price: 3.49, cals: 240 }
+        ]
+      },
+
+      {
+        id: 'ft-matcha-latte',
+        name: 'Matcha Latte',
+        category: 'featured',
+        price: 3.49,
+        cals: 100,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 100 },
+          { size: 'Medium', price: 3.99, cals: 160 },
+          { size: 'Large', price: 4.49, cals: 210 }
+        ]
+      },
+      {
+        id: 'ft-iced-matcha',
+        name: 'Iced Matcha',
+        category: 'featured',
+        price: 4.29,
+        cals: 87
+      },
+      {
+        id: 'ft-orig-iced-matcha-latte',
+        name: 'Original Iced Matcha Latte',
+        category: 'featured',
+        price: 3.49,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 90 },
+          { size: 'Medium', price: 3.99, cals: 210 },
+          { size: 'Large', price: 4.49, cals: 260 }
+        ]
+      },
+      {
+        id: 'ft-unsweet-iced-matcha-latte',
+        name: 'Unsweetened Iced Matcha Latte',
+        category: 'featured',
+        price: 3.49,
+        cals: 100,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 100 },
+          { size: 'Medium', price: 3.99, cals: 130 },
+          { size: 'Large', price: 4.49, cals: 160 }
+        ]
+      },
+      {
+        id: 'ft-vanilla-iced-matcha-latte',
+        name: 'Vanilla Iced Matcha Latte',
+        category: 'featured',
+        price: 3.99,
+        cals: 260,
+        sizes: [
+          { size: 'Small', price: 4.49, cals: 260 },
+          { size: 'Medium', price: 3.99, cals: 320 },
+          { size: 'Large', price: 5.49, cals: 370 }
+        ]
+      },
+      {
+        id: 'ft-vanilla-matcha-latte',
+        name: 'Vanilla Matcha Latte',
+        category: 'featured',
+        price: 3.99,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 3.99, cals: 90 },
+          { size: 'Medium', price: 4.49, cals: 240 },
+          { size: 'Large', price: 4.49, cals: 320 }
+        ]
+      },
+      {
+        id: 'ft-choc-pistachio-iced-matcha-foam',
+        name: 'Chocolate Pistachio Iced Matcha Latte with Chocolate Pistachio Infused Foam',
+        category: 'featured',
+        price: 3.99,
+        cals: 254
+      },
+      {
+        id: 'ft-choc-pistachio-matcha-latte',
+        name: 'Chocolate Pistachio Matcha Latte',
+        category: 'featured',
+        price: 3.99,
+        cals: 142
+      },
+      {
+        id: 'ft-matcha-mango-cloud',
+        name: 'Matcha Mango Cloud',
+        category: 'featured',
+        price: 4.49,
+        cals: 354
+      },
+      {
+        id: 'ft-blackberry-yuzu-iced-tea',
+        name: 'Blackberry Yuzu Iced Tea Quencher',
+        category: 'featured',
+        price: 3.49,
+        cals: 130
+      },
+      {
+        id: 'ft-blackberry-yuzu-poppin-frozen',
+        name: "Blackberry Yuzu Poppin' Frozen Quencher",
+        category: 'featured',
+        price: 4.19,
+        cals: 380,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 380 },
+          { size: 'Medium', price: 4.69, cals: 450 },
+          { size: 'Large', price: 5.19, cals: 550 }
+        ]
+      },
+      {
+        id: 'ft-blackberry-yuzu-protein',
+        name: 'Blackberry Yuzu Protein Quencher',
+        category: 'featured',
+        price: 3.49,
+        cals: 170,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 170 },
+          { size: 'Medium', price: 3.99, cals: 230 },
+          { size: 'Large', price: 4.49, cals: 300 }
+        ]
+      },
+      {
+        id: 'ft-cadbury-mini-eggs-cookie',
+        name: 'Cadbury Mini Eggs Cookie',
+        category: 'featured',
+        price: 1.99,
+        cals: 370
+      },
+      {
+        id: 'ft-cadbury-mini-eggs-donut',
+        name: 'Cadbury Mini Eggs Dream Donut',
+        category: 'featured',
+        price: 2.49,
+        cals: 330
+      },
+      {
+        id: 'ft-canada-straw-tumbler',
+        name: 'Canada Plastic Straw Tumbler 24oz',
+        category: 'featured',
+        price: 14.99,
+        cals: null
+      },
+      {
+        id: 'ft-canadian-fireworks-timbit',
+        name: 'Canadian Fireworks Timbit',
+        category: 'featured',
+        price: 0.49,
+        cals: 80
+      },
+      {
+        id: 'ft-cappuccino-timbit',
+        name: 'Cappuccino Timbit',
+        category: 'featured',
+        price: 0.49,
+        cals: 60
+      },
+      {
+        id: 'ft-caramel-churro-cold-brew',
+        name: 'Caramel Churro Cold Brew',
+        category: 'featured',
+        price: 3.99,
+        cals: 308
+      },
+      {
+        id: 'ft-caramel-churro-iced-capp',
+        name: 'Caramel Churro Iced Capp',
+        category: 'featured',
+        price: 4.19,
+        cals: 450,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 450 },
+          { size: 'Medium', price: 4.69, cals: 560 },
+          { size: 'Large', price: 5.19, cals: 700 }
+        ]
+      },
+      {
+        id: 'ft-caramel-churro-iced-latte',
+        name: 'Caramel Churro Iced Latte',
+        category: 'featured',
+        price: 3.99,
+        cals: 233
+      },
+      {
+        id: 'ft-chocolate-creme-brulee-timbit',
+        name: 'Chocolate Creme Brulee Filled Timbit',
+        category: 'featured',
+        price: 0.49,
+        cals: 50
+      },
+      {
+        id: 'ft-classic-breakfast-wraps',
+        name: 'Classic Breakfast Wraps',
+        category: 'featured',
+        price: 4.49,
+        cals: null
+      },
+      {
+        id: 'ft-crispy-chicken-sandwich',
+        name: 'Crispy Chicken Sandwich',
+        category: 'featured',
+        price: 7.29,
+        cals: 660
+      },
+      {
+        id: 'ft-custard-tart',
+        name: 'Custard Tart',
+        category: 'featured',
+        price: 2.29,
+        cals: 210
+      },
+      {
+        id: 'ft-lime-cheesecake-timbit',
+        name: 'Lime Cheesecake Filled Timbit',
+        category: 'featured',
+        price: 0.49,
+        cals: 50
+      },
+      {
+        id: 'ft-mango-slushy-tajin',
+        name: 'Mango Slushy with Tajin',
+        category: 'featured',
+        price: 3.99,
+        cals: 240
+      },
+      {
+        id: 'ft-oatmeal-raisin-cookie',
+        name: 'Oatmeal Raisin Cookie',
+        category: 'featured',
+        price: 1.99,
+        cals: 290
+      },
+      {
+        id: 'ft-orange-tangerine-iced-tea',
+        name: 'Orange Tangerine Iced Tea Quencher',
+        category: 'featured',
+        price: 3.49,
+        cals: 240
+      },
+      {
+        id: 'ft-orange-tangerine-poppin-frozen',
+        name: "Orange Tangerine Poppin' Frozen Quencher",
+        category: 'featured',
+        price: 4.19,
+        cals: 380,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 380 },
+          { size: 'Medium', price: 4.69, cals: 450 },
+          { size: 'Large', price: 5.19, cals: 560 }
+        ]
+      },
+      {
+        id: 'ft-peach-iced-tea-quencher',
+        name: 'Peach Iced Tea Quencher',
+        category: 'featured',
+        price: 3.49,
+        cals: 100
+      },
+      {
+        id: 'ft-peach-poppin-frozen-quencher',
+        name: "Peach Poppin' Frozen Quencher",
+        category: 'featured',
+        price: 4.19,
+        cals: 350,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 350 },
+          { size: 'Medium', price: 4.69, cals: 410 },
+          { size: 'Large', price: 5.19, cals: 500 }
+        ]
+      },
+      {
+        id: 'ft-peach-protein-quencher',
+        name: 'Peach Protein Quencher',
+        category: 'featured',
+        price: 3.49,
+        cals: 140,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 140 },
+          { size: 'Medium', price: 3.99, cals: 190 },
+          { size: 'Large', price: 4.49, cals: 240 }
+        ]
+      },
+      {
+        id: 'ft-pecan-butter-tart',
+        name: 'Pecan Butter Tart',
+        category: 'featured',
+        price: 2.29,
+        cals: 330
+      },
+      {
+        id: 'ft-protein-iced-chai-latte',
+        name: 'Protein Iced Chai Latte',
+        category: 'featured',
+        price: 4.29,
+        cals: 190,
+        sizes: [
+          { size: 'Small', price: 4.29, cals: 190 },
+          { size: 'Medium', price: 4.79, cals: 260 },
+          { size: 'Large', price: 5.29, cals: 340 }
+        ]
+      },
+      {
+        id: 'ft-raspberry-mojito-frozen',
+        name: 'Raspberry Mojito Frozen Quencher',
+        category: 'featured',
+        price: 3.49,
+        cals: 260,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 260 },
+          { size: 'Medium', price: 3.99, cals: 280 },
+          { size: 'Large', price: 4.49, cals: 340 }
+        ]
+      },
+      {
+        id: 'ft-raspberry-mojito-iced-tea',
+        name: 'Raspberry Mojito Iced Tea Quencher',
+        category: 'featured',
+        price: 3.49,
+        cals: 80
+      },
+      {
+        id: 'ft-raspberry-mojito-lemonade',
+        name: 'Raspberry Mojito Lemonade Quencher',
+        category: 'featured',
+        price: 2.49,
+        cals: 50,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 50 },
+          { size: 'Medium', price: 2.99, cals: 60 },
+          { size: 'Large', price: 3.49, cals: 80 }
+        ]
+      },
+      {
+        id: 'ft-raspberry-mojito-poppin-frozen',
+        name: "Raspberry Mojito Poppin' Frozen Quencher",
+        category: 'featured',
+        price: 4.19,
+        cals: 300,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 300 },
+          { size: 'Medium', price: 4.69, cals: 340 },
+          { size: 'Large', price: 5.19, cals: 410 }
+        ]
+      },
+      {
+        id: 'ft-raspberry-mojito-zero-sugar',
+        name: 'Raspberry Mojito Zero Sugar Sparkling Quencher',
+        category: 'featured',
+        price: 2.79,
+        cals: 5,
+        sizes: [
+          { size: 'Small', price: 2.79, cals: 5 },
+          { size: 'Medium', price: 3.29, cals: 10 },
+          { size: 'Large', price: 3.79, cals: 10 }
+        ]
+      },
+      {
+        id: 'ft-ryan-reynolds-tshirt-en',
+        name: 'Ryan Reynolds Charitable T-Shirt - English',
+        category: 'featured',
+        price: 19.99,
+        cals: null
+      },
+      {
+        id: 'ft-ryan-reynolds-tshirt-fr',
+        name: 'Ryan Reynolds Charitable T-Shirt - French',
+        category: 'featured',
+        price: 19.99,
+        cals: null
+      },
+      {
+        id: 'ft-ryan-reynolds-donut',
+        name: 'Ryan Reynolds Maple Butter Glazed Donut',
+        category: 'featured',
+        price: 1.79,
+        cals: 260
+      },
+      {
+        id: 'ft-soccer-timbits-bucket',
+        name: 'Soccer Timbits® Bucket with 30 Timbits',
+        category: 'featured',
+        price: 12.99,
+        cals: null
+      },
+      {
+        id: 'ft-strawberry-cheesecake-muffin',
+        name: 'Strawberry Cheesecake Filled Muffin',
+        category: 'featured',
+        price: 2.29,
+        cals: 380
+      },
+      {
+        id: 'ft-strawberry-watermelon-iced-tea',
+        name: 'Strawberry Watermelon Iced Tea Quencher',
+        category: 'featured',
+        price: 3.49,
+        cals: 90
+      },
+      {
+        id: 'ft-strawberry-watermelon-poppin-frozen',
+        name: "Strawberry Watermelon Poppin' Frozen Quencher",
+        category: 'featured',
+        price: 4.19,
+        cals: 340,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 340 },
+          { size: 'Medium', price: 4.69, cals: 390 },
+          { size: 'Large', price: 5.19, cals: 480 }
+        ]
+      },
+      {
+        id: 'ft-strawberry-watermelon-protein',
+        name: 'Strawberry Watermelon Protein Quencher',
+        category: 'featured',
+        price: 3.49,
+        cals: 130,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 130 },
+          { size: 'Medium', price: 3.99, cals: 170 },
+          { size: 'Large', price: 4.49, cals: 220 }
+        ]
+      },
+      {
+        id: 'ft-supreme-stack',
+        name: 'Supreme Stack',
+        category: 'featured',
+        price: 6.49,
+        cals: 494
+      },
+      {
+        id: 'ft-team-canada-hockey-binder',
+        name: 'Team Canada Hockey Binder',
+        category: 'featured',
+        price: 14.99,
+        cals: null
+      },
+      {
+        id: 'ft-team-canada-trading-cards',
+        name: 'Team Canada Trading Cards',
+        category: 'featured',
+        price: 1.99,
+        cals: null
+      },
+      {
+        id: 'ft-team-canada-hot-cup',
+        name: 'Timbits® Team Canada Reusable Hot Cup 16oz',
+        category: 'featured',
+        price: 3.99,
+        cals: null
+      },
+      {
+        id: 'ft-orig-iced-steeped-tea',
+        name: 'Original Iced Steeped Tea',
+        category: 'featured',
+        price: 2.49,
+        cals: 120,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 120 },
+          { size: 'Medium', price: 2.79, cals: 160 },
+          { size: 'Large', price: 3.19, cals: 240 }
+        ]
+      },
+      {
+        id: 'ft-brown-sugar-iced-steeped-tea',
+        name: 'Brown Sugar Iced Steeped Tea',
+        category: 'featured',
+        price: 2.99,
+        cals: 120,
+        sizes: [
+          { size: 'Small', price: 2.99, cals: 120 },
+          { size: 'Medium', price: 3.29, cals: 160 },
+          { size: 'Large', price: 3.69, cals: 240 }
+        ]
+      },
+      {
+        id: 'ft-black-iced-steeped-tea',
+        name: 'Black Iced Steeped Tea',
+        category: 'featured',
+        price: 2.49,
+        cals: 0,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 0 },
+          { size: 'Medium', price: 2.79, cals: 0 },
+          { size: 'Large', price: 3.19, cals: 0 }
+        ]
+      },
+      {
+        id: 'ft-pumpkin-spice-cold-brew',
+        name: 'Pumpkin Spice Cold Brew',
+        category: 'featured',
+        price: 3.69,
+        cals: 230,
+        sizes: [
+          { size: 'Small', price: 3.69, cals: 230 },
+          { size: 'Medium', price: 3.99, cals: 260 },
+          { size: 'Large', price: 4.49, cals: 340 }
+        ]
+      },
+      {
+        id: 'ft-pumpkin-spice-latte',
+        name: 'Pumpkin Spice Latte',
+        category: 'featured',
+        price: 3.99,
+        cals: 230,
+        sizes: [
+          { size: 'Small', price: 3.99, cals: 230 },
+          { size: 'Medium', price: 4.49, cals: 300 },
+          { size: 'Large', price: 5.19, cals: 380 }
+        ]
+      },
+      {
+        id: 'ft-chipotle-veggie-wrap',
+        name: 'Chipotle Veggie Wrap',
+        category: 'featured',
+        price: 5.29,
+        cals: 600
+      },
+      {
+        id: 'ft-cherry-soda-swirl',
+        name: 'Cherry Soda Swirl',
+        category: 'featured',
+        price: 2.99,
+        cals: 310,
+        sizes: [
+          { size: 'Small', price: 2.99, cals: 310 },
+          { size: 'Medium', price: 3.49, cals: 370 },
+          { size: 'Large', price: 3.99, cals: 480 }
+        ]
+      },
+      {
+        id: 'ft-vanilla-soda-swirl',
+        name: 'Vanilla Soda Swirl',
+        category: 'featured',
+        price: 2.99,
+        cals: 320,
+        sizes: [
+          { size: 'Small', price: 2.99, cals: 320 },
+          { size: 'Medium', price: 3.49, cals: 380 },
+          { size: 'Large', price: 3.99, cals: 500 }
+        ]
+      },
+      {
+        id: 'ft-vanilla-light-soda-swirl',
+        name: 'Vanilla Light Soda Swirl',
+        category: 'featured',
+        price: 2.49,
+        cals: 80,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 80 },
+          { size: 'Medium', price: 2.99, cals: 100 },
+          { size: 'Large', price: 3.49, cals: 160 }
+        ]
+      },
+      {
+        id: 'ft-white-cheddar-hashbrown',
+        name: 'White Cheddar Hashbrown',
+        category: 'featured',
+        price: 2.89,
+        cals: 120
+      },
+      {
+        id: 'ft-turkey-bacon-club-sandwich',
+        name: 'Turkey Bacon Club Artisan Sandwich',
+        category: 'featured',
+        price: 7.79,
+        cals: 550
+      },
+
+      // Breakfast Menu Items (Sandwiches, Wraps, Boxes, Bundles, Sides)
+      // 1. Breakfast Sandwiches
+      {
+        id: 'bf-bacon-breakfast-sandwich',
+        name: 'Bacon Breakfast Sandwich',
+        category: 'breakfast',
+        subSection: 'Breakfast Sandwiches',
+        price: 4.49,
+        cals: 330
+      },
+      {
+        id: 'bf-bagel-belt',
+        name: 'Bagel BELT',
+        category: 'breakfast',
+        subSection: 'Breakfast Sandwiches',
+        price: 5.99,
+        cals: 397
+      },
+      {
+        id: 'bf-double-stacked-sandwich',
+        name: 'Double Stacked Breakfast Sandwich',
+        category: 'breakfast',
+        subSection: 'Breakfast Sandwiches',
+        price: 6.49,
+        cals: 580
+      },
+      {
+        id: 'bf-egg-cheese-sandwich',
+        name: 'Egg & Cheese Breakfast Sandwich',
+        category: 'breakfast',
+        subSection: 'Breakfast Sandwiches',
+        price: 4.29,
+        cals: 270
+      },
+      {
+        id: 'bf-farmers-breakfast-sandwich',
+        name: "Farmer's Breakfast Sandwich",
+        category: 'breakfast',
+        subSection: 'Breakfast Sandwiches',
+        price: 5.69,
+        cals: 680
+      },
+      {
+        id: 'bf-maple-scrambled-egg-croissant',
+        name: 'Maple Brown Butter Scrambled Egg Loaded Croissant',
+        category: 'breakfast',
+        subSection: 'Breakfast Sandwiches',
+        price: 5.99,
+        cals: 590
+      },
+      {
+        id: 'bf-protein-bagel-belt',
+        name: 'Protein Bagel BELT',
+        category: 'breakfast',
+        subSection: 'Breakfast Sandwiches',
+        price: 6.49,
+        cals: 397
+      },
+      {
+        id: 'bf-sausage-breakfast-sandwich',
+        name: 'Sausage Breakfast Sandwich',
+        category: 'breakfast',
+        subSection: 'Breakfast Sandwiches',
+        price: 4.79,
+        cals: 474
+      },
+      {
+        id: 'bf-scrambled-egg-croissant',
+        name: 'Scrambled Egg Loaded Croissant',
+        category: 'breakfast',
+        subSection: 'Breakfast Sandwiches',
+        price: 5.69,
+        cals: 590
+      },
+      {
+        id: 'bf-simply-sausage-sandwich',
+        name: 'Simply Sausage Sandwich',
+        category: 'breakfast',
+        subSection: 'Breakfast Sandwiches',
+        price: 3.49,
+        cals: 202
+      },
+
+      // 2. Breakfast Wraps
+      {
+        id: 'bf-farmers-breakfast-wrap',
+        name: "Farmer's Breakfast Wrap",
+        category: 'breakfast',
+        subSection: 'Breakfast Wraps',
+        price: 5.79,
+        cals: 509
+      },
+      {
+        id: 'bf-maple-scrambled-egg-wrap',
+        name: "Maple Brown Butter Scrambled Egg Farmer's Wrap",
+        category: 'breakfast',
+        subSection: 'Breakfast Wraps',
+        price: 5.99,
+        cals: 509
+      },
+      {
+        id: 'bf-scrambled-egg-wrap',
+        name: "Scrambled Egg Farmer's Wrap",
+        category: 'breakfast',
+        subSection: 'Breakfast Wraps',
+        price: 5.79,
+        cals: 509
+      },
+
+      // 3. Breakfast Boxes
+      {
+        id: 'bf-maple-scrambled-egg-box',
+        name: 'Maple Brown Butter Scrambled Egg Loaded Box',
+        category: 'breakfast',
+        subSection: 'Breakfast Boxes',
+        price: 8.49,
+        cals: 490
+      },
+      {
+        id: 'bf-scrambled-egg-box',
+        name: 'Scrambled Egg Loaded Box',
+        category: 'breakfast',
+        subSection: 'Breakfast Boxes',
+        price: 7.99,
+        cals: 490
+      },
+
+      // 4. Breakfast Bundles
+      {
+        id: 'bf-classic-bundle-family',
+        name: 'Classic Breakfast Bundle (serves 4-6)',
+        category: 'breakfast',
+        subSection: 'Breakfast Bundles',
+        price: 29.99,
+        cals: 4450
+      },
+      {
+        id: 'bf-classic-bundle-2',
+        name: 'Classic Breakfast Bundle for 2',
+        category: 'breakfast',
+        subSection: 'Breakfast Bundles',
+        price: 14.49,
+        cals: 2200
+      },
+      {
+        id: 'bf-farmers-bundle-family',
+        name: "Farmer's Breakfast Bundle (serves 4-6)",
+        category: 'breakfast',
+        subSection: 'Breakfast Bundles',
+        price: 33.99,
+        cals: 5088
+      },
+      {
+        id: 'bf-farmers-bundle-2',
+        name: "Farmer's Breakfast Bundle for 2",
+        category: 'breakfast',
+        subSection: 'Breakfast Bundles',
+        price: 15.99,
+        cals: 2420
+      },
+
+      // 5. Breakfast (Sides & Essentials)
+      {
+        id: 'bf-hashbrown',
+        name: 'Hashbrown',
+        category: 'breakfast',
+        subSection: 'Breakfast',
+        price: 2.19,
+        cals: 120
+      },
+      {
+        id: 'bf-omelette-bites',
+        name: 'Omelette Bites',
+        category: 'breakfast',
+        subSection: 'Breakfast',
+        price: 4.19,
+        cals: 210
+      },
+      {
+        id: 'bf-toast',
+        name: 'Toast',
+        category: 'breakfast',
+        subSection: 'Breakfast',
+        price: 1.79,
+        cals: 341
+      },
+      {
+        id: 'bf-vanilla-yogurt-parfait',
+        name: 'Vanilla Yogurt Parfait',
+        category: 'breakfast',
+        subSection: 'Breakfast',
+        price: 3.79,
+        cals: 250
+      },
+      {
+        id: 'bf-white-cheddar-hashbrown',
+        name: 'White Cheddar Hashbrown',
+        category: 'breakfast',
+        subSection: 'Breakfast',
+        price: 2.89,
+        cals: 120
+      },
+
+      // Flatbread Pizzas
+      {
+        id: 'ld-bacon-everything-pizza',
+        name: 'Bacon Everything Flatbread Pizza',
+        category: 'lunch-dinner',
+        price: 6.99,
+        cals: 275
+      },
+      {
+        id: 'ld-chicken-parmesan-pizza',
+        name: 'Chicken Parmesan Flatbread Pizza',
+        category: 'lunch-dinner',
+        price: 6.99,
+        cals: 429
+      },
+      {
+        id: 'ld-pepperoni-pizza',
+        name: 'Pepperoni Flatbread Pizza',
+        category: 'lunch-dinner',
+        price: 6.99,
+        cals: 433
+      },
+      {
+        id: 'ld-simply-cheese-pizza',
+        name: 'Simply Cheese Flatbread Pizza',
+        category: 'lunch-dinner',
+        price: 6.99,
+        cals: 430
+      },
+
+      // Wraps
+      {
+        id: 'ld-bbq-chicken-loaded-wrap',
+        name: 'BBQ Chicken Loaded Wrap with Cheese',
+        category: 'lunch-dinner',
+        price: 6.49,
+        cals: 580
+      },
+      {
+        id: 'ld-chicken-bacon-ranch-wrap',
+        name: 'Chicken Bacon Ranch Wrap',
+        category: 'lunch-dinner',
+        price: 7.29,
+        cals: 530
+      },
+      {
+        id: 'ld-chipotle-craveable-wrap',
+        name: 'Chipotle Craveable Wrap',
+        category: 'lunch-dinner',
+        price: 3.99,
+        cals: 390
+      },
+      {
+        id: 'ld-chipotle-veggie-wrap',
+        name: 'Chipotle Veggie Wrap',
+        category: 'lunch-dinner',
+        price: 5.29,
+        cals: 600
+      },
+      {
+        id: 'ld-cilantro-lime-chicken-loaded-wrap',
+        name: 'Cilantro Lime Chicken Loaded Wrap with Cheese',
+        category: 'lunch-dinner',
+        price: 8.99,
+        cals: 690
+      },
+      {
+        id: 'ld-cilantro-lime-sous-vide-wrap',
+        name: 'Cilantro Lime Sous Vide Chicken Wrap',
+        category: 'lunch-dinner',
+        price: 6.49,
+        cals: 680
+      },
+      {
+        id: 'ld-cilantro-lime-veggie-loaded-wrap',
+        name: 'Cilantro Lime Veggie Loaded Wrap with Cheese',
+        category: 'lunch-dinner',
+        price: 7.99,
+        cals: 570
+      },
+      {
+        id: 'ld-classic-chicken-wrap',
+        name: 'Classic Chicken Wrap',
+        category: 'lunch-dinner',
+        price: 6.79,
+        cals: 420
+      },
+      {
+        id: 'ld-habanero-chicken-loaded-wrap',
+        name: 'Habanero Chicken Loaded Wrap with Cheese',
+        category: 'lunch-dinner',
+        price: 8.99,
+        cals: 660
+      },
+      {
+        id: 'ld-habanero-sous-vide-wrap',
+        name: 'Habanero Sous Vide Chicken Wrap',
+        category: 'lunch-dinner',
+        price: 6.49,
+        cals: 650
+      },
+      {
+        id: 'ld-habanero-veggie-loaded-wrap',
+        name: 'Habanero Veggie Loaded Wrap with Cheese',
+        category: 'lunch-dinner',
+        price: 7.99,
+        cals: 540
+      },
+      {
+        id: 'ld-pesto-chicken-wrap',
+        name: 'Pesto Chicken Wrap',
+        category: 'lunch-dinner',
+        price: 6.49,
+        cals: 471
+      },
+      {
+        id: 'ld-ranch-craveable-wrap',
+        name: 'Ranch Craveable Wrap',
+        category: 'lunch-dinner',
+        price: 3.99,
+        cals: 400
+      },
+
+      // Sandwiches & Melts
+      {
+        id: 'ld-bacon-grilled-cheese-melt',
+        name: 'Bacon Grilled Cheese Melt',
+        category: 'lunch-dinner',
+        price: 6.99,
+        cals: 335
+      },
+      {
+        id: 'ld-blt-artisan-sandwich',
+        name: 'BLT Artisan Sandwich',
+        category: 'lunch-dinner',
+        price: 6.29,
+        cals: 490
+      },
+      {
+        id: 'ld-crispy-chicken-craveable',
+        name: 'Crispy Chicken Craveable',
+        category: 'lunch-dinner',
+        price: 5.29,
+        cals: 470
+      },
+      {
+        id: 'ld-garden-vegetable-sandwich',
+        name: 'Garden Vegetable Artisan Sandwich',
+        category: 'lunch-dinner',
+        price: 6.99,
+        cals: 350
+      },
+      {
+        id: 'ld-grilled-cheese-melt',
+        name: 'Grilled Cheese Melt',
+        category: 'lunch-dinner',
+        price: 5.79,
+        cals: 490
+      },
+      {
+        id: 'ld-large-blt',
+        name: 'Large BLT',
+        category: 'lunch-dinner',
+        price: 6.99,
+        cals: 490
+      },
+      {
+        id: 'ld-large-turkey-bacon-club',
+        name: 'Large Turkey Bacon Club',
+        category: 'lunch-dinner',
+        price: 6.99,
+        cals: 550
+      },
+      {
+        id: 'ld-steak-cheddar-sandwich',
+        name: 'Steak & Cheddar Artisan Sandwich',
+        category: 'lunch-dinner',
+        price: 6.99,
+        cals: 450
+      },
+      {
+        id: 'ld-steak-craveable',
+        name: 'Steak Craveable',
+        category: 'lunch-dinner',
+        price: 5.29,
+        cals: 450
+      },
+      {
+        id: 'ld-turkey-avocado-club',
+        name: 'Turkey Avocado Club',
+        category: 'lunch-dinner',
+        price: 6.99,
+        cals: 780
+      },
+      {
+        id: 'ld-turkey-bacon-club-artisan',
+        name: 'Turkey Bacon Club Artisan Sandwich',
+        category: 'lunch-dinner',
+        price: 7.79,
+        cals: 550
+      },
+      {
+        id: 'ld-turkey-melt',
+        name: 'Turkey Melt',
+        category: 'lunch-dinner',
+        price: 6.79,
+        cals: 550
+      },
+      {
+        id: 'ld-tuscan-caprese',
+        name: 'Tuscan Caprese',
+        category: 'lunch-dinner',
+        price: 6.99,
+        cals: 670
+      },
+
+      // Loaded Bowls
+      {
+        id: 'ld-bbq-chicken-loaded-bowl',
+        name: 'BBQ Chicken Loaded Bowl with Cheese',
+        category: 'lunch-dinner',
+        price: 7.99,
+        cals: 580
+      },
+      {
+        id: 'ld-cilantro-lime-chicken-bowl',
+        name: 'Cilantro Lime Chicken Loaded Bowl with Cheese',
+        category: 'lunch-dinner',
+        price: 7.99,
+        cals: 580
+      },
+      {
+        id: 'ld-cilantro-lime-veggie-bowl',
+        name: 'Cilantro Lime Veggie Loaded Bowl with Cheese',
+        category: 'lunch-dinner',
+        price: 7.99,
+        cals: 460
+      },
+      {
+        id: 'ld-habanero-chicken-bowl',
+        name: 'Habanero Chicken Loaded Bowl with Cheese',
+        category: 'lunch-dinner',
+        price: 7.99,
+        cals: 580
+      },
+      {
+        id: 'ld-habanero-veggie-bowl',
+        name: 'Habanero Veggie Loaded Bowl with Cheese',
+        category: 'lunch-dinner',
+        price: 7.99,
+        c400: null,
+        cals: 440
+      },
+
+      // Soups & Chili
+      {
+        id: 'ld-chicken-noodle-soup',
+        name: 'Chicken Noodle Soup',
+        category: 'lunch-dinner',
+        price: 3.99,
+        cals: null
+      },
+      {
+        id: 'ld-tims-chili',
+        name: 'Chili',
+        category: 'lunch-dinner',
+        price: 3.99,
+        cals: 165
+      },
+      {
+        id: 'ld-daily-soup',
+        name: 'Soup of the Day',
+        category: 'lunch-dinner',
+        price: 3.99,
+        cals: null
+      },
+
+      // Bundles & Sides
+      {
+        id: 'ld-craveables-meal-bundle',
+        name: 'Craveables Meal Bundle (serves 2)',
+        category: 'lunch-dinner',
+        price: 19.99,
+        cals: 1430
+      },
+      {
+        id: 'ld-garlic-bread',
+        name: 'Garlic Bread',
+        category: 'lunch-dinner',
+        price: 1.99,
+        cals: 380
+      },
+      {
+        id: 'ld-potato-wedges',
+        name: 'Potato Wedges',
+        category: 'lunch-dinner',
+        price: 2.99,
+        cals: 160
+      },
+      {
+        id: 'crispy-chicken-burger',
+        name: 'Crispy Chicken Crave Burger',
+        category: 'lunch-dinner',
+        price: 7.49,
+        cals: 580
+      },
+      {
+        id: 'crispy-chicken-nuggets',
+        name: 'Crispy Chicken Nuggets (10 Pcs)',
+        category: 'lunch-dinner',
+        price: 6.99,
+        cals: 460
+      },
+
+      // --- HOT DRINKS CATEGORY WITH SUBSECTIONS ---
+      // Brewed Coffee Sub-section
+      {
+        id: 'hd-brown-sugar-cream-coffee',
+        name: 'Brown Sugar Cream Coffee',
+        category: 'hot-drinks',
+        subSection: 'Brewed Coffee',
+        price: 2.49,
+        cals: 130,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 130 },
+          { size: 'Medium', price: 2.99, cals: 210 },
+          { size: 'Large', price: 3.39, cals: 260 },
+          { size: 'X Large', price: 3.69, cals: 310 }
+        ]
+      },
+      {
+        id: 'hd-dark-roast-brewed-coffee',
+        name: 'Dark Roast Brewed Coffee',
+        category: 'hot-drinks',
+        subSection: 'Brewed Coffee',
+        price: 1.59,
+        cals: 3,
+        sizes: [
+          { size: 'Small', price: 1.59, cals: 3 },
+          { size: 'Medium', price: 1.83, cals: 4 },
+          { size: 'Large', price: 2.07, cals: 5 },
+          { size: 'X Large', price: 2.69, cals: null }
+        ]
+      },
+      {
+        id: 'hd-dark-roast-double-double',
+        name: 'Dark Roast Double Double',
+        category: 'hot-drinks',
+        subSection: 'Brewed Coffee',
+        price: 1.59,
+        cals: 73,
+        sizes: [
+          { size: 'Small', price: 1.59, cals: 73 },
+          { size: 'Medium', price: 1.83, cals: 74 },
+          { size: 'Large', price: 2.07, cals: 75 },
+          { size: 'X-Large', price: 2.69, cals: 76 }
+        ]
+      },
+      {
+        id: 'hd-dark-roast-regular-coffee',
+        name: 'Dark Roast Regular Coffee',
+        category: 'hot-drinks',
+        subSection: 'Brewed Coffee',
+        price: 1.59,
+        cals: 38,
+        sizes: [
+          { size: 'Small', price: 1.59, cals: 38 },
+          { size: 'Medium', price: 1.83, cals: 39 },
+          { size: 'Large', price: 2.07, cals: 40 },
+          { size: 'X-Large', price: 2.69, cals: 41 }
+        ]
+      },
+      {
+        id: 'hd-dark-roast-triple-triple',
+        name: 'Dark Roast Triple Triple',
+        category: 'hot-drinks',
+        subSection: 'Brewed Coffee',
+        price: 1.59,
+        cals: 108,
+        sizes: [
+          { size: 'Small', price: 1.59, cals: 108 },
+          { size: 'Medium', price: 1.83, cals: 109 },
+          { size: 'Large', price: 2.07, cals: 110 },
+          { size: 'X-Large', price: 2.69, cals: 111 }
+        ]
+      },
+      {
+        id: 'hd-double-double',
+        name: 'Double Double',
+        category: 'hot-drinks',
+        subSection: 'Brewed Coffee',
+        price: 1.59,
+        cals: 73,
+        sizes: [
+          { size: 'Small', price: 1.59, cals: 73 },
+          { size: 'Medium', price: 1.83, cals: 74 },
+          { size: 'Large', price: 2.07, cals: 75 },
+          { size: 'X-Large', price: 2.69, cals: 76 }
+        ]
+      },
+      {
+        id: 'hd-original-blend',
+        name: 'Original Blend',
+        category: 'hot-drinks',
+        subSection: 'Brewed Coffee',
+        price: 1.59,
+        cals: 3,
+        sizes: [
+          { size: 'Small', price: 1.59, cals: 3 },
+          { size: 'Medium', price: 1.83, cals: 4 },
+          { size: 'Regular', price: 2.09, cals: null },
+          { size: 'Large', price: 2.07, cals: 5 }
+        ]
+      },
+      {
+        id: 'hd-regular-coffee',
+        name: 'Regular Coffee',
+        category: 'hot-drinks',
+        subSection: 'Brewed Coffee',
+        price: 1.59,
+        cals: 38,
+        sizes: [
+          { size: 'Small', price: 1.59, cals: 38 },
+          { size: 'Medium', price: 1.83, cals: 39 },
+          { size: 'Large', price: 2.07, cals: 40 },
+          { size: 'X-Large', price: 2.69, cals: 41 }
+        ]
+      },
+      {
+        id: 'hd-triple-triple',
+        name: 'Triple Triple',
+        category: 'hot-drinks',
+        subSection: 'Brewed Coffee',
+        price: 1.59,
+        cals: 108,
+        sizes: [
+          { size: 'Small', price: 1.59, cals: 108 },
+          { size: 'Medium', price: 1.83, cals: 109 },
+          { size: 'Large', price: 2.07, cals: 110 },
+          { size: 'X-Large', price: 2.69, cals: 111 }
+        ]
+      },
+
+      // Espresso Drinks Sub-section
+      {
+        id: 'hd-americano',
+        name: 'Americano',
+        category: 'hot-drinks',
+        subSection: 'Espresso Drinks',
+        price: 2.49,
+        cals: 3,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 3 },
+          { size: 'Medium', price: 2.99, cals: 5 },
+          { size: 'Large', price: 3.49, cals: 5 }
+        ]
+      },
+      {
+        id: 'hd-biscoff-latte',
+        name: 'Biscoff® Latte',
+        category: 'hot-drinks',
+        subSection: 'Espresso Drinks',
+        price: 3.99,
+        cals: 146
+      },
+      {
+        id: 'hd-cappuccino',
+        name: 'Cappuccino',
+        category: 'hot-drinks',
+        subSection: 'Espresso Drinks',
+        price: 3.19,
+        cals: 80,
+        sizes: [
+          { size: 'Small', price: 3.19, cals: 80 },
+          { size: 'Medium', price: 3.69, cals: 120 },
+          { size: 'Large', price: 4.19, cals: 170 }
+        ]
+      },
+      {
+        id: 'hd-choc-pistachio-cappuccino',
+        name: 'Chocolate Pistachio Cappuccino',
+        category: 'hot-drinks',
+        subSection: 'Espresso Drinks',
+        price: 3.99,
+        cals: 258
+      },
+      {
+        id: 'hd-choc-pistachio-latte',
+        name: 'Chocolate Pistachio Latte',
+        category: 'hot-drinks',
+        subSection: 'Espresso Drinks',
+        price: 3.99,
+        cals: 85
+      },
+      {
+        id: 'hd-espresso',
+        name: 'Espresso',
+        category: 'hot-drinks',
+        subSection: 'Espresso Drinks',
+        price: 1.59,
+        cals: 3,
+        sizes: [
+          { size: 'Single', price: 1.59, cals: 3 },
+          { size: 'Double', price: 2.19, cals: 5 }
+        ]
+      },
+      {
+        id: 'hd-latte',
+        name: 'Latte',
+        category: 'hot-drinks',
+        subSection: 'Espresso Drinks',
+        price: 3.19,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 3.19, cals: 90 },
+          { size: 'Medium', price: 3.69, cals: 140 },
+          { size: 'Large', price: 4.19, cals: 190 }
+        ]
+      },
+      {
+        id: 'hd-matcha-latte',
+        name: 'Matcha Latte',
+        category: 'hot-drinks',
+        subSection: 'Espresso Drinks',
+        price: 3.49,
+        cals: 100,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 100 },
+          { size: 'Medium', price: 3.99, cals: null },
+          { size: 'Large', price: 4.49, cals: 210 }
+        ]
+      },
+      {
+        id: 'hd-mocha-latte',
+        name: 'Mocha Latte',
+        category: 'hot-drinks',
+        subSection: 'Espresso Drinks',
+        price: 3.69,
+        cals: 140,
+        sizes: [
+          { size: 'Small', price: 3.69, cals: 140 },
+          { size: 'Medium', price: 4.19, cals: 220 },
+          { size: 'Large', price: 4.69, cals: 300 }
+        ]
+      },
+      {
+        id: 'hd-protein-latte',
+        name: 'Protein Latte',
+        category: 'hot-drinks',
+        subSection: 'Espresso Drinks',
+        price: 4.19,
+        cals: 110,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 110 },
+          { size: 'Medium', price: 4.69, cals: 170 },
+          { size: 'Large', price: 5.19, cals: 230 }
+        ]
+      },
+      {
+        id: 'hd-protein-latte-sugarfree-vanilla',
+        name: 'Protein Latte with Sugar-Free Vanilla Syrup',
+        category: 'hot-drinks',
+        subSection: 'Espresso Drinks',
+        price: 4.19,
+        cals: 110,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 110 },
+          { size: 'Medium', price: 4.69, cals: 170 },
+          { size: 'Large', price: 5.19, cals: 230 }
+        ]
+      },
+      {
+        id: 'hd-vanilla-latte',
+        name: 'Vanilla Latte',
+        category: 'hot-drinks',
+        subSection: 'Espresso Drinks',
+        price: 3.69,
+        cals: null,
+        sizes: [
+          { size: 'Small', price: 3.69, cals: null },
+          { size: 'Medium', price: 4.19, cals: 230 },
+          { size: 'Large', price: 4.69, cals: 310 }
+        ]
+      },
+
+      // Tea Sub-section
+      {
+        id: 'hd-chai-latte',
+        name: 'Chai Latte',
+        category: 'hot-drinks',
+        subSection: 'Tea',
+        price: 3.29,
+        cals: null,
+        sizes: [
+          { size: 'Small', price: 3.29, cals: null },
+          { size: 'Medium', price: 3.79, cals: 230 },
+          { size: 'Large', price: 4.29, cals: 310 }
+        ]
+      },
+      {
+        id: 'hd-london-fog',
+        name: 'London Fog',
+        category: 'hot-drinks',
+        subSection: 'Tea',
+        price: 3.29,
+        cals: 110,
+        sizes: [
+          { size: 'Small', price: 3.29, cals: 110 },
+          { size: 'Medium', price: 3.79, cals: 160 },
+          { size: 'Large', price: 4.29, cals: 240 }
+        ]
+      },
+      {
+        id: 'hd-specialty-tea',
+        name: 'Specialty Tea',
+        category: 'hot-drinks',
+        subSection: 'Tea',
+        price: 1.99,
+        cals: 0,
+        sizes: [
+          { size: 'Small', price: 1.99, cals: 0 },
+          { size: 'Medium', price: 2.29, cals: 0 },
+          { size: 'Large', price: 2.59, cals: 0 },
+          { size: 'Extra Large', price: 2.79, cals: 0 }
+        ]
+      },
+      {
+        id: 'hd-steeped-tea',
+        name: 'Steeped Tea',
+        category: 'hot-drinks',
+        subSection: 'Tea',
+        price: 1.99,
+        cals: 0,
+        sizes: [
+          { size: 'Small', price: 1.99, cals: 0 },
+          { size: 'Medium', price: 2.29, cals: 0 },
+          { size: 'Large', price: 2.59, cals: 0 },
+          { size: 'Extra Large', price: 2.79, cals: 0 }
+        ]
+      },
+      {
+        id: 'hd-tropical-green-tea',
+        name: 'Tropical Green Tea',
+        category: 'hot-drinks',
+        subSection: 'Tea',
+        price: 1.99,
+        cals: 0,
+        sizes: [
+          { size: 'Small', price: 1.99, cals: 0 },
+          { size: 'Medium', price: 2.29, cals: 0 },
+          { size: 'Large', price: 2.59, cals: 0 },
+          { size: 'Extra Large', price: 2.79, cals: 0 }
+        ]
+      },
+
+      // Hot Chocolate Sub-section
+      {
+        id: 'hd-candy-cane-hot-chocolate',
+        name: 'Candy Cane Hot Chocolate',
+        category: 'hot-drinks',
+        subSection: 'Hot Chocolate',
+        price: 3.89,
+        cals: 600
+      },
+      {
+        id: 'hd-candy-cane-white-hot-chocolate',
+        name: 'Candy Cane White Hot Chocolate',
+        category: 'hot-drinks',
+        subSection: 'Hot Chocolate',
+        price: 2.49,
+        cals: 282
+      },
+      {
+        id: 'hd-hot-chocolate',
+        name: 'Hot Chocolate',
+        category: 'hot-drinks',
+        subSection: 'Hot Chocolate',
+        price: 2.69,
+        cals: 220,
+        sizes: [
+          { size: 'Small', price: 2.69, cals: 220 },
+          { size: 'Medium', price: 2.99, cals: 280 },
+          { size: 'Large', price: 3.19, cals: 380 },
+          { size: 'Extra Large', price: 3.49, cals: 500 }
+        ]
+      },
+      {
+        id: 'hd-white-hot-chocolate',
+        name: 'White Hot Chocolate',
+        category: 'hot-drinks',
+        subSection: 'Hot Chocolate',
+        price: 2.69,
+        cals: 250,
+        sizes: [
+          { size: 'Small', price: 2.69, cals: 250 },
+          { size: 'Medium', price: 2.99, cals: 330 },
+          { size: 'Large', price: 3.19, cals: 430 },
+          { size: 'Extra Large', price: 3.49, cals: 570 }
+        ]
+      },
+
+      // Hot Drinks Sub-section
+      {
+        id: 'hd-coffee-mocha',
+        name: 'Coffee Mocha',
+        category: 'hot-drinks',
+        subSection: 'Hot Drinks',
+        price: 2.49,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 90 },
+          { size: 'Medium', price: 2.79, cals: 110 },
+          { size: 'Large', price: 3.09, cals: null },
+          { size: 'Extra Large', price: 3.39, cals: 200 }
+        ]
+      },
+      {
+        id: 'hd-french-vanilla-full',
+        name: 'French Vanilla',
+        category: 'hot-drinks',
+        subSection: 'Hot Drinks',
+        price: 2.69,
+        cals: 260,
+        sizes: [
+          { size: 'Small', price: 2.69, cals: 260 },
+          { size: 'Medium', price: 2.99, cals: 330 },
+          { size: 'Large', price: 3.29, cals: 430 },
+          { size: 'Extra Large', price: 3.59, cals: 570 }
+        ]
+      },
+      {
+        id: 'hd-paper-delivery-bag',
+        name: 'Paper Delivery Bag',
+        category: 'hot-drinks',
+        subSection: 'Hot Drinks',
+        price: 0.15,
+        cals: null
+      },
+      {
+        id: 'hd-take-twelve',
+        name: 'Take Twelve',
+        category: 'hot-drinks',
+        subSection: 'Hot Drinks',
+        price: 19.99,
+        cals: 3,
+        sizes: [
+          { size: 'Original Blend', price: 19.99, cals: 3 },
+          { size: 'Dark Roast', price: 19.99, cals: 3 },
+          { size: 'Decaf', price: 19.99, cals: 3 },
+          { size: 'Specialty Tea', price: 21.99, cals: 0 }
+        ]
+      },
+
+      // --- COLD DRINKS CATEGORY WITH SUBSECTIONS ---
+      // 1. Matcha
+      {
+        id: 'cd-matcha-latte',
+        name: 'Matcha Latte',
+        category: 'cold-drinks',
+        subSection: 'Matcha',
+        price: 3.49,
+        cals: 100,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 100 },
+          { size: 'Medium', price: 3.99, cals: null },
+          { size: 'Large', price: 4.49, cals: 210 }
+        ]
+      },
+      {
+        id: 'cd-iced-matcha',
+        name: 'Iced Matcha',
+        category: 'cold-drinks',
+        subSection: 'Matcha',
+        price: 4.29,
+        cals: 87
+      },
+      {
+        id: 'cd-orig-iced-matcha-latte',
+        name: 'Original Iced Matcha Latte',
+        category: 'cold-drinks',
+        subSection: 'Matcha',
+        price: 3.49,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 90 },
+          { size: 'Medium', price: 3.99, cals: 210 },
+          { size: 'Large', price: 4.49, cals: 260 }
+        ]
+      },
+      {
+        id: 'cd-unsweet-iced-matcha-latte',
+        name: 'Unsweetened Iced Matcha Latte',
+        category: 'cold-drinks',
+        subSection: 'Matcha',
+        price: 3.49,
+        cals: 100,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 100 },
+          { size: 'Medium', price: 3.99, cals: 130 },
+          { size: 'Large', price: 4.49, cals: 160 }
+        ]
+      },
+      {
+        id: 'cd-vanilla-iced-matcha-latte',
+        name: 'Vanilla Iced Matcha Latte',
+        category: 'cold-drinks',
+        subSection: 'Matcha',
+        price: 3.99,
+        cals: 260,
+        sizes: [
+          { size: 'Small', price: 4.49, cals: 260 },
+          { size: 'Medium', price: 3.99, cals: 320 },
+          { size: 'Large', price: 5.49, cals: 370 }
+        ]
+      },
+      {
+        id: 'cd-vanilla-matcha-latte',
+        name: 'Vanilla Matcha Latte',
+        category: 'cold-drinks',
+        subSection: 'Matcha',
+        price: 3.99,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 3.99, cals: 90 },
+          { size: 'Medium', price: 4.49, cals: 240 },
+          { size: 'Large', price: 4.49, cals: 320 }
+        ]
+      },
+      {
+        id: 'cd-choc-pistachio-iced-matcha-foam',
+        name: 'Chocolate Pistachio Iced Matcha Latte with Chocolate Pistachio Infused Foam',
+        category: 'cold-drinks',
+        subSection: 'Matcha',
+        price: 3.99,
+        cals: 254
+      },
+      {
+        id: 'cd-choc-pistachio-matcha-latte',
+        name: 'Chocolate Pistachio Matcha Latte',
+        category: 'cold-drinks',
+        subSection: 'Matcha',
+        price: 3.99,
+        cals: 142
+      },
+      {
+        id: 'cd-matcha-mango-cloud',
+        name: 'Matcha Mango Cloud',
+        category: 'cold-drinks',
+        subSection: 'Matcha',
+        price: 4.49,
+        cals: 354
+      },
+      {
+        id: 'cd-iced-vanilla-matcha-latte',
+        name: 'Iced Vanilla Matcha Latte',
+        category: 'cold-drinks',
+        subSection: 'Matcha',
+        price: 4.29,
+        cals: 85
+      },
+
+      // 2. Iced Coffee
+      {
+        id: 'cd-black-iced-coffee',
+        name: 'Black Iced Coffee',
+        category: 'cold-drinks',
+        subSection: 'Iced Coffee',
+        price: 2.49,
+        cals: 0,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 0 },
+          { size: 'Medium', price: 2.79, cals: 0 },
+          { size: 'Large', price: 3.19, cals: 0 }
+        ]
+      },
+      {
+        id: 'cd-original-iced-coffee',
+        name: 'Original Iced Coffee',
+        category: 'cold-drinks',
+        subSection: 'Iced Coffee',
+        price: 2.49,
+        cals: 120,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 120 },
+          { size: 'Medium', price: 2.79, cals: 160 },
+          { size: 'Large', price: 3.19, cals: 240 }
+        ]
+      },
+
+      // 3. Iced Capp®
+      {
+        id: 'cd-caramel-churro-iced-capp',
+        name: 'Caramel Churro Iced Capp',
+        category: 'cold-drinks',
+        subSection: 'Iced Capp®',
+        price: 4.19,
+        cals: 450,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 450 },
+          { size: 'Medium', price: 4.69, cals: 560 },
+          { size: 'Large', price: 5.19, cals: 700 }
+        ]
+      },
+      {
+        id: 'cd-biscoff-iced-capp',
+        name: 'Biscoff® Iced Capp',
+        category: 'cold-drinks',
+        subSection: 'Iced Capp®',
+        price: 3.49,
+        cals: 294
+      },
+      {
+        id: 'cd-choc-pistachio-iced-capp',
+        name: 'Chocolate Pistachio Iced Capp',
+        category: 'cold-drinks',
+        subSection: 'Iced Capp®',
+        price: 4.09,
+        cals: 420,
+        sizes: [
+          { size: 'Small', price: 4.09, cals: 420 },
+          { size: 'Medium', price: 4.59, cals: 520 }
+        ]
+      },
+      {
+        id: 'cd-mocha-iced-capp',
+        name: 'Mocha Iced Capp',
+        category: 'cold-drinks',
+        subSection: 'Iced Capp®',
+        price: 4.19,
+        cals: 430,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 430 },
+          { size: 'Medium', price: 4.69, cals: 530 },
+          { size: 'Large', price: 5.19, cals: 650 }
+        ]
+      },
+      {
+        id: 'cd-oreo-double-stuf-iced-capp',
+        name: 'OREO® Double Stuf Iced Capp',
+        category: 'cold-drinks',
+        subSection: 'Iced Capp®',
+        price: 4.19,
+        cals: 450,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 450 },
+          { size: 'Medium', price: 4.69, cals: 560 },
+          { size: 'Large', price: 5.19, cals: 700 }
+        ]
+      },
+      {
+        id: 'cd-original-iced-capp',
+        name: 'Original Iced Capp',
+        category: 'cold-drinks',
+        subSection: 'Iced Capp®',
+        price: 3.49,
+        cals: 260,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 260 },
+          { size: 'Medium', price: 3.99, cals: 330 },
+          { size: 'Large', price: 4.49, cals: 430 }
+        ]
+      },
+      {
+        id: 'cd-pumpkin-spice-iced-capp',
+        name: 'Pumpkin Spice Iced Capp',
+        category: 'cold-drinks',
+        subSection: 'Iced Capp®',
+        price: 4.19,
+        cals: 410,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 410 },
+          { size: 'Medium', price: 4.69, cals: 510 },
+          { size: 'Large', price: 5.19, cals: 630 }
+        ]
+      },
+      {
+        id: 'cd-vanilla-iced-capp',
+        name: 'Vanilla Iced Capp',
+        category: 'cold-drinks',
+        subSection: 'Iced Capp®',
+        price: 4.19,
+        cals: 440,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 440 },
+          { size: 'Medium', price: 4.69, cals: 540 },
+          { size: 'Large', price: 5.19, cals: 660 }
+        ]
+      },
+
+      // 4. Cold Brew
+      {
+        id: 'cd-black-cold-brew',
+        name: 'Black Cold Brew',
+        category: 'cold-drinks',
+        subSection: 'Cold Brew',
+        price: 2.69,
+        cals: 0,
+        sizes: [
+          { size: 'Small', price: 2.69, cals: 0 },
+          { size: 'Medium', price: 2.99, cals: 0 },
+          { size: 'Regular', price: 3.99, cals: null },
+          { size: 'Large', price: 3.49, cals: 0 }
+        ]
+      },
+      {
+        id: 'cd-choc-pistachio-cold-brew',
+        name: 'Chocolate Pistachio Cold Brew',
+        category: 'cold-drinks',
+        subSection: 'Cold Brew',
+        price: 3.99,
+        cals: 308
+      },
+      {
+        id: 'cd-original-cold-brew',
+        name: 'Original Cold Brew',
+        category: 'cold-drinks',
+        subSection: 'Cold Brew',
+        price: 2.69,
+        cals: 120,
+        sizes: [
+          { size: 'Small', price: 2.69, cals: 120 },
+          { size: 'Medium', price: 2.99, cals: 150 },
+          { size: 'Regular', price: 3.99, cals: 84 },
+          { size: 'Large', price: 3.49, cals: 240 }
+        ]
+      },
+      {
+        id: 'cd-pumpkin-spice-cold-brew',
+        name: 'Pumpkin Spice Cold Brew',
+        category: 'cold-drinks',
+        subSection: 'Cold Brew',
+        price: 3.69,
+        cals: 230,
+        sizes: [
+          { size: 'Small', price: 3.69, cals: 230 },
+          { size: 'Medium', price: 3.99, cals: 260 },
+          { size: 'Large', price: 4.49, cals: 340 }
+        ]
+      },
+      {
+        id: 'cd-roasted-hazelnut-cold-brew',
+        name: 'Roasted Hazelnut Cold Brew with Espresso Cold Foam',
+        category: 'cold-drinks',
+        subSection: 'Cold Brew',
+        price: 3.69,
+        cals: 180,
+        sizes: [
+          { size: 'Small', price: 3.69, cals: 180 },
+          { size: 'Medium', price: 3.99, cals: 220 },
+          { size: 'Regular', price: 3.99, cals: null },
+          { size: 'Large', price: 4.49, cals: 300 }
+        ]
+      },
+      {
+        id: 'cd-toasted-marshmallow-cold-brew',
+        name: 'Toasted Marshmallow Cold Brew with Infused Cold Foam',
+        category: 'cold-drinks',
+        subSection: 'Cold Brew',
+        price: 3.99,
+        cals: 308
+      },
+      {
+        id: 'cd-vanilla-cream-cold-brew',
+        name: 'Vanilla Cream Cold Brew',
+        category: 'cold-drinks',
+        subSection: 'Cold Brew',
+        price: 3.19,
+        cals: 120,
+        sizes: [
+          { size: 'Small', price: 3.19, cals: 120 },
+          { size: 'Medium', price: 3.49, cals: 160 },
+          { size: 'Regular', price: 3.99, cals: 28 },
+          { size: 'Large', price: 3.99, cals: 240 }
+        ]
+      },
+
+      // 5. Iced Lattes
+      {
+        id: 'cd-protein-iced-chai-latte',
+        name: 'Protein Iced Chai Latte',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 4.29,
+        cals: 190,
+        sizes: [
+          { size: 'Small', price: 4.29, cals: 190 },
+          { size: 'Medium', price: 4.79, cals: 260 },
+          { size: 'Regular', price: 4.49, cals: 119 },
+          { size: 'Large', price: 5.29, cals: 340 }
+        ]
+      },
+      {
+        id: 'cd-caramel-churro-iced-latte',
+        name: 'Caramel Churro Iced Latte',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 3.99,
+        cals: 233
+      },
+      {
+        id: 'cd-brown-sugar-iced-latte',
+        name: 'Brown Sugar Iced Latte',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 3.69,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 3.69, cals: 90 },
+          { size: 'Medium', price: 4.19, cals: 200 },
+          { size: 'Regular', price: 4.29, cals: 233 },
+          { size: 'Large', price: 4.69, cals: 250 }
+        ]
+      },
+      {
+        id: 'cd-brown-sugar-protein-iced-latte',
+        name: 'Brown Sugar Protein Iced Latte',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 4.29,
+        cals: 160,
+        sizes: [
+          { size: 'Small', price: 4.69, cals: 160 },
+          { size: 'Medium', price: 5.19, cals: 220 },
+          { size: 'Regular', price: 4.29, cals: 159 },
+          { size: 'Large', price: 5.69, cals: 300 }
+        ]
+      },
+      {
+        id: 'cd-choc-pistachio-protein-iced-latte',
+        name: 'Chocolate Pistachio Protein Iced Latte',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 4.29,
+        cals: 159
+      },
+      {
+        id: 'cd-iced-americano',
+        name: 'Iced Americano',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 4.29,
+        cals: null
+      },
+      {
+        id: 'cd-iced-chai-latte',
+        name: 'Iced Chai Latte',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 3.29,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 3.29, cals: 90 },
+          { size: 'Medium', price: 3.79, cals: 200 },
+          { size: 'Regular', price: 4.29, cals: 119 },
+          { size: 'Large', price: 4.29, cals: 250 }
+        ]
+      },
+      {
+        id: 'cd-mocha-iced-latte',
+        name: 'Mocha Iced Latte',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 3.69,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 3.69, cals: 90 },
+          { size: 'Medium', price: 4.19, cals: 200 },
+          { size: 'Regular', price: 4.29, cals: 181 },
+          { size: 'Large', price: 4.69, cals: 250 }
+        ]
+      },
+      {
+        id: 'cd-original-iced-latte',
+        name: 'Original Iced Latte',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 3.19,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 3.19, cals: 90 },
+          { size: 'Medium', price: 3.69, cals: 200 },
+          { size: 'Regular', price: 4.29, cals: 137 },
+          { size: 'Large', price: 4.19, cals: 250 }
+        ]
+      },
+      {
+        id: 'cd-original-protein-iced-latte',
+        name: 'Original Protein Iced Latte',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 4.19,
+        cals: 160,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 160 },
+          { size: 'Medium', price: 4.69, cals: 230 },
+          { size: 'Regular', price: 4.29, cals: 135 },
+          { size: 'Large', price: 5.19, cals: 310 }
+        ]
+      },
+      {
+        id: 'cd-protein-latte-sugar-free',
+        name: 'Protein Iced Latte with Sugar-Free Vanilla Syrup',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 4.29,
+        cals: 119
+      },
+      {
+        id: 'cd-pumpkin-spice-iced-latte',
+        name: 'Pumpkin Spice Iced Latte',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 3.69,
+        cals: 140,
+        sizes: [
+          { size: 'Small', price: 3.69, cals: 140 },
+          { size: 'Medium', price: 4.19, cals: 200 },
+          { size: 'Large', price: 4.69, cals: 250 }
+        ]
+      },
+      {
+        id: 'cd-pumpkin-spice-latte-cold',
+        name: 'Pumpkin Spice Latte',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 3.99,
+        cals: 230,
+        sizes: [
+          { size: 'Small', price: 3.99, cals: 230 },
+          { size: 'Medium', price: 4.49, cals: 300 },
+          { size: 'Large', price: 5.19, cals: 380 }
+        ]
+      },
+      {
+        id: 'cd-unsweetened-iced-latte',
+        name: 'Unsweetened Iced Latte',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 3.19,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 3.19, cals: 90 },
+          { size: 'Medium', price: 3.69, cals: 120 },
+          { size: 'Regular', price: 4.29, cals: 51 },
+          { size: 'Large', price: 4.19, cals: 140 }
+        ]
+      },
+      {
+        id: 'cd-vanilla-iced-latte',
+        name: 'Vanilla Iced Latte',
+        category: 'cold-drinks',
+        subSection: 'Iced Lattes',
+        price: 3.69,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 3.69, cals: 90 },
+          { size: 'Medium', price: 4.19, cals: 210 },
+          { size: 'Regular', price: 4.29, cals: 230 },
+          { size: 'Large', price: 4.69, cals: 260 }
+        ]
+      },
+
+      // 6. Fruit Quenchers
+      {
+        id: 'cd-straw-water-protein-quencher',
+        name: 'Strawberry Watermelon Protein Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.49,
+        cals: 130,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 130 },
+          { size: 'Medium', price: 3.99, cals: 170 },
+          { size: 'Regular', price: 4.49, cals: 220 },
+          { size: 'Large', price: 4.49, cals: 220 }
+        ]
+      },
+      {
+        id: 'cd-peach-protein-quencher',
+        name: 'Peach Protein Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.49,
+        cals: 140,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 140 },
+          { size: 'Medium', price: 3.99, cals: 190 },
+          { size: 'Regular', price: 4.49, cals: 240 },
+          { size: 'Large', price: 4.49, cals: 240 }
+        ]
+      },
+      {
+        id: 'cd-blackberry-yuzu-protein-quencher',
+        name: 'Blackberry Yuzu Protein Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.49,
+        cals: 170,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 170 },
+          { size: 'Medium', price: 3.99, cals: 230 },
+          { size: 'Regular', price: 4.49, cals: 300 },
+          { size: 'Large', price: 4.49, cals: 300 }
+        ]
+      },
+      {
+        id: 'cd-rasp-mojito-lemonade-quencher',
+        name: 'Raspberry Mojito Lemonade Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 2.49,
+        cals: 50,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 50 },
+          { size: 'Medium', price: 2.99, cals: 60 },
+          { size: 'Regular', price: 3.99, cals: 80 },
+          { size: 'Large', price: 3.49, cals: 80 }
+        ]
+      },
+      {
+        id: 'cd-rasp-mojito-frozen-quencher',
+        name: 'Raspberry Mojito Frozen Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.49,
+        cals: 260,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 260 },
+          { size: 'Medium', price: 3.99, cals: 280 },
+          { size: 'Regular', price: 3.99, cals: 236 },
+          { size: 'Large', price: 4.49, cals: 340 }
+        ]
+      },
+      {
+        id: 'cd-rasp-mojito-zero-sugar-quencher',
+        name: 'Raspberry Mojito Zero Sugar Sparkling Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 2.79,
+        cals: 5,
+        sizes: [
+          { size: 'Small', price: 2.79, cals: 5 },
+          { size: 'Medium', price: 3.29, cals: 10 },
+          { size: 'Regular', price: 3.49, cals: 10 },
+          { size: 'Large', price: 3.79, cals: 10 }
+        ]
+      },
+      {
+        id: 'cd-forbidden-forest-quencher',
+        name: 'Forbidden Forest Iced Tea Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 2.49,
+        cals: 130,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 130 },
+          { size: 'Medium', price: 2.99, cals: 190 },
+          { size: 'Large', price: 3.49, cals: 240 }
+        ]
+      },
+      {
+        id: 'cd-patronus-frozen-quencher',
+        name: 'Patronus Frozen Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.49,
+        cals: 340,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 340 },
+          { size: 'Medium', price: 3.99, cals: 400 },
+          { size: 'Large', price: 4.49, cals: 500 }
+        ]
+      },
+      {
+        id: 'cd-patronus-lemonade-quencher',
+        name: 'Patronus Lemonade Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 2.49,
+        cals: 150,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 150 },
+          { size: 'Medium', price: 2.99, cals: 210 },
+          { size: 'Large', price: 3.49, cals: 270 }
+        ]
+      },
+      {
+        id: 'cd-patronus-sparkling-quencher',
+        name: 'Patronus Sparkling Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.49,
+        cals: 190,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 190 },
+          { size: 'Medium', price: 3.99, cals: 230 },
+          { size: 'Large', price: 4.49, cals: 270 }
+        ]
+      },
+      {
+        id: 'cd-blackberry-yuzu-cloud-quencher',
+        name: 'Blackberry Yuzu Cloud Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.99,
+        cals: 390
+      },
+      {
+        id: 'cd-blackberry-yuzu-frozen-quencher',
+        name: 'Blackberry Yuzu Frozen Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.49,
+        cals: 330,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 330 },
+          { size: 'Medium', price: 3.99, cals: 390 },
+          { size: 'Regular', price: 3.99, cals: 330 },
+          { size: 'Large', price: 4.49, cals: 480 }
+        ]
+      },
+      {
+        id: 'cd-blackberry-yuzu-lemonade-quencher',
+        name: 'Blackberry Yuzu Lemonade Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 2.49,
+        cals: 120,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 120 },
+          { size: 'Medium', price: 2.99, cals: 170 },
+          { size: 'Regular', price: 3.99, cals: 220 },
+          { size: 'Large', price: 3.49, cals: 220 }
+        ]
+      },
+      {
+        id: 'cd-blackberry-yuzu-poppin-quencher',
+        name: "Blackberry Yuzu Poppin' Frozen Quencher",
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 4.19,
+        cals: 380,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 380 },
+          { size: 'Medium', price: 4.69, cals: 450 },
+          { size: 'Large', price: 5.19, cals: 550 }
+        ]
+      },
+      {
+        id: 'cd-blackberry-yuzu-sparkling-quencher',
+        name: 'Blackberry Yuzu Sparkling Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 2.79,
+        cals: 80,
+        sizes: [
+          { size: 'Small', price: 2.79, cals: 80 },
+          { size: 'Medium', price: 3.29, cals: 110 },
+          { size: 'Regular', price: 3.99, cals: 80 },
+          { size: 'Large', price: 3.79, cals: 150 }
+        ]
+      },
+      {
+        id: 'cd-classic-lemonade-quencher',
+        name: 'Classic Lemonade Quenchers',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 2.49,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 90 },
+          { size: 'Medium', price: 2.99, cals: 110 },
+          { size: 'Regular', price: 3.99, cals: 90 },
+          { size: 'Large', price: 3.49, cals: 140 }
+        ]
+      },
+      {
+        id: 'cd-orange-tangerine-cloud-quencher',
+        name: 'Orange Tangerine Cloud Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.99,
+        cals: 360
+      },
+      {
+        id: 'cd-orange-tangerine-frozen-quencher',
+        name: 'Orange Tangerine Frozen Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.49,
+        cals: 340,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 340 },
+          { size: 'Medium', price: 3.99, cals: 400 },
+          { size: 'Regular', price: 3.99, cals: 340 },
+          { size: 'Large', price: 4.49, cals: 490 }
+        ]
+      },
+      {
+        id: 'cd-orange-tangerine-lemonade-quencher',
+        name: 'Orange Tangerine Lemonade Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 2.49,
+        cals: 130,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 130 },
+          { size: 'Medium', price: 2.99, cals: 180 },
+          { size: 'Regular', price: 3.99, cals: 230 },
+          { size: 'Large', price: 3.49, cals: 230 }
+        ]
+      },
+      {
+        id: 'cd-orange-tangerine-poppin-quencher',
+        name: "Orange Tangerine Poppin' Frozen Quencher",
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 4.19,
+        cals: 380,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 380 },
+          { size: 'Medium', price: 4.69, cals: 450 },
+          { size: 'Large', price: 5.19, cals: 560 }
+        ]
+      },
+      {
+        id: 'cd-orange-tangerine-protein-quencher',
+        name: 'Orange Tangerine Protein Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.49,
+        cals: 170,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 170 },
+          { size: 'Medium', price: 3.99, cals: 240 },
+          { size: 'Regular', price: 3.99, cals: 300 },
+          { size: 'Large', price: 4.49, cals: 300 }
+        ]
+      },
+      {
+        id: 'cd-orange-tangerine-sparkling-quencher',
+        name: 'Orange Tangerine Sparkling Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 2.79,
+        cals: 80,
+        sizes: [
+          { size: 'Small', price: 2.79, cals: 80 },
+          { size: 'Medium', price: 3.29, cals: 120 },
+          { size: 'Regular', price: 3.99, cals: 80 },
+          { size: 'Large', price: 3.79, cals: 160 }
+        ]
+      },
+      {
+        id: 'cd-patronus-protein-quencher',
+        name: 'Patronus Protein Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.49,
+        cals: 180,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 180 },
+          { size: 'Medium', price: 3.99, cals: 240 },
+          { size: 'Large', price: 4.49, cals: 310 }
+        ]
+      },
+      {
+        id: 'cd-peach-frozen-quencher',
+        name: 'Peach Frozen Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.49,
+        cals: 310,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 310 },
+          { size: 'Medium', price: 3.99, cals: 350 },
+          { size: 'Regular', price: 3.99, cals: 430 },
+          { size: 'Large', price: 4.49, cals: 430 }
+        ]
+      },
+      {
+        id: 'cd-peach-lemonade-quencher',
+        name: 'Peach Lemonade Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 2.49,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 90 },
+          { size: 'Medium', price: 2.99, cals: 130 },
+          { size: 'Regular', price: 3.99, cals: 90 },
+          { size: 'Large', price: 3.49, cals: 170 }
+        ]
+      },
+      {
+        id: 'cd-peach-poppin-frozen-quencher',
+        name: "Peach Poppin' Frozen Quencher",
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 4.19,
+        cals: 350,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 350 },
+          { size: 'Medium', price: 4.69, cals: 410 },
+          { size: 'Large', price: 5.19, cals: 500 }
+        ]
+      },
+      {
+        id: 'cd-peach-sparkling-quencher',
+        name: 'Peach Sparkling Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 2.79,
+        cals: 50,
+        sizes: [
+          { size: 'Small', price: 2.79, cals: 50 },
+          { size: 'Medium', price: 3.29, cals: 70 },
+          { size: 'Regular', price: 3.99, cals: 100 },
+          { size: 'Large', price: 3.79, cals: 100 }
+        ]
+      },
+      {
+        id: 'cd-pineapple-dragonfruit-frozen',
+        name: 'Pineapple Dragon Fruit Frozen Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.99,
+        cals: 306
+      },
+      {
+        id: 'cd-pineapple-dragonfruit-lemonade',
+        name: 'Pineapple Dragon Fruit Lemonade Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.99,
+        cals: 140
+      },
+      {
+        id: 'cd-pineapple-dragonfruit-sparkling',
+        name: 'Pineapple Dragon Fruit Sparkling Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.99,
+        cals: 80
+      },
+      {
+        id: 'cd-rasp-mojito-poppin-quencher',
+        name: "Raspberry Mojito Poppin' Frozen Quencher",
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 4.19,
+        cals: 300,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 300 },
+          { size: 'Medium', price: 4.69, cals: 340 },
+          { size: 'Large', price: 5.19, cals: 410 }
+        ]
+      },
+      {
+        id: 'cd-rasp-mojito-protein-quencher',
+        name: 'Raspberry Mojito Protein Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.49,
+        cals: 100,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 100 },
+          { size: 'Medium', price: 3.99, cals: 120 },
+          { size: 'Regular', price: 3.99, cals: 170 },
+          { size: 'Large', price: 4.49, cals: 220 }
+        ]
+      },
+      {
+        id: 'cd-straw-watermelon-frozen-quencher',
+        name: 'Strawberry Watermelon Frozen Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 3.49,
+        cals: 300,
+        sizes: [
+          { size: 'Small', price: 3.49, cals: 300 },
+          { size: 'Medium', price: 3.99, cals: 340 },
+          { size: 'Regular', price: 3.99, cals: 410 },
+          { size: 'Large', price: 4.49, cals: 410 }
+        ]
+      },
+      {
+        id: 'cd-straw-watermelon-lemonade-quencher',
+        name: 'Strawberry Watermelon Lemonade Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 2.49,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 90 },
+          { size: 'Medium', price: 2.99, cals: 120 },
+          { size: 'Regular', price: 3.99, cals: 90 },
+          { size: 'Large', price: 3.49, cals: 190 }
+        ]
+      },
+      {
+        id: 'cd-straw-watermelon-poppin-quencher',
+        name: "Strawberry Watermelon Poppin' Frozen Quencher",
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 4.19,
+        cals: 340,
+        sizes: [
+          { size: 'Small', price: 4.19, cals: 340 },
+          { size: 'Medium', price: 4.69, cals: 390 },
+          { size: 'Large', price: 5.19, cals: 480 }
+        ]
+      },
+      {
+        id: 'cd-straw-watermelon-sparkling-quencher',
+        name: 'Strawberry Watermelon Sparkling Quencher',
+        category: 'cold-drinks',
+        subSection: 'Fruit Quenchers',
+        price: 2.79,
+        cals: 40,
+        sizes: [
+          { size: 'Small', price: 2.79, cals: 40 },
+          { size: 'Medium', price: 3.29, cals: 60 },
+          { size: 'Regular', price: 3.99, cals: 40 },
+          { size: 'Large', price: 3.79, cals: 80 }
+        ]
+      },
+
+      // 7. Frozen Lemonade
+      {
+        id: 'cd-frozen-lemonade-classic',
+        name: 'Frozen Lemonade',
+        category: 'cold-drinks',
+        subSection: 'Frozen Lemonade',
+        price: 3.99,
+        cals: 200
+      },
+      {
+        id: 'cd-mango-frozen-lemonade',
+        name: 'Mango Frozen Lemonade',
+        category: 'cold-drinks',
+        subSection: 'Frozen Lemonade',
+        price: 3.99,
+        cals: 240
+      },
+      {
+        id: 'cd-strawberry-frozen-lemonade',
+        name: 'Strawberry Frozen Lemonade',
+        category: 'cold-drinks',
+        subSection: 'Frozen Lemonade',
+        price: 3.99,
+        cals: 200
+      },
+
+      // 8. Fountain Pop
+      {
+        id: 'cd-cherry-soda-swirl',
+        name: 'Cherry Soda Swirl',
+        category: 'cold-drinks',
+        subSection: 'Fountain Pop',
+        price: 2.99,
+        cals: 310,
+        sizes: [
+          { size: 'Small', price: 2.99, cals: 310 },
+          { size: 'Medium', price: 3.49, cals: 370 },
+          { size: 'Large', price: 3.99, cals: 480 }
+        ]
+      },
+      {
+        id: 'cd-coke-fountain',
+        name: 'Coke',
+        category: 'cold-drinks',
+        subSection: 'Fountain Pop',
+        price: 1.79,
+        cals: 90,
+        sizes: [
+          { size: 'Small', price: 1.99, cals: 90 },
+          { size: 'Medium', price: 2.49, cals: 110 },
+          { size: 'Regular', price: 1.79, cals: 1 },
+          { size: 'Large', price: 2.99, cals: 210 }
+        ]
+      },
+      {
+        id: 'cd-diet-coke-fountain',
+        name: 'Diet Coke',
+        category: 'cold-drinks',
+        subSection: 'Fountain Pop',
+        price: 1.79,
+        cals: 1,
+        sizes: [
+          { size: 'Small', price: 1.99, cals: 1 },
+          { size: 'Medium', price: 2.49, cals: 1 },
+          { size: 'Regular', price: 1.79, cals: 1 },
+          { size: 'Large', price: 2.99, cals: 1 }
+        ]
+      },
+      {
+        id: 'cd-fuze-iced-tea-fountain',
+        name: 'Fuze Iced Tea',
+        category: 'cold-drinks',
+        subSection: 'Fountain Pop',
+        price: 1.79,
+        cals: 70,
+        sizes: [
+          { size: 'Small', price: 1.99, cals: 70 },
+          { size: 'Medium', price: 2.49, cals: 90 },
+          { size: 'Regular', price: 1.79, cals: 160 },
+          { size: 'Large', price: 2.99, cals: 120 }
+        ]
+      },
+      {
+        id: 'cd-minute-maid-lemonade-fountain',
+        name: 'Minute Maid Lemonade',
+        category: 'cold-drinks',
+        subSection: 'Fountain Pop',
+        price: 1.79,
+        cals: 100,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 100 },
+          { size: 'Medium', price: 2.99, cals: 130 },
+          { size: 'Regular', price: 1.79, cals: 100 },
+          { size: 'Large', price: 3.49, cals: 210 }
+        ]
+      },
+      {
+        id: 'cd-vanilla-light-soda-swirl',
+        name: 'Vanilla Light Soda Swirl',
+        category: 'cold-drinks',
+        subSection: 'Fountain Pop',
+        price: 2.49,
+        cals: 80,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 80 },
+          { size: 'Medium', price: 2.99, cals: 100 },
+          { size: 'Large', price: 3.49, cals: 160 }
+        ]
+      },
+      {
+        id: 'cd-vanilla-soda-swirl',
+        name: 'Vanilla Soda Swirl',
+        category: 'cold-drinks',
+        subSection: 'Fountain Pop',
+        price: 2.99,
+        cals: 320,
+        sizes: [
+          { size: 'Small', price: 2.99, cals: 320 },
+          { size: 'Medium', price: 3.49, cals: 380 },
+          { size: 'Large', price: 3.99, cals: 500 }
+        ]
+      },
+
+      // 9. Bottled Drinks
+      {
+        id: 'cd-apple-juice',
+        name: 'Apple Juice',
+        category: 'cold-drinks',
+        subSection: 'Bottled Drinks',
+        price: 2.99,
+        cals: 130
+      },
+      {
+        id: 'cd-canada-dry-bottle',
+        name: 'Canada Dry® Ginger Ale 500mL Bottle',
+        category: 'cold-drinks',
+        subSection: 'Bottled Drinks',
+        price: 2.99,
+        cals: 190
+      },
+      {
+        id: 'cd-coca-cola-bottle',
+        name: 'Coca-Cola® 500mL Bottle',
+        category: 'cold-drinks',
+        subSection: 'Bottled Drinks',
+        price: 2.99,
+        cals: 200
+      },
+      {
+        id: 'cd-diet-coke-bottle',
+        name: 'Diet Coke® 500mL Bottle',
+        category: 'cold-drinks',
+        subSection: 'Bottled Drinks',
+        price: 2.99,
+        cals: null
+      },
+      {
+        id: 'cd-fuze-tea-bottle',
+        name: 'Fuze Iced Tea Bottle',
+        category: 'cold-drinks',
+        subSection: 'Bottled Drinks',
+        price: 2.99,
+        cals: 160
+      },
+      {
+        id: 'cd-smartwater-bottle',
+        name: 'Glacéau smartwater® 591mL Bottle',
+        category: 'cold-drinks',
+        subSection: 'Bottled Drinks',
+        price: 2.99,
+        cals: null
+      },
+      {
+        id: 'cd-milk-bottle',
+        name: 'Milk',
+        category: 'cold-drinks',
+        subSection: 'Bottled Drinks',
+        price: 2.99,
+        cals: 120
+      },
+      {
+        id: 'cd-orange-juice',
+        name: 'Orange Juice',
+        category: 'cold-drinks',
+        subSection: 'Bottled Drinks',
+        price: 2.99,
+        cals: 140
+      },
+      {
+        id: 'cd-peach-drink',
+        name: 'Peach Drink',
+        category: 'cold-drinks',
+        subSection: 'Bottled Drinks',
+        price: 2.99,
+        cals: 200
+      },
+      {
+        id: 'cd-smartwater-sparkling',
+        name: 'SmartWater Sparkling',
+        category: 'cold-drinks',
+        subSection: 'Bottled Drinks',
+        price: 2.99,
+        cals: null
+      },
+      {
+        id: 'cd-spring-water',
+        name: 'Spring Water',
+        category: 'cold-drinks',
+        subSection: 'Bottled Drinks',
+        price: 2.99,
+        cals: null
+      },
+      {
+        id: 'cd-sprite-bottle',
+        name: 'Sprite® 500mL Bottle',
+        category: 'cold-drinks',
+        subSection: 'Bottled Drinks',
+        price: 2.99,
+        cals: 200
+      },
+
+      // 10. Infusr™ Energy Drink
+      {
+        id: 'cd-infusr-blackberry-yuzu',
+        name: 'Blackberry Yuzu Infusr™ Energy Drink',
+        category: 'cold-drinks',
+        subSection: 'Infusr™ Energy Drink',
+        price: 4.29,
+        cals: 140
+      },
+      {
+        id: 'cd-infusr-mango-starfruit',
+        name: 'Mango Starfruit Infusr™ Energy Drink',
+        category: 'cold-drinks',
+        subSection: 'Infusr™ Energy Drink',
+        price: 4.29,
+        cals: 130
+      },
+      {
+        id: 'cd-infusr-orange-citrus-zero',
+        name: 'Orange Citrus Infusr™ Zero Energy Drink',
+        category: 'cold-drinks',
+        subSection: 'Infusr™ Energy Drink',
+        price: 4.29,
+        cals: 15
+      },
+
+      // 11. Iced Steeped Tea
+      {
+        id: 'cd-black-iced-steeped-tea',
+        name: 'Black Iced Steeped Tea',
+        category: 'cold-drinks',
+        subSection: 'Iced Steeped Tea',
+        price: 2.49,
+        cals: 0,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 0 },
+          { size: 'Medium', price: 2.79, cals: 0 },
+          { size: 'Large', price: 3.19, cals: 0 }
+        ]
+      },
+      {
+        id: 'cd-brown-sugar-iced-steeped-tea',
+        name: 'Brown Sugar Iced Steeped Tea',
+        category: 'cold-drinks',
+        subSection: 'Iced Steeped Tea',
+        price: 2.99,
+        cals: 120,
+        sizes: [
+          { size: 'Small', price: 2.99, cals: 120 },
+          { size: 'Medium', price: 3.29, cals: 160 },
+          { size: 'Large', price: 3.69, cals: 240 }
+        ]
+      },
+      {
+        id: 'cd-original-iced-steeped-tea',
+        name: 'Original Iced Steeped Tea',
+        category: 'cold-drinks',
+        subSection: 'Iced Steeped Tea',
+        price: 2.49,
+        cals: 120,
+        sizes: [
+          { size: 'Small', price: 2.49, cals: 120 },
+          { size: 'Medium', price: 2.79, cals: 160 },
+          { size: 'Large', price: 3.19, cals: 240 }
+        ]
+      },
+
+      // --- BAKED GOODS CATEGORY WITH SUBSECTIONS ---
+      // Donuts
+      { id: 'bg-ryan-reynolds-donut', name: 'Ryan Reynolds Maple Butter Glazed Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.79, cals: 260 },
+      { id: 'bg-12-assorted-donuts', name: '12 Assorted Donuts', category: 'baked-goods', subSection: 'Donuts', price: 14.49, cals: 3720 },
+      { id: 'bg-6-assorted-donuts', name: '6 Assorted Donuts', category: 'baked-goods', subSection: 'Donuts', price: 7.99, cals: 1860 },
+      { id: 'bg-apple-fritter-donut', name: 'Apple Fritter Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.79, cals: 330 },
+      { id: 'bg-biscoff-boston-cream', name: 'Biscoff® Boston Cream', category: 'baked-goods', subSection: 'Donuts', price: 1.99, cals: 310 },
+      { id: 'bg-boston-cream-donut', name: 'Boston Cream Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.79, cals: 240 },
+      { id: 'bg-canadian-maple-donut', name: 'Canadian Maple Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.79, cals: 250 },
+      { id: 'bg-chocolate-cruller-donut', name: 'Chocolate Cruller Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.99, cals: 360 },
+      { id: 'bg-chocolate-dip-donut', name: 'Chocolate Dip Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.79, cals: 220 },
+      { id: 'bg-chocolate-eclair', name: 'Chocolate Eclair', category: 'baked-goods', subSection: 'Donuts', price: 1.99, cals: 310 },
+      { id: 'bg-chocolate-glazed-donut', name: 'Chocolate Glazed Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.79, cals: 330 },
+      { id: 'bg-chocolate-toasted-coconut-donut', name: 'Chocolate Toasted Coconut Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.99, cals: 360 },
+      { id: 'bg-double-chocolate-donut', name: 'Double Chocolate Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.79, cals: 310 },
+      { id: 'bg-honey-cruller-donut', name: 'Honey Cruller Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.79, cals: 320 },
+      { id: 'bg-honey-dip-donut', name: 'Honey Dip Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.79, cals: 250 },
+      { id: 'bg-maple-dip-donut', name: 'Maple Dip Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.79, cals: 220 },
+      { id: 'bg-old-fashioned-glazed-donut', name: 'Old Fashioned Glazed Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.99, cals: 330 },
+      { id: 'bg-old-fashioned-plain-donut', name: 'Old Fashioned Plain Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.79, cals: 280 },
+      { id: 'bg-sour-cream-glazed-donut', name: 'Sour Cream Glazed Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.79, cals: 340 },
+      { id: 'bg-spiced-vanilla-ring-donut', name: 'Spiced Vanilla Filled Ring Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.99, cals: 320 },
+      { id: 'bg-strawberry-fill-donut', name: 'Strawberry Fill Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.99, cals: 240 },
+      { id: 'bg-sugar-loop-donut', name: 'Sugar Loop Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.99, cals: 200 },
+      { id: 'bg-toasted-coconut-donut', name: 'Toasted Coconut Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.79, cals: 360 },
+      { id: 'bg-vanilla-dip-donut', name: 'Vanilla Dip Donut', category: 'baked-goods', subSection: 'Donuts', price: 1.79, cals: 250 },
+
+      // Timbits
+      { id: 'bg-10-assorted-timbits', name: '10 Assorted Timbits', category: 'baked-goods', subSection: 'Timbits', price: 3.49, cals: 900 },
+      { id: 'bg-20-assorted-timbits', name: '20 Assorted Timbits', category: 'baked-goods', subSection: 'Timbits', price: 5.49, cals: 1800 },
+      { id: 'bg-50-assorted-timbits', name: '50 Assorted Timbits', category: 'baked-goods', subSection: 'Timbits', price: 9.99, cals: 4500 },
+      { id: 'bg-birthday-cake-timbit', name: 'Birthday Cake Timbit', category: 'baked-goods', subSection: 'Timbits', price: 0.49, cals: 80 },
+      { id: 'bg-blueberry-cheesecake-timbit', name: 'Blueberry Cheesecake Filled Timbit', category: 'baked-goods', subSection: 'Timbits', price: 0.49, cals: 50 },
+      { id: 'bg-chocolate-glazed-timbit', name: 'Chocolate Glazed Timbit', category: 'baked-goods', subSection: 'Timbits', price: 0.49, cals: 80 },
+      { id: 'bg-creme-brulee-timbit', name: 'Crème Brulée Filled Timbit', category: 'baked-goods', subSection: 'Timbits', price: 0.49, cals: 50 },
+      { id: 'bg-halloween-timbits-bucket', name: 'Halloween Timbits Bucket - Black Cat w Timbits®', category: 'baked-goods', subSection: 'Timbits', price: 0.49, cals: null },
+      { id: 'bg-holiday-timbits-tray', name: 'Holiday Timbits Tray w 50 Timbits®', category: 'baked-goods', subSection: 'Timbits', price: 0.49, cals: null },
+      { id: 'bg-honey-dip-timbit', name: 'Honey Dip Timbit', category: 'baked-goods', subSection: 'Timbits', price: 0.49, cals: 50 },
+      { id: 'bg-old-fashioned-glazed-timbit', name: 'Old Fashioned Glazed Timbit', category: 'baked-goods', subSection: 'Timbits', price: 0.49, cals: 80 },
+      { id: 'bg-old-fashioned-plain-timbit', name: 'Old Fashioned Plain Timbit', category: 'baked-goods', subSection: 'Timbits', price: 0.49, cals: 60 },
+      { id: 'bg-powdered-strawberry-timbit', name: 'Powdered Strawberry Filled Timbit', category: 'baked-goods', subSection: 'Timbits', price: 0.49, cals: 50 },
+      { id: 'bg-sour-cream-glazed-timbit', name: 'Sour Cream Glazed Timbit', category: 'baked-goods', subSection: 'Timbits', price: 0.49, cals: 90 },
+      { id: 'bg-summer-timbits-bucket', name: 'Summer Timbits Bucket with 30 Timbits', category: 'baked-goods', subSection: 'Timbits', price: 0.49, cals: null },
+
+      // Bagels
+      { id: 'bg-12-assorted-bagels', name: '12 Assorted Bagels', category: 'baked-goods', subSection: 'Bagels', price: 30.99, cals: 3960 },
+      { id: 'bg-12-grain-bagel', name: '12 Grain Bagel', category: 'baked-goods', subSection: 'Bagels', price: 2.49, cals: 320 },
+      { id: 'bg-6-assorted-bagels', name: '6 Assorted Bagels', category: 'baked-goods', subSection: 'Bagels', price: 15.99, cals: 1980 },
+      { id: 'bg-avocado-bagel', name: 'Avocado Bagel', category: 'baked-goods', subSection: 'Bagels', price: 2.49, cals: 310 },
+      { id: 'bg-cinnamon-raisin-bagel', name: 'Cinnamon Raisin Bagel', category: 'baked-goods', subSection: 'Bagels', price: 2.49, cals: 290 },
+      { id: 'bg-everything-bagel', name: 'Everything Bagel', category: 'baked-goods', subSection: 'Bagels', price: 2.49, cals: 290 },
+      { id: 'bg-four-cheese-bagel', name: 'Four Cheese Bagel', category: 'baked-goods', subSection: 'Bagels', price: 2.49, cals: 330 },
+      { id: 'bg-jalapeno-asiago-bagel', name: 'Jalapeno Asiago Mozzarella Bagel', category: 'baked-goods', subSection: 'Bagels', price: 2.49, cals: 320 },
+      { id: 'bg-cream-cheese', name: 'PHILADELPHIA® Original Cream Cheese', category: 'baked-goods', subSection: 'Bagels', price: 2.49, cals: 640 },
+      { id: 'bg-plain-bagel', name: 'Plain Bagel', category: 'baked-goods', subSection: 'Bagels', price: 2.49, cals: 290 },
+      { id: 'bg-sesame-seed-bagel', name: 'Sesame Seed Bagel', category: 'baked-goods', subSection: 'Bagels', price: 2.49, cals: 310 },
+
+      // Muffins
+      { id: 'bg-12-assorted-muffins', name: '12 Assorted Muffins', category: 'baked-goods', subSection: 'Muffins', price: 18.99, cals: 5040 },
+      { id: 'bg-6-assorted-muffins', name: '6 Assorted Muffins', category: 'baked-goods', subSection: 'Muffins', price: 10.49, cals: 2520 },
+      { id: 'bg-carrot-cake-walnut-muffin', name: 'Carrot Cake with Walnut Muffin', category: 'baked-goods', subSection: 'Muffins', price: 2.49, cals: 360 },
+      { id: 'bg-chocolate-chip-muffin', name: 'Chocolate Chip Muffin', category: 'baked-goods', subSection: 'Muffins', price: 2.49, cals: 420 },
+      { id: 'bg-chocolate-hazelnut-muffin', name: 'Chocolate Hazelnut Muffin', category: 'baked-goods', subSection: 'Muffins', price: 2.49, cals: 430 },
+      { id: 'bg-fruit-explosion-muffin', name: 'Fruit Explosion Muffin', category: 'baked-goods', subSection: 'Muffins', price: 2.49, cals: 360 },
+      { id: 'bg-hot-chocolate-muffin', name: 'Hot Chocolate Muffin', category: 'baked-goods', subSection: 'Muffins', price: 2.49, cals: 410 },
+      { id: 'bg-lemon-poppyseed-muffin', name: 'Lemon Poppyseed Cheesecake Muffin', category: 'baked-goods', subSection: 'Muffins', price: 2.49, cals: 370 },
+      { id: 'bg-pumpkin-spice-muffin', name: 'Pumpkin Spice Muffin', category: 'baked-goods', subSection: 'Muffins', price: 2.49, cals: 390 },
+      { id: 'bg-raisin-bran-muffin', name: 'Raisin Bran Muffin', category: 'baked-goods', subSection: 'Muffins', price: 2.49, cals: 367 },
+      { id: 'bg-pecan-banana-muffin', name: 'Whole Grain Pecan Banana Bread Muffin', category: 'baked-goods', subSection: 'Muffins', price: 2.49, cals: 340 },
+      { id: 'bg-wild-blueberry-muffin', name: 'Wild Blueberry Muffin', category: 'baked-goods', subSection: 'Muffins', price: 2.49, cals: 380 },
+
+      // Cookies
+      { id: 'bg-12-assorted-cookies', name: '12 Assorted Cookies', category: 'baked-goods', subSection: 'Cookies', price: 14.49, cals: 3360 },
+      { id: 'bg-6-assorted-cookies', name: '6 Assorted Cookies', category: 'baked-goods', subSection: 'Cookies', price: 7.99, cals: 1860 },
+      { id: 'bg-caramel-chocolate-cookie', name: 'Caramel Chocolate Cookie', category: 'baked-goods', subSection: 'Cookies', price: 1.99, cals: 300 },
+      { id: 'bg-caramilk-dream-cookie', name: 'Caramilk Dream Cookie', category: 'baked-goods', subSection: 'Cookies', price: 1.99, cals: 340 },
+      { id: 'bg-chocolate-chunk-brookie', name: 'Chocolate Chunk Brookie', category: 'baked-goods', subSection: 'Cookies', price: 1.99, cals: 410 },
+      { id: 'bg-chocolate-chunk-cookie', name: 'Chocolate Chunk Cookie', category: 'baked-goods', subSection: 'Cookies', price: 1.99, cals: 310 },
+      { id: 'bg-dream-cookie-mms', name: 'Dream Cookie with M&M Minis', category: 'baked-goods', subSection: 'Cookies', price: 1.99, cals: 360 },
+      { id: 'bg-dream-cookie-nutella', name: 'Dream Cookie with Nutella', category: 'baked-goods', subSection: 'Cookies', price: 1.99, cals: 370 },
+      { id: 'bg-mms-brookie', name: 'M&Ms Brookie', category: 'baked-goods', subSection: 'Cookies', price: 1.99, cals: 460 },
+      { id: 'bg-oreo-chunk-cookie', name: 'Oreo Chunk Cookie', category: 'baked-goods', subSection: 'Cookies', price: 1.99, cals: 310 },
+      { id: 'bg-peanut-butter-cookie', name: 'Peanut Butter Cookie', category: 'baked-goods', subSection: 'Cookies', price: 1.99, cals: 320 },
+      { id: 'bg-reeses-minis-dream-cookie', name: 'Reese’s Minis Dream Cookie', category: 'baked-goods', subSection: 'Cookies', price: 1.99, cals: 350 },
+
+      // Croissants
+      { id: 'bg-biscoff-croissant', name: 'Biscoff® Croissant', category: 'baked-goods', subSection: 'Croissants', price: 2.69, cals: 400 },
+      { id: 'bg-cheese-croissant', name: 'Cheese Croissant', category: 'baked-goods', subSection: 'Croissants', price: 2.69, cals: 311 },
+      { id: 'bg-chocolate-croissant', name: 'Chocolate Croissant', category: 'baked-goods', subSection: 'Croissants', price: 2.69, cals: 347 },
+      { id: 'bg-croissant-nutella', name: 'Croissant with Nutella', category: 'baked-goods', subSection: 'Croissants', price: 2.69, cals: 330 },
+      { id: 'bg-plain-croissant', name: 'Plain Croissant', category: 'baked-goods', subSection: 'Croissants', price: 2.69, cals: 260 },
+      { id: 'bg-vanilla-matcha-croissant', name: 'Vanilla Matcha Croissant', category: 'baked-goods', subSection: 'Croissants', price: 2.69, cals: 320 },
+
+      // Savoury Pastries
+      { id: 'bg-onion-parmesan-pinwheel', name: 'Caramelized Onion & Parmesan Savoury Pinwheel', category: 'baked-goods', subSection: 'Savoury Pastries', price: 2.79, cals: 290 },
+      { id: 'bg-herb-garlic-pastry', name: 'Herb & Garlic Savoury Pastry', category: 'baked-goods', subSection: 'Savoury Pastries', price: 2.79, cals: 240 },
+      { id: 'bg-red-pepper-pinwheel', name: 'Red Pepper & Swiss Savoury Pinwheel', category: 'baked-goods', subSection: 'Savoury Pastries', price: 2.79, cals: 280 },
+      { id: 'bg-spinach-feta-pastry', name: 'Spinach & Feta Savoury Egg Pastry', category: 'baked-goods', subSection: 'Savoury Pastries', price: 2.79, cals: 280 },
+
+      // Twist Pastries
+      { id: 'bg-four-cheese-twist', name: 'Four Cheese Twist', category: 'baked-goods', subSection: 'Twist Pastries', price: 2.99, cals: 220 },
+
+      // Baked Goods (General)
+      { id: 'bg-double-chocolate-brownie', name: 'Double Chocolate Brownie', category: 'baked-goods', subSection: 'Baked Goods', price: 2.49, cals: 410 },
+      { id: 'bg-family-bundle', name: 'Family Bundle (serves 12+)', category: 'baked-goods', subSection: 'Baked Goods', price: 24.99, cals: 4910 },
+      { id: 'bg-raisin-tea-biscuit', name: 'Raisin Tea Biscuit', category: 'baked-goods', subSection: 'Baked Goods', price: 2.29, cals: 250 },
+      { id: 'bg-salted-caramel-butter-tart', name: 'Salted Caramel Butter Tart', category: 'baked-goods', subSection: 'Baked Goods', price: 2.29, cals: 350 },
+
+      // --- TIMS AT HOME CATEGORY ---
+      {
+        id: 'tah-10ct-winter-blend-kcups',
+        name: '10ct Winter Blend Keurig K-Cups',
+        category: 'tims-home',
+        subSection: 'Tims® at Home',
+        price: 8.99,
+        cals: null
+      },
+      {
+        id: 'tah-12ct-kcups-orig-blend',
+        name: '12ct K-Cups Original Blend Coffee',
+        category: 'tims-home',
+        subSection: 'Tims® at Home',
+        price: 9.99,
+        cals: null
+      },
+      {
+        id: 'tah-30ct-kcups-orig-blend',
+        name: '30ct K-Cups Original Blend Coffee',
+        category: 'tims-home',
+        subSection: 'Tims® at Home',
+        price: 21.99,
+        cals: null
+      },
+      {
+        id: 'tah-400g-orig-blend-coffee-bag',
+        name: '400g Original Blend Coffee Bag',
+        category: 'tims-home',
+        subSection: 'Tims® at Home',
+        price: 8.99,
+        cals: null
+      },
+      {
+        id: 'tah-450g-candy-cane-hot-choc-can',
+        name: '450g Candy Cane Hot Chocolate Can',
+        category: 'tims-home',
+        subSection: 'Tims® at Home',
+        price: 5.99,
+        cals: null
+      },
+      {
+        id: 'tah-454g-french-vanilla-capp-can',
+        name: '454g French Vanilla Cappuccino Can',
+        category: 'tims-home',
+        subSection: 'Tims® at Home',
+        price: 5.99,
+        cals: 407
+      },
+      {
+        id: 'tah-875g-orig-blend-can',
+        name: '875g Original Blend Can',
+        category: 'tims-home',
+        subSection: 'Tims® at Home',
+        price: 15.99,
+        cals: null
+      },
+      {
+        id: 'tah-hot-choc-sachet-ornament',
+        name: 'Hot Chocolate Set of 2 Sachet Ornament',
+        category: 'tims-home',
+        subSection: 'Tims® at Home',
+        price: 5.99,
+        cals: null
+      },
+      {
+        id: 'tah-winter-blend-coffee-bag',
+        name: 'Winter Blend Coffee Bag',
+        category: 'tims-home',
+        subSection: 'Tims® at Home',
+        price: 8.99,
+        cals: null
+      },
+
+      // --- MERCHANDISE CATEGORY WITH H3 SUBSECTIONS (NO CALORIES) ---
+      // 1. Ceramic Mugs
+      { id: 'merch-cm-first-tims', name: '16oz Ceramic Mug – But First, Tims', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+      { id: 'merch-cm-alberta', name: '16oz Ceramic Mug – Alberta', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+      { id: 'merch-cm-canada', name: '16oz Ceramic Mug – Canada', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+      { id: 'merch-cm-manitoba', name: '16oz Ceramic Mug – Manitoba', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+      { id: 'merch-cm-ontario', name: '16oz Ceramic Mug – Ontario', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+      { id: 'merch-cm-quebec', name: '16oz Ceramic Mug – Quebec', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+      { id: 'merch-cm-sask', name: '16oz Ceramic Mug – Saskatchewan', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+      { id: 'merch-cm-bc', name: '16oz Ceramic Mug – British Columbia', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+      { id: 'merch-cm-nb', name: '16oz Ceramic Mug – New Brunswick', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+      { id: 'merch-cm-nl', name: '16oz Ceramic Mug – Newfoundland and Labrador', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+      { id: 'merch-cm-ns', name: '16oz Ceramic Mug – Nova Scotia', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+      { id: 'merch-cm-pei', name: '16oz Ceramic Mug – Prince Edward Island', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+      { id: 'merch-cm-retro-bonjour', name: 'Retro Bonjour Ça va beigne Ceramic Mug 16oz', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+      { id: 'merch-cm-retro-mug', name: 'Retro Ceramic Mug 16oz', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+      { id: 'merch-cm-retro-fresh-start', name: 'Retro Fresh Start Ceramic Mug 16oz', category: 'merchandise', subSection: 'Tim Hortons Ceramic Mugs', price: 11.99, cals: null },
+
+      // 2. Stainless Steel Travel Mugs
+      { id: 'merch-ss-forest-green', name: '16oz Stainless Steel Travel Mug – Forest Green', category: 'merchandise', subSection: 'Tim Hortons Stainless Steel Travel Mugs', price: 17.99, cals: null },
+      { id: 'merch-ss-white', name: '16oz White Stainless Steel Travel Mug', category: 'merchandise', subSection: 'Tim Hortons Stainless Steel Travel Mugs', price: 17.99, cals: null },
+      { id: 'merch-ss-cream-shimmer', name: '20oz Stainless Steel Travel Mug – Cream Shimmer', category: 'merchandise', subSection: 'Tim Hortons Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-ss-wood-grain', name: '20oz Stainless Steel Travel Mug – Wood Grain', category: 'merchandise', subSection: 'Tim Hortons Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-ss-canada-22', name: '22oz Stainless Steel Travel Mug – Canada', category: 'merchandise', subSection: 'Tim Hortons Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-ss-floral-handle', name: 'Floral Stainless Steel Travel Mug with Handle 20oz', category: 'merchandise', subSection: 'Tim Hortons Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-ss-shimmer-blue', name: 'Holiday Stainless Steel Travel Mug – Glossy Shimmer Blue 20oz', category: 'merchandise', subSection: 'Tim Hortons Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-ss-pink-bear', name: 'Pink Stainless Steel Travel Mug With Bear Charm 16oz', category: 'merchandise', subSection: 'Tim Hortons Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-ss-retro-handle', name: 'Retro Stainless Steel Travel Mug with Handle 20oz', category: 'merchandise', subSection: 'Tim Hortons Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-ss-retro-handle-fr', name: 'Retro Stainless Steel Travel Mug with Handle 20oz – (FR)', category: 'merchandise', subSection: 'Tim Hortons Stainless Steel Travel Mugs', price: 19.99, cals: null },
+
+      // 3. Province-Themed Stainless Steel Travel Mugs
+      { id: 'merch-prov-ab', name: 'Alberta Stainless Steel Travel Mug 22oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-prov-bc', name: 'British Columbia Stainless Steel Travel Mug 22oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-prov-mb', name: 'Manitoba Stainless Steel Travel Mug 22oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-prov-nb', name: 'New Brunswick Stainless Steel Travel Mug 22oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-prov-nl', name: 'Newfoundland and Labrador Stainless Steel Travel Mug 22oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-prov-ns', name: 'Nova Scotia Stainless Steel Travel Mug 22oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-prov-on', name: 'Ontario Stainless Steel Travel Mug 22oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-prov-pei', name: 'Prince Edward Island Stainless Steel Travel Mug 22oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-prov-qc', name: 'Quebec Stainless Steel Travel Mug 22oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Stainless Steel Travel Mugs', price: 19.99, cals: null },
+      { id: 'merch-prov-sk', name: 'Saskatchewan Stainless Steel Travel Mug 22oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Stainless Steel Travel Mugs', price: 19.99, cals: null },
+
+      // 4. Plastic Tumblers and Straw Cups
+      { id: 'merch-pt-floral', name: '24oz Plastic Straw Tumbler – Floral', category: 'merchandise', subSection: 'Tim Hortons Plastic Tumblers and Straw Cups', price: 12.99, cals: null },
+      { id: 'merch-pt-sage', name: '24oz Plastic Straw Tumbler – Sage', category: 'merchandise', subSection: 'Tim Hortons Plastic Tumblers and Straw Cups', price: 12.99, cals: null },
+      { id: 'merch-pt-black-cat', name: '24oz Plastic Tumbler – Black Cat', category: 'merchandise', subSection: 'Tim Hortons Plastic Tumblers and Straw Cups', price: 14.99, cals: null },
+      { id: 'merch-pt-colour-change', name: 'Colour Changing Cold Cup with Straw Buddy 24oz', category: 'merchandise', subSection: 'Tim Hortons Plastic Tumblers and Straw Cups', price: 6.99, cals: null },
+      { id: 'merch-pt-dual-wall', name: 'Holiday Dual Wall Plastic Straw Tumbler 24oz', category: 'merchandise', subSection: 'Tim Hortons Plastic Tumblers and Straw Cups', price: 14.99, cals: null },
+      { id: 'merch-pt-ombre-ss', name: 'New! 24oz Ombre Stainless Steel Tumbler', category: 'merchandise', subSection: 'Tim Hortons Plastic Tumblers and Straw Cups', price: 19.99, cals: null },
+      { id: 'merch-pt-handle-navy', name: '30oz Stainless Steel Tumbler with Top Handle – Navy', category: 'merchandise', subSection: 'Tim Hortons Plastic Tumblers and Straw Cups', price: 24.99, cals: null },
+      { id: 'merch-pt-beige-40', name: '40oz Stainless Steel Tumbler – Beige', category: 'merchandise', subSection: 'Tim Hortons Plastic Tumblers and Straw Cups', price: 29.99, cals: null },
+
+      // 5. Province-Themed Plastic Straw Tumblers
+      { id: 'merch-pt-ab', name: 'Alberta Plastic Straw Tumbler 24oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Plastic Straw Tumblers', price: 12.99, cals: null },
+      { id: 'merch-pt-bc', name: 'British Columbia Plastic Straw Tumbler 24oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Plastic Straw Tumblers', price: 12.99, cals: null },
+      { id: 'merch-pt-mb', name: 'Manitoba Plastic Straw Tumbler 24oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Plastic Straw Tumblers', price: 12.99, cals: null },
+      { id: 'merch-pt-nb', name: 'New Brunswick Plastic Straw Tumbler 24oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Plastic Straw Tumblers', price: 12.99, cals: null },
+      { id: 'merch-pt-nl', name: 'Newfoundland and Labrador Plastic Straw Tumbler 24oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Plastic Straw Tumblers', price: 12.99, cals: null },
+      { id: 'merch-pt-ns', name: 'Nova Scotia Plastic Straw Tumbler 24oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Plastic Straw Tumblers', price: 12.99, cals: null },
+      { id: 'merch-pt-on', name: 'Ontario Plastic Straw Tumbler 24oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Plastic Straw Tumblers', price: 12.99, cals: null },
+      { id: 'merch-pt-pei', name: 'Prince Edward Island Plastic Straw Tumbler 24oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Plastic Straw Tumblers', price: 12.99, cals: null },
+      { id: 'merch-pt-qc', name: 'Quebec Plastic Straw Tumbler 24oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Plastic Straw Tumblers', price: 12.99, cals: null },
+      { id: 'merch-pt-sk', name: 'Saskatchewan Plastic Straw Tumbler 24oz', category: 'merchandise', subSection: 'Tim Hortons Province-Themed Plastic Straw Tumblers', price: 12.99, cals: null },
+
+      // 6. Figural and Novelty Mugs
+      { id: 'merch-fig-black-cat', name: '20oz Figural Mug – Black Cat', category: 'merchandise', subSection: 'Tim Hortons Figural and Novelty Mugs', price: 14.99, cals: null },
+      { id: 'merch-fig-bear', name: 'Figural Bear Mug – 20oz', category: 'merchandise', subSection: 'Tim Hortons Figural and Novelty Mugs', price: 14.99, cals: null },
+
+      // 7. Reusable Beverage Cups
+      { id: 'merch-rc-cold', name: 'Reusable Cold Beverage Cup', category: 'merchandise', subSection: 'Tim Hortons Reusable Beverage Cups', price: 2.99, cals: null },
+      { id: 'merch-rc-hot', name: 'Reusable Hot Beverage Cup', category: 'merchandise', subSection: 'Tim Hortons Reusable Beverage Cups', price: 2.49, cals: null },
+
+      // 8. Water Bottles and Timbits Buckets
+      { id: 'merch-wb-hockey', name: 'Hockey Squeeze Water Bottle – 32oz', category: 'merchandise', subSection: 'Tim Hortons Water Bottles and Timbits Buckets', price: 8.99, cals: null },
+      { id: 'merch-tb-cat', name: 'Halloween Timbits Bucket – Black Cat', category: 'merchandise', subSection: 'Tim Hortons Water Bottles and Timbits Buckets', price: 4.99, cals: null },
+      { id: 'merch-tb-soccer', name: 'Soccer Timbits® Bucket', category: 'merchandise', subSection: 'Tim Hortons Water Bottles and Timbits Buckets', price: 4.99, cals: null },
+      { id: 'merch-tb-summer', name: 'Summer Timbits Bucket', category: 'merchandise', subSection: 'Tim Hortons Water Bottles and Timbits Buckets', price: 4.99, cals: null },
+      { id: 'merch-tb-holiday-tray', name: 'Holiday Timbits Tray', category: 'merchandise', subSection: 'Tim Hortons Water Bottles and Timbits Buckets', price: 14.99, cals: null },
+
+      // 9. Hats and Clothing Accessories
+      { id: 'merch-hat-iced-capp', name: 'Retro Dad Hat – Iced Capp®', category: 'merchandise', subSection: 'Tim Hortons Hats and Clothing Accessories', price: 19.99, cals: null },
+      { id: 'merch-hat-iced-capp-fr', name: 'Retro Dad Hat – Iced Capp® (FR)', category: 'merchandise', subSection: 'Tim Hortons Hats and Clothing Accessories', price: 19.99, cals: null },
+      { id: 'merch-sock-bear', name: 'Holiday Adult Cozy Socks – Bear', category: 'merchandise', subSection: 'Tim Hortons Hats and Clothing Accessories', price: 11.99, cals: null },
+      { id: 'merch-sock-novelty', name: 'Holiday Novelty Socks', category: 'merchandise', subSection: 'Tim Hortons Hats and Clothing Accessories', price: 9.99, cals: null },
+
+      // 10. Plush Toys and Pet Accessories
+      { id: 'merch-plush-hockey', name: 'Hockey Timbits® Plush', category: 'merchandise', subSection: 'Tim Hortons Plush Toys and Pet Accessories', price: 9.99, cals: null },
+      { id: 'merch-pet-toy', name: 'Retro Pet Toy – Iced Capp®', category: 'merchandise', subSection: 'Tim Hortons Plush Toys and Pet Accessories', price: 9.99, cals: null },
+      { id: 'merch-pet-toy-fr', name: 'Retro Pet Toy – Iced Capp® (FR)', category: 'merchandise', subSection: 'Tim Hortons Plush Toys and Pet Accessories', price: 9.99, cals: null },
+
+      // 11. Retro Merchandise
+      { id: 'merch-cozy', name: 'Retro Drink Cozy', category: 'merchandise', subSection: 'Tim Hortons Retro Merchandise', price: 4.99, cals: null },
+      { id: 'merch-pens', name: 'Retro Soft Touch Pens, Set of 6', category: 'merchandise', subSection: 'Tim Hortons Retro Merchandise', price: 8.99, cals: null },
+
+      // 12. Reusable Shopping Bags
+      { id: 'merch-bag-sm', name: 'Small Reusable Bag', category: 'merchandise', subSection: 'Tim Hortons Reusable Shopping Bags', price: 1.49, cals: null },
+      { id: 'merch-bag-lg', name: 'Large Reusable Bag', category: 'merchandise', subSection: 'Tim Hortons Reusable Shopping Bags', price: 1.99, cals: null }
+    ];
+
+    // State Variables
+    let userCart = [];
+    let currentCategory = 'all';
+    let searchQuery = '';
+    const standardTaxRate = 0.13;
+
+    // Helper to get an exact, item-specific emoji
+    function getItemEmoji(item) {
+      const name = (item.name || '').toLowerCase();
+      const cat = (item.category || '').toLowerCase();
+      const sub = (item.subSection || '').toLowerCase();
+
+      // Bakery & Food
+      if (name.includes('timbit')) return '🧆';
+      if (name.includes('donut') || name.includes('fritter') || name.includes('eclair') || name.includes('cruller')) return '🍩';
+      if (name.includes('bagel') || name.includes('cream cheese')) return '🥯';
+      if (name.includes('muffin')) return '🧁';
+      if (name.includes('cookie') || name.includes('brookie')) return '🍪';
+      if (name.includes('croissant')) return '🥐';
+      if (name.includes('brownie')) return '🍫';
+      if (name.includes('tart')) return '🥧';
+      if (name.includes('pinwheel') || name.includes('twist') || name.includes('pastry')) return '🥨';
+      if (name.includes('biscuit')) return '🥮';
+      if (name.includes('pizza')) return '🍕';
+      if (name.includes('burger')) return '🍔';
+      if (name.includes('nugget') || name.includes('chicken sandwich') || name.includes('crispy chicken')) return '🍗';
+      if (name.includes('wrap')) return '🌯';
+      if (name.includes('sandwich') || name.includes('melt') || name.includes('belt') || name.includes('blt') || name.includes('stack')) return '🥪';
+      if (name.includes('bowl') || name.includes('box')) return '🥗';
+      if (name.includes('soup') || name.includes('chili')) return '🥣';
+      if (name.includes('hashbrown') || name.includes('wedges')) return '🥔';
+      if (name.includes('omelette') || name.includes('egg')) return '🍳';
+      if (name.includes('toast')) return '🍞';
+      if (name.includes('parfait') || name.includes('yogurt')) return '🍨';
+
+      // Drinks
+      if (name.includes('matcha')) return '🍵';
+      if (name.includes('iced capp')) return '🍧';
+      if (name.includes('cold brew')) return '🧋';
+      if (name.includes('iced latte') || name.includes('iced americano') || name.includes('iced chai')) return '🧋';
+      if (name.includes('latte') || name.includes('cappuccino') || name.includes('americano') || name.includes('espresso') || name.includes('mocha')) return '☕';
+      if (name.includes('hot chocolate')) return '🍫';
+      if (name.includes('french vanilla')) return '☕';
+      if (name.includes('steeped tea') || name.includes('london fog') || name.includes('chai') || name.includes('tea')) return '🫖';
+      if (name.includes('brewed') || name.includes('dark roast') || name.includes('double double') || name.includes('triple triple') || name.includes('original blend') || name.includes('coffee')) return '☕';
+      if (name.includes('lemonade')) return '🍋';
+      if (name.includes('quencher') || name.includes('cloud') || name.includes('slush')) return '🍹';
+      if (name.includes('coke') || name.includes('soda') || name.includes('fountain') || name.includes('fuze') || name.includes('sprite')) return '🥤';
+      if (name.includes('iced coffee')) return '🥤';
+      if (name.includes('juice') || name.includes('milk') || name.includes('water') || name.includes('infusr')) return '🧃';
+
+      // Merchandise & Tims at Home
+      if (name.includes('mug') || name.includes('ceramic') || name.includes('travel mug')) return '☕';
+      if (name.includes('tumbler') || name.includes('bottle') || name.includes('cup')) return '🥤';
+      if (name.includes('hat') || name.includes('cap') || name.includes('sock') || name.includes('t-shirt') || name.includes('tshirt')) return '🧢';
+      if (name.includes('plush') || name.includes('toy')) return '🧸';
+      if (name.includes('bag') || name.includes('cozy') || name.includes('pen') || name.includes('binder') || name.includes('card')) return '🛍️';
+      if (name.includes('wand')) return '🪄';
+      if (cat === 'tims-home' || name.includes('k-cup') || name.includes('can') || name.includes('bag')) return '🏠';
+
+      // Fallback to category defaults
+      return categoryEmojiMap[cat] || '🍁';
+    }
+
+    // Helper to generate a single menu card HTML
+    function buildCardHtml(item) {
+      const itemEmoji = getItemEmoji(item);
+      const hasSizes = Array.isArray(item.sizes) && item.sizes.length > 0;
+      const isMerchandise = item.category === 'merchandise';
+
+      // Elegant 3-column size table: Size | Price | Calories
+      let sizeTableHtml = '';
+      if (hasSizes) {
+        sizeTableHtml = `
+          <div class="mt-3.5 rounded-xl border border-stone-200/90 overflow-hidden bg-stone-50/70 shadow-[inset_0_1px_2px_rgba(0,0,0,0.03)]">
+            <table class="w-full text-[11px] leading-tight">
+              <thead>
+                <tr class="bg-stone-100/90 text-stone-500 font-bold uppercase tracking-wider text-[10px] border-b border-stone-200/80">
+                  <th class="py-2 px-2.5 text-left font-semibold">Size</th>
+                  <th class="py-2 px-2 text-center font-semibold">Price</th>
+                  <th class="py-2 px-2.5 text-right font-semibold">Calories</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-stone-200/50">
+                ${item.sizes.map(s => `
+                  <tr class="hover:bg-white/80 transition-colors">
+                    <td class="py-2 px-2.5 font-medium text-stone-700">
+                      <span class="inline-flex items-center gap-1.5">
+                        <span class="w-1.5 h-1.5 rounded-full bg-tims-red/60"></span>
+                        <span>${s.size}</span>
+                      </span>
+                    </td>
+                    <td class="py-2 px-2 text-center font-bold text-stone-900 font-display">
+                      $${s.price.toFixed(2)}
+                    </td>
+                    <td class="py-2 px-2.5 text-right font-medium text-stone-600">
+                      <span class="bg-amber-100/60 text-amber-800 font-semibold px-1.5 py-0.5 rounded text-[10px]">
+                        ${s.cals !== null ? `${s.cals} cal` : '—'}
+                      </span>
+                    </td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
+        `;
+      }
+
+      const calorieText = item.cals !== null ? `${item.cals} Calories` : '';
+      const displayPrice = hasSizes ? `From $${item.sizes[0].price.toFixed(2)}` : `$${item.price.toFixed(2)}`;
+
+      return `
+        <div class="bg-white rounded-2xl border border-stone-200 shadow-card hover:shadow-cardHover hover:-translate-y-1 transition-all duration-200 flex flex-col justify-between overflow-hidden group">
+          
+          <!-- Specific Menu Item Emoji Container -->
+          <div class="relative h-36 bg-gradient-to-br from-stone-100 via-stone-50 to-stone-200 flex items-center justify-center cursor-pointer border-b border-stone-100" onclick="openModal('${item.id}')">
+            <span class="text-6xl filter drop-shadow-sm group-hover:scale-110 transition-transform duration-300">
+              ${itemEmoji}
+            </span>
+          </div>
+
+          <!-- Card Body Details -->
+          <div class="p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <h3 class="font-display font-bold text-base sm:text-lg text-tims-coffee leading-snug group-hover:text-tims-red transition-colors cursor-pointer" onclick="openModal('${item.id}')">
+                ${item.name}
+              </h3>
+
+              <!-- 3-Column Size Table if item has sizes -->
+              ${sizeTableHtml}
+            </div>
+          </div>
+
+          <!-- Card Bottom Bar: Calories on left (hidden for merchandise), Price in Red Container on right -->
+          <div class="px-5 py-3.5 bg-stone-50/80 border-t border-stone-100 flex items-center ${isMerchandise ? 'justify-end' : 'justify-between'}">
+            ${!isMerchandise && calorieText ? `
+              <div class="flex items-center gap-1.5 text-xs font-semibold text-stone-500">
+                <span>${calorieText}</span>
+              </div>
+            ` : (!isMerchandise ? `<div class="text-xs font-medium text-stone-400">Calories vary</div>` : '')}
+
+            <div class="bg-tims-red text-white font-display font-extrabold text-sm sm:text-base px-3.5 py-1.5 rounded-xl shadow-sm tracking-tight">
+              ${displayPrice}
+            </div>
+          </div>
+
+          <!-- More Details Link Container -->
+          <div class="px-5 pb-3.5 pt-1 bg-stone-50/80">
+            <a href="#item-${item.id}" class="w-full inline-flex items-center justify-center gap-1.5 text-xs font-bold text-stone-700 hover:text-white bg-white hover:bg-stone-800 border border-stone-200 py-2 rounded-xl transition-all shadow-xs">
+              <span>More details</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+      `;
+    }
+
+    // Render Items Function with Category Emojis and Sub-headings
+    function renderMenuItems() {
+      const grid = document.getElementById('menuItemsGrid');
+      const emptyState = document.getElementById('noResultsState');
+
+      if (!grid) return;
+
+      const filtered = menuDatabase.filter(item => {
+        const matchCat = (currentCategory === 'all') || (item.category === currentCategory);
+        const matchSearch = searchQuery === '' || 
+          item.name.toLowerCase().includes(searchQuery.toLowerCase());
+
+        return matchCat && matchSearch;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '';
+        if (emptyState) emptyState.classList.remove('hidden');
+        return;
+      }
+
+      if (emptyState) emptyState.classList.add('hidden');
+
+      // Category definitions metadata for both single-category and "All Items" views
+      const categoryConfig = [
+        {
+          id: 'harry-potter',
+          title: 'Harry Potter Collection',
+          h2Icon: '⚡',
+          color: 'bg-amber-600',
+          subSections: null
+        },
+        {
+          id: 'featured',
+          title: 'Featured Menu',
+          h2Icon: '⭐',
+          color: 'bg-amber-500',
+          subSections: ['New and Seasonal']
+        },
+        {
+          id: 'breakfast',
+          title: 'Breakfast Menu',
+          h2Icon: '🍳',
+          color: 'bg-amber-500',
+          subSections: [
+            'Breakfast Sandwiches',
+            'Breakfast Wraps',
+            'Breakfast Boxes',
+            'Breakfast Bundles',
+            'Breakfast'
+          ]
+        },
+        {
+          id: 'lunch-dinner',
+          title: 'Lunch & Dinner Menu',
+          h2Icon: '🍔',
+          color: 'bg-rose-600',
+          subSections: null
+        },
+        {
+          id: 'hot-drinks',
+          title: 'Hot Drinks Menu',
+          h2Icon: '☕',
+          color: 'bg-amber-800',
+          subSections: [
+            'Brewed Coffee',
+            'Espresso Drinks',
+            'Tea',
+            'Hot Chocolate',
+            'Hot Drinks'
+          ]
+        },
+        {
+          id: 'cold-drinks',
+          title: 'Cold Drinks Menu',
+          h2Icon: '🧊',
+          color: 'bg-cyan-600',
+          subSections: [
+            'Matcha',
+            'Iced Coffee',
+            'Iced Capp®',
+            'Cold Brew',
+            'Iced Lattes',
+            'Fruit Quenchers',
+            'Frozen Lemonade',
+            'Fountain Pop',
+            'Bottled Drinks',
+            'Infusr™ Energy Drink',
+            'Iced Steeped Tea'
+          ]
+        },
+        {
+          id: 'baked-goods',
+          title: 'Baked Goods Menu',
+          h2Icon: '🍩',
+          color: 'bg-amber-600',
+          subSections: [
+            'Donuts',
+            'Timbits',
+            'Bagels',
+            'Muffins',
+            'Cookies',
+            'Croissants',
+            'Savoury Pastries',
+            'Twist Pastries',
+            'Baked Goods'
+          ]
+        },
+        {
+          id: 'tims-home',
+          title: 'Tims at Home',
+          h2Icon: '🏠',
+          color: 'bg-stone-700',
+          subSections: null
+        },
+        {
+          id: 'merchandise',
+          title: 'Merchandise & Collectibles',
+          h2Icon: '🛍️',
+          color: 'bg-rose-600',
+          subSections: [
+            'Tim Hortons Ceramic Mugs',
+            'Tim Hortons Stainless Steel Travel Mugs',
+            'Tim Hortons Province-Themed Stainless Steel Travel Mugs',
+            'Tim Hortons Plastic Tumblers and Straw Cups',
+            'Tim Hortons Province-Themed Plastic Straw Tumblers',
+            'Tim Hortons Figural and Novelty Mugs',
+            'Tim Hortons Reusable Beverage Cups',
+            'Tim Hortons Water Bottles and Timbits Buckets',
+            'Tim Hortons Hats and Clothing Accessories',
+            'Tim Hortons Plush Toys and Pet Accessories',
+            'Tim Hortons Retro Merchandise',
+            'Tim Hortons Reusable Shopping Bags'
+          ]
+        }
+      ];
+
+      // Helper to render a category's content (with or without H3s)
+      function renderCategorySection(catDef, itemsList) {
+        const catItems = itemsList.filter(item => item.category === catDef.id);
+        if (catItems.length === 0) return '';
+
+        let innerContent = '';
+
+        if (catDef.subSections && catDef.subSections.length > 0) {
+          // Render with H3 sub-headings
+          const activeSubSections = catDef.subSections.filter(secTitle => {
+            if (catDef.id === 'featured') return true; // maps all featured items to 'New and Seasonal'
+            return catItems.some(i => (i.subSection || (catDef.id === 'hot-drinks' ? 'Hot Drinks' : (catDef.id === 'breakfast' ? 'Breakfast' : (catDef.id === 'baked-goods' ? 'Baked Goods' : '')))) === secTitle);
+          });
+
+          innerContent = activeSubSections.map(secTitle => {
+            const secItems = catItems.filter(item => {
+              if (catDef.id === 'featured') return true;
+              const itemSec = item.subSection || (catDef.id === 'hot-drinks' ? 'Hot Drinks' : (catDef.id === 'breakfast' ? 'Breakfast' : (catDef.id === 'baked-goods' ? 'Baked Goods' : '')));
+              return itemSec === secTitle;
+            });
+
+            if (secItems.length === 0) return '';
+
+            return `
+              <div class="space-y-4 pt-2">
+                <div class="flex items-center gap-3 pb-2 border-b border-stone-200">
+                  <h3 class="font-display font-bold text-xl sm:text-2xl text-stone-800 flex items-center gap-2">
+                    <span class="w-2 h-5 rounded-full ${catDef.color} inline-block"></span>
+                    <span>${secTitle}</span>
+                  </h3>
+                  <span class="text-[11px] font-semibold text-stone-500 bg-stone-100 border border-stone-200 px-2.5 py-0.5 rounded-full">
+                    ${secItems.length} items
+                  </span>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                  ${secItems.map(item => buildCardHtml(item)).join('')}
+                </div>
+              </div>
+            `;
+          }).join('');
+        } else {
+          // Direct grid (no sub-sections needed, like Harry Potter, Lunch & Dinner, Tims at Home)
+          innerContent = `
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 pt-2">
+              ${catItems.map(item => buildCardHtml(item)).join('')}
+            </div>
+          `;
+        }
+
+        // Return container with Category H2
+        return `
+          <section id="category-section-${catDef.id}" class="space-y-6 pt-6 first:pt-0">
+            <!-- Category H2 Heading centered with solid tims-red background and white text -->
+            <div class="bg-tims-red text-white p-4 sm:p-5 rounded-2xl shadow-md text-center">
+              <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-white tracking-tight">
+                ${catDef.title}
+              </h2>
+            </div>
+
+            <!-- Category Body Content (H3 sections or Grid) -->
+            <div class="space-y-8 pl-1 sm:pl-2">
+              ${innerContent}
+            </div>
+          </section>
+        `;
+      }
+
+      // Handle "All Items" view: Iterate through all categories and print H2 + H3s
+      if (currentCategory === 'all') {
+        grid.className = "space-y-16";
+        grid.innerHTML = categoryConfig
+          .map(catDef => renderCategorySection(catDef, filtered))
+          .filter(html => html.trim() !== '')
+          .join('<hr class="border-t-2 border-dashed border-stone-200 my-8"/>');
+      } else {
+        // Individual Category view
+        const targetDef = categoryConfig.find(c => c.id === currentCategory);
+        if (targetDef) {
+          grid.className = "space-y-8";
+          grid.innerHTML = renderCategorySection(targetDef, filtered);
+        } else {
+          grid.className = "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6";
+          grid.innerHTML = filtered.map(item => buildCardHtml(item)).join('');
+        }
+      }
+    }
+
+    // Modal Control with Size Selection & Table
+    function openModal(itemId) {
+      const item = menuDatabase.find(i => i.id === itemId);
+      if (!item) return;
+
+      const itemEmoji = getItemEmoji(item);
+      const modalEmojiEl = document.getElementById('modalEmojiPic');
+      if (modalEmojiEl) {
+        modalEmojiEl.innerText = itemEmoji;
+      }
+
+      const modalTitleEl = document.getElementById('modalTitle');
+      if (modalTitleEl) modalTitleEl.innerText = item.name;
+
+      const modalCatBadgeEl = document.getElementById('modalCategoryBadge');
+      if (modalCatBadgeEl) modalCatBadgeEl.innerText = item.category.replace('-', ' ');
+
+      const modalDescEl = document.getElementById('modalDescription');
+      if (modalDescEl) modalDescEl.innerText = item.description;
+      
+      const pricingContainer = document.getElementById('modalPricingContainer');
+      const addBtn = document.getElementById('modalAddButton');
+
+      if (!pricingContainer || !addBtn) return;
+
+      if (Array.isArray(item.sizes) && item.sizes.length > 0) {
+        let selectedSizeIndex = 0;
+        pricingContainer.innerHTML = `
+          <div class="space-y-3">
+            <span class="text-xs font-bold text-stone-700 block">Select Cup / Serving Size:</span>
+            <div class="rounded-2xl border border-stone-200 overflow-hidden bg-stone-50">
+              <table class="w-full text-xs">
+                <thead>
+                  <tr class="bg-stone-200/70 text-stone-700 font-bold border-b border-stone-200 text-left">
+                    <th class="px-3 py-2">Size Option</th>
+                    <th class="px-3 py-2 text-right">Price &amp; Calories</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-stone-200/60" id="modalSizeRadioTable">
+                  ${item.sizes.map((s, idx) => `
+                    <tr class="cursor-pointer hover:bg-white transition p-1" onclick="selectModalSize(${idx})">
+                      <td class="px-3 py-2.5 font-semibold text-stone-800 flex items-center gap-2">
+                        <input type="radio" name="modalSizePick" id="sizeOpt_${idx}" value="${idx}" ${idx === 0 ? 'checked' : ''} class="text-tims-red focus:ring-tims-red">
+                        <label for="sizeOpt_${idx}" class="cursor-pointer">${s.size}</label>
+                      </td>
+                      <td class="px-3 py-2.5 text-right font-bold text-tims-darkRed">
+                        $${s.price.toFixed(2)} <span class="text-stone-400 font-normal">(${s.cals} cal)</span>
+                      </td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+
+        window.selectModalSize = function(index) {
+          selectedSizeIndex = index;
+          const radio = document.getElementById(`sizeOpt_${index}`);
+          if (radio) radio.checked = true;
+        };
+
+        addBtn.onclick = () => {
+          const checkedRadio = document.querySelector('input[name="modalSizePick"]:checked');
+          const finalIndex = checkedRadio ? parseInt(checkedRadio.value) : selectedSizeIndex;
+          const chosenSize = item.sizes[finalIndex];
+          
+          addToCart(item.id, chosenSize);
+          closeModal();
+        };
+
+      } else {
+        const calText = item.cals !== null ? `${item.cals} kcal` : '—';
+        pricingContainer.innerHTML = `
+          <div class="grid grid-cols-3 gap-3 bg-stone-50 p-3 rounded-2xl border border-stone-200 text-center text-xs">
+            <div>
+              <span class="text-stone-400 font-semibold uppercase">Calories</span>
+              <div class="font-display font-bold text-base text-stone-800">${calText}</div>
+            </div>
+            <div>
+              <span class="text-stone-400 font-semibold uppercase">Price (CAD)</span>
+              <div class="font-display font-bold text-base text-tims-red">$${item.price.toFixed(2)}</div>
+            </div>
+            <div>
+              <span class="text-stone-400 font-semibold uppercase">Availability</span>
+              <div class="font-display font-bold text-base text-emerald-600">Available</div>
+            </div>
+          </div>
+        `;
+
+        addBtn.onclick = () => {
+          addToCart(item.id);
+          closeModal();
+        };
+      }
+
+      const modalEl = document.getElementById('itemDetailModal');
+      if (modalEl) modalEl.classList.remove('hidden');
+    }
+
+    // Add To Cart supporting custom sized selections
+    function addToCart(itemId, sizeOption = null) {
+      const item = menuDatabase.find(i => i.id === itemId);
+      if (!item) return;
+
+      const cartKey = sizeOption ? `${item.id}_${sizeOption.size}` : item.id;
+      const itemName = sizeOption ? `${item.name} (${sizeOption.size})` : item.name;
+      const itemPrice = sizeOption ? sizeOption.price : item.price;
+      const itemCals = sizeOption ? (sizeOption.cals || 0) : (item.cals || 0);
+
+      const existing = userCart.find(i => i.cartKey === cartKey);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        userCart.push({
+          cartKey: cartKey,
+          id: item.id,
+          name: itemName,
+          category: item.category,
+          price: itemPrice,
+          cals: itemCals,
+          qty: 1
+        });
+      }
+
+      updateCartSummary();
+      showToast(`Added "${itemName}" to Meal Tracker`);
+    }
+
+    function removeFromCart(cartKey) {
+      userCart = userCart.filter(i => (i.cartKey || i.id) !== cartKey);
+      updateCartSummary();
+    }
+
+    function updateCartQty(cartKey, delta) {
+      const existing = userCart.find(i => (i.cartKey || i.id) === cartKey);
+      if (!existing) return;
+      existing.qty += delta;
+      if (existing.qty <= 0) {
+        removeFromCart(cartKey);
+      } else {
+        updateCartSummary();
+      }
+    }
+
+    function clearCart() {
+      userCart = [];
+      updateCartSummary();
+      showToast("Order Tracker cleared");
+    }
+
+    function updateCartSummary() {
+      const listEl = document.getElementById('cartItemsList');
+      const quickCount = document.getElementById('quickItemCount');
+      const quickCals = document.getElementById('quickCalories');
+      const quickCost = document.getElementById('quickCost');
+
+      const sumCals = document.getElementById('summaryTotalCals');
+      const sumSub = document.getElementById('summarySubtotal');
+      const sumTax = document.getElementById('summaryTotalWithTax');
+      const progBar = document.getElementById('calorieProgressBar');
+      const progPercent = document.getElementById('caloriePercentage');
+
+      const totalItems = userCart.reduce((sum, item) => sum + item.qty, 0);
+      const totalCals = userCart.reduce((sum, item) => sum + (item.cals * item.qty), 0);
+      const subtotal = userCart.reduce((sum, item) => sum + (item.price * item.qty), 0);
+
+      const totalWithTax = subtotal * (1 + standardTaxRate);
+
+      if (quickCount) quickCount.innerText = `${totalItems} items`;
+      if (quickCals) quickCals.innerText = `${totalCals} kcal`;
+      if (quickCost) quickCost.innerText = `$${totalWithTax.toFixed(2)}`;
+
+      if (sumCals) sumCals.innerText = `${totalCals} kcal`;
+      if (sumSub) sumSub.innerText = `$${subtotal.toFixed(2)}`;
+      if (sumTax) sumTax.innerText = `$${totalWithTax.toFixed(2)}`;
+
+      const percentage = Math.min(Math.round((totalCals / 2000) * 100), 100);
+      if (progBar) progBar.style.width = `${percentage}%`;
+      if (progPercent) progPercent.innerText = `${percentage}%`;
+
+      if (!listEl) return;
+
+      if (userCart.length === 0) {
+        listEl.innerHTML = `
+          <div class="py-8 text-center text-stone-400 text-sm">
+            No items selected yet. Click the <strong>"+ Add"</strong> button on any item card above!
+          </div>
+        `;
+        return;
+      }
+
+      listEl.innerHTML = userCart.map(item => {
+        const itemKey = item.cartKey || item.id;
+        const categoryEmoji = categoryEmojiMap[item.category] || '🍁';
+        return `
+          <div class="py-2.5 flex items-center justify-between text-xs">
+            <div class="flex items-center gap-2">
+              <span class="text-base">${categoryEmoji}</span>
+              <div>
+                <div class="font-bold text-stone-800 leading-tight">${item.name}</div>
+                <div class="text-[11px] text-stone-400">${item.cals * item.qty} Cals · $${(item.price * item.qty).toFixed(2)}</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <button onclick="updateCartQty('${itemKey}', -1)" class="w-6 h-6 rounded bg-stone-100 hover:bg-stone-200 text-stone-700 font-bold flex items-center justify-center">-</button>
+              <span class="font-bold text-stone-800 w-4 text-center">${item.qty}</span>
+              <button onclick="updateCartQty('${itemKey}', 1)" class="w-6 h-6 rounded bg-stone-100 hover:bg-stone-200 text-stone-700 font-bold flex items-center justify-center">+</button>
+              <button onclick="removeFromCart('${itemKey}')" class="text-stone-300 hover:text-red-500 ml-1 p-1">✕</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Category & Filter Handlers
+    function scrollCategories(distance) {
+      const container = document.getElementById('categoryTabsContainer');
+      if (container) {
+        container.scrollBy({ left: distance, behavior: 'smooth' });
+        setTimeout(updateCategoryScrollTrack, 150);
+      }
+    }
+
+    function updateCategoryScrollTrack() {
+      const container = document.getElementById('categoryTabsContainer');
+      const indicator = document.getElementById('categoryScrollIndicator');
+      if (!container || !indicator) return;
+
+      const maxScroll = container.scrollWidth - container.clientWidth;
+      if (maxScroll <= 0) {
+        indicator.style.width = '100%';
+        indicator.style.transform = 'translateX(0%)';
+        return;
+      }
+
+      const scrollPercent = container.scrollLeft / maxScroll;
+      const thumbWidthPercent = Math.max(20, Math.round((container.clientWidth / container.scrollWidth) * 100));
+      indicator.style.width = `${thumbWidthPercent}%`;
+      const availableTrack = 100 - thumbWidthPercent;
+      indicator.style.transform = `translateX(${scrollPercent * (availableTrack / thumbWidthPercent) * 100}%)`;
+    }
+
+    function filterCategory(cat) {
+      currentCategory = cat;
+      const headingEl = document.getElementById('currentCategoryHeading');
+      const catNames = {
+        'all': 'Full Tim Hortons Menu Catalog',
+        'harry-potter': 'Harry Potter Special Edition Collection',
+        'featured': 'Featured & Seasonal Items',
+        'breakfast': 'Breakfast Sandwiches, Wraps & Sides',
+        'lunch-dinner': 'Lunch, Crave Burgers, Nuggets & Bowls',
+        'hot-drinks': 'Hot Drinks, Brewed Coffees & Lattes',
+        'cold-drinks': 'Cold Drinks, Iced Capps & Refreshers',
+        'baked-goods': 'Fresh Baked Goods, Donuts & Timbits®',
+        'tims-home': 'Tims at Home K-Cups & Packaged Goods',
+        'merchandise': 'Official Merchandise & Collectibles'
+      };
+      if (headingEl && catNames[cat]) {
+        headingEl.innerText = catNames[cat];
+      }
+
+      document.querySelectorAll('.cat-pill').forEach(btn => {
+        if (btn.getAttribute('data-cat') === cat) {
+          btn.className = "cat-pill active px-3.5 py-2 lg:px-3 lg:py-1.5 rounded-xl whitespace-nowrap transition-all duration-150 bg-tims-red text-white shadow-sm text-xs md:text-sm font-semibold touch-manipulation";
+          btn.scrollIntoView({ behavior: 'smooth', inline: 'nearest', block: 'nearest' });
+        } else {
+          btn.className = "cat-pill px-3.5 py-2 lg:px-3 lg:py-1.5 rounded-xl whitespace-nowrap transition-all duration-150 bg-white text-stone-700 hover:bg-stone-50 border border-stone-200 text-xs md:text-sm font-semibold shadow-xs touch-manipulation";
+        }
+      });
+      renderMenuItems();
+      updateCategoryScrollTrack();
+    }
+
+    function resetFilters() {
+      currentCategory = 'all';
+      searchQuery = '';
+      filterCategory('all');
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('itemDetailModal');
+      if (modal) modal.classList.add('hidden');
+    }
+
+    // Dynamic Page View Handler
+    function showPageView(viewName) {
+      const homeSections = document.getElementById('homePageSections');
+      const pageContainer = document.getElementById('customPageViewContainer');
+      const pageContent = document.getElementById('pageViewContent');
+      const pageBadge = document.getElementById('pageViewBadge');
+
+      if (viewName === 'home') {
+        if (homeSections) homeSections.classList.remove('hidden');
+        if (pageContainer) pageContainer.classList.add('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      if (homeSections) homeSections.classList.add('hidden');
+      if (pageContainer) pageContainer.classList.remove('hidden');
+
+      const pages = {
+        'allergens': {
+          badge: 'Allergen Information',
+          html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Allergen & Nutritional Information</h1>
+                 <p class="text-stone-600">Tim Hortons stores prepare bakery products that contain wheat, milk, eggs, soy, peanuts, tree nuts, and sesame. Cross-contact between allergens can occur in the kitchen and prep stations.</p>
+                 <div class="p-4 bg-amber-50 rounded-xl border border-amber-200 text-xs text-amber-800 font-medium">Please inform staff of any serious allergies when ordering in-restaurant.</div>`
+        },
+        'hours': {
+          badge: 'Operating Hours',
+          html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Breakfast & Store Hours</h1>
+                 <p class="text-stone-600">Standard Canadian breakfast hours run from opening (typically 5:00 AM or 6:00 AM) until 11:00 AM or 12:00 PM, with select items served all day.</p>`
+        },
+        'locations': {
+          badge: 'Canada Locations',
+          html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Tim Hortons Locations Across Canada</h1>
+                 <p class="text-stone-600">With over 4,000 restaurants across all 10 provinces and 3 territories, Tim Hortons serves Canadians from coast to coast.</p>`
+        },
+        'disclaimer': {
+          badge: 'Legal Disclaimer',
+          html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Disclaimer Notice</h1>
+                 <p class="text-stone-600 leading-relaxed">This website is an independent informational guide created for educational and community reference. We are <strong>not affiliated with, authorized, or endorsed by Tim Hortons® or The TDL Group Corp.</strong> All trademarks belong to their respective holders.</p>`
+        },
+        'privacy': {
+          badge: 'Privacy Policy',
+          html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Privacy Policy</h1>
+                 <p class="text-stone-600">We do not collect personal identification information. Any inputs to the calorie calculator remain strictly local to your browser session.</p>`
+        },
+        'terms': {
+          badge: 'Terms of Service',
+          html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Terms of Use</h1>
+                 <p class="text-stone-600">By browsing this educational portal, you agree that prices, calorie estimations, and nutrition specs are indicative averages and subject to regional franchise variance.</p>`
+        },
+        'cookie': {
+          badge: 'Cookie Policy',
+          html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Cookie Policy</h1>
+                 <p class="text-stone-600">This website uses minimal essential client-side storage to preserve interface states such as your active category view and meal calculator entries.</p>`
+        }
+      };
+
+      if (pages[viewName]) {
+        if (pageBadge) pageBadge.innerText = pages[viewName].badge;
+        if (pageContent) pageContent.innerHTML = pages[viewName].html;
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Copy to clipboard without external alerts
+    function copyOrderSummary() {
+      if (userCart.length === 0) {
+        showToast("Cart is empty to copy!");
+        return;
+      }
+
+      let summaryText = `🍁 Tim Hortons Order (TimsMenu.ca Calorie Calculator):\n`;
+      userCart.forEach(item => {
+        summaryText += `- ${item.qty}x ${item.name} (${item.cals * item.qty} Cals) - $${(item.price * item.qty).toFixed(2)}\n`;
+      });
+      summaryText += `Subtotal: ${document.getElementById('summarySubtotal').innerText}\n`;
+      summaryText += `Total with Estimated Tax: ${document.getElementById('summaryTotalWithTax').innerText}\n`;
+      summaryText += `Total Calories: ${document.getElementById('summaryTotalCals').innerText}`;
+
+      const tempInput = document.createElement("textarea");
+      tempInput.value = summaryText;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
+
+      showToast("Order breakdown copied to clipboard!");
+    }
+
+    // Friendly Toast Box
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      const msgEl = document.getElementById('toastMessage');
+      if (!toast || !msgEl) return;
+      msgEl.innerText = msg;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 3000);
+    }
+
+    // FAQ Accordion
+    function toggleFaq(num) {
+      const ans = document.getElementById(`faqAnswer-${num}`);
+      const icon = document.getElementById(`faqIcon-${num}`);
+      if (!ans) return;
+      if (ans.classList.contains('hidden')) {
+        ans.classList.remove('hidden');
+        if (icon) icon.classList.add('rotate-180');
+      } else {
+        ans.classList.add('hidden');
+        if (icon) icon.classList.remove('rotate-180');
+      }
+    }
+
+    // Mobile Navbar Toggles
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenuLinks');
+      if (menu) menu.classList.toggle('hidden');
+    }
+
+    // Scroll to Top Handler
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // Window Scroll Listener to Show / Hide Back-to-Top Button
+    window.addEventListener('scroll', function() {
+      const topBtn = document.getElementById('backToTopBtn');
+      if (!topBtn) return;
+      if (window.scrollY > 300) {
+        topBtn.classList.remove('hidden');
+      } else {
+        topBtn.classList.add('hidden');
+      }
+    });
+
+    // Initial render on page load
+    window.onload = function() {
+      renderMenuItems();
+      updateCartSummary();
+    };
+  </script>
+</body>
+</html>
