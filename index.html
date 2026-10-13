@@ -615,7 +615,7 @@
   </button>
 
   <script>
-    // Flat image lookup map matching the user's downloaded .webp files
+    // Flat image lookup map matching the exact uploaded files in GitHub images/ folder
     const itemImageMap = {
       // Harry Potter
       'Gryffindor Strawberry Cheesecake Donut': '001-Gryffindor-Strawberry-Cheesecake-Donut.webp',
@@ -652,8 +652,8 @@
       'Canadian Fireworks Timbit': '016-Canadian-Fireworks-Timbit.webp',
       'Cappuccino Timbit': '017-Cappuccino-Timbit.webp',
       'Caramel Churro Cold Brew': '018-Caramel-Churro-Cold-Brew.webp',
-      'Caramel Churro Iced Capp': '019-Caramel-Churro-Iced-Capp.webp',
-      'Caramel Churro Iced Latte': '020-Caramel-Churro-Iced-Latte.webp',
+      'Caramel Churro Iced Capp': '001-Caramel-Churro-Iced-Capp.webp',
+      'Caramel Churro Iced Latte': '002-Caramel-Churro-Iced-Latte.webp',
       'Chocolate Creme Brulee Filled Timbit': '021-Chocolate-Creme-Brulee-Filled-Timbit.webp',
       'Classic Breakfast Wraps': '022-Classic-Breakfast-Wraps.webp',
       'Crispy Chicken Sandwich': '023-Crispy-Chicken-Sandwich.webp',
@@ -665,37 +665,37 @@
       "Orange Tangerine Poppin' Frozen Quencher": '029-Orange-Tangerine-Poppin-Frozen-Quencher.webp',
       'Peach Iced Tea Quencher': '030-Peach-Iced-Tea-Quencher.webp',
       "Peach Poppin' Frozen Quencher": '031-Peach-Poppin-Frozen-Quencher.webp',
-      'Peach Protein Quencher': '032-Peach-Protein-Quencher.webp',
+      'Peach Protein Quencher': '002-Peach-Protein-Quencher.webp',
       'Pecan Butter Tart': '033-Pecan-Butter-Tart.webp',
-      'Protein Iced Chai Latte': '034-Protein-Iced-Chai-Latte.webp',
+      'Protein Iced Chai Latte': '001-Protein-Iced-Chai-Latte.webp',
       'Raspberry Mojito Frozen Quencher': '035-Raspberry-Mojito-Frozen-Quencher.webp',
       'Raspberry Mojito Iced Tea Quencher': '036-Raspberry-Mojito-Iced-Tea-Quencher.webp',
-      'Raspberry Mojito Lemonade Quencher': '037-Raspberry-Mojito-Lemonade-Quencher.webp',
-      "Raspberry Mojito Poppin' Frozen Quencher": '038-Raspberry-Mojito-Poppin-Frozen-Quencher.webp',
-      'Raspberry Mojito Zero Sugar Sparkling Quencher': '039-Raspberry-Mojito-Zero-Sugar-Sparkling-Quencher.webp',
+      'Raspberry Mojito Lemonade Quencher': '004-Raspberry-Mojito-Lemonade-Quencher.webp',
+      "Raspberry Mojito Poppin' Frozen Quencher": '031-Raspberry-Mojito-Poppin-Frozen-Quencher.webp',
+      'Raspberry Mojito Zero Sugar Sparkling Quencher': '006-Raspberry-Mojito-Zero-Sugar-Sparkling-Quencher.webp',
       'Ryan Reynolds Charitable T-Shirt - English': '040-Ryan-Reynolds-Charitable-T-Shirt-English.webp',
       'Ryan Reynolds Charitable T-Shirt - French': '041-Ryan-Reynolds-Charitable-T-Shirt-French.webp',
-      'Ryan Reynolds Maple Butter Glazed Donut': '042-Ryan-Reynolds-Maple-Butter-Glazed-Donut.webp',
+      'Ryan Reynolds Maple Butter Glazed Donut': '001-Ryan-Reynolds-Maple-Butter-Glazed-Donut.webp',
       'Soccer Timbits® Bucket with 30 Timbits': '043-Soccer-Timbits-Bucket-with-30-Timbits.webp',
       'Strawberry Cheesecake Filled Muffin': '044-Strawberry-Cheesecake-Filled-Muffin.webp',
       'Strawberry Watermelon Iced Tea Quencher': '045-Strawberry-Watermelon-Iced-Tea-Quencher.webp',
-      "Strawberry Watermelon Poppin' Frozen Quencher": '046-Strawberry-Watermelon-Poppin-Frozen-Quencher.webp',
-      'Strawberry Watermelon Protein Quencher': '047-Strawberry-Watermelon-Protein-Quencher.webp',
+      "Strawberry Watermelon Poppin' Frozen Quencher": '035-Strawberry-Watermelon-Poppin-Frozen-Quencher.webp',
+      'Strawberry Watermelon Protein Quencher': '001-Strawberry-Watermelon-Protein-Quencher.webp',
       'Supreme Stack': '048-Supreme-Stack.webp',
       'Team Canada Hockey Binder': '049-Team-Canada-Hockey-Binder.webp',
       'Team Canada Trading Cards': '050-Team-Canada-Trading-Cards.webp',
       'Timbits® Team Canada Reusable Hot Cup 16oz': '051-Timbits-Team-Canada-Reusable-Hot-Cup-16oz.webp',
-      'Original Iced Steeped Tea': '052-Original-Iced-Steeped-Tea.webp',
-      'Brown Sugar Iced Steeped Tea': '053-Brown-Sugar-Iced-Steeped-Tea.webp',
-      'Black Iced Steeped Tea': '054-Black-Iced-Steeped-Tea.webp',
-      'Pumpkin Spice Cold Brew': '055-Pumpkin-Spice-Cold-Brew.webp',
-      'Pumpkin Spice Latte': '056-Pumpkin-Spice-Latte.webp',
-      'Chipotle Veggie Wrap': '057-Chipotle-Veggie-Wrap.webp',
-      'Cherry Soda Swirl': '058-Cherry-Soda-Swirl.webp',
-      'Vanilla Soda Swirl': '059-Vanilla-Soda-Swirl.webp',
-      'Vanilla Light Soda Swirl': '060-Vanilla-Light-Soda-Swirl.webp',
-      'White Cheddar Hashbrown': '061-White-Cheddar-Hashbrown.webp',
-      'Turkey Bacon Club Artisan Sandwich': '062-Turkey-Bacon-Club-Artisan-Sandwich.webp',
+      'Original Iced Steeped Tea': '003-Original-Iced-Steeped-Tea.webp',
+      'Brown Sugar Iced Steeped Tea': '002-Brown-Sugar-Iced-Steeped-Tea.webp',
+      'Black Iced Steeped Tea': '001-Black-Iced-Steeped-Tea.webp',
+      'Pumpkin Spice Cold Brew': '004-Pumpkin-Spice-Cold-Brew.webp',
+      'Pumpkin Spice Latte': '013-Pumpkin-Spice-Latte.webp',
+      'Chipotle Veggie Wrap': '004-Chipotle-Veggie-Wrap.webp',
+      'Cherry Soda Swirl': '001-Cherry-Soda-Swirl.webp',
+      'Vanilla Soda Swirl': '007-Vanilla-Soda-Swirl.webp',
+      'Vanilla Light Soda Swirl': '006-Vanilla-Light-Soda-Swirl.webp',
+      'White Cheddar Hashbrown': '005-White-Cheddar-Hashbrown.webp',
+      'Turkey Bacon Club Artisan Sandwich': '011-Turkey-Bacon-Club-Artisan-Sandwich.webp',
 
       // Hot Drinks - Brewed Coffee
       'Brown Sugar Cream Coffee': '001-Brown-Sugar-Cream-Coffee.webp',
@@ -1066,7 +1066,7 @@
       'Summer Timbits Bucket': '098-Summer-Timbits-Bucket.webp'
     };
 
-    // Helper to resolve an item's image file path
+    // Helper to resolve an item's image file path from the flat images/ folder
     function getItemImagePath(item) {
       if (!item) return null;
       if (item.image) return item.image;
