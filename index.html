@@ -700,36 +700,42 @@
     window.handleImageError = function(imgElement, fallbackEmoji) {
       if (!imgElement) return;
 
-      // Avoid infinite loop if secondary attempt also fails
-      if (imgElement.dataset.fallbackAttempted === 'true') {
-        const parent = imgElement.parentElement;
-        if (parent) {
-          parent.innerHTML = `
-            <span class="text-6xl filter drop-shadow-sm select-none">
-              ${fallbackEmoji || '🍁'}
-            </span>
-          `;
-        }
+      const currentSrc = imgElement.getAttribute('src') || '';
+      const tried = (imgElement.dataset.triedSrcs || '').split('|').filter(Boolean);
+      if (!tried.includes(currentSrc)) tried.push(currentSrc);
+
+      // Build the next candidate URLs to try, in order of likelihood
+      const candidates = [];
+
+      // 1) Same file name but with a .webp extension (every photo in images/ is .webp)
+      if (/\.(jpe?g|png|avif|gif)$/i.test(currentSrc)) {
+        candidates.push(currentSrc.replace(/\.(jpe?g|png|avif|gif)$/i, '.webp'));
+      }
+
+      // 2) Alternate folder spelling: ./images/ <-> ./image/
+      if (currentSrc.includes('/images/')) {
+        candidates.push(currentSrc.replace('/images/', '/image/'));
+      } else if (currentSrc.includes('/image/')) {
+        candidates.push(currentSrc.replace('/image/', '/images/'));
+      }
+
+      const nextSrc = candidates.find(src => src && !tried.includes(src));
+
+      // Another source to try: swap it in and wait for its own onerror/success
+      if (nextSrc) {
+        imgElement.dataset.triedSrcs = tried.join('|');
+        imgElement.src = nextSrc;
         return;
       }
 
-      imgElement.dataset.fallbackAttempted = 'true';
-
-      const currentSrc = imgElement.getAttribute('src') || '';
-      // If path used ./images/ try ./image/ or vice-versa
-      if (currentSrc.includes('/images/')) {
-        imgElement.src = currentSrc.replace('/images/', '/image/');
-      } else if (currentSrc.includes('/image/')) {
-        imgElement.src = currentSrc.replace('/image/', '/images/');
-      } else {
-        const parent = imgElement.parentElement;
-        if (parent) {
-          parent.innerHTML = `
+      // Nothing left to try - replace the broken <img> with the category emoji
+      const parent = imgElement.parentElement;
+      if (parent) {
+        parent.innerHTML = `
             <span class="text-6xl filter drop-shadow-sm select-none">
               ${fallbackEmoji || '🍁'}
             </span>
           `;
-        }
       }
     };
 
@@ -900,6 +906,10 @@
       'Pineapple Dragon Fruit Frozen Quencher': '028-Pineapple-Dragon-Fruit-Frozen-Quencher.webp',
       'Pineapple Dragon Fruit Lemonade Quencher': '029-Pineapple-Dragon-Fruit-Lemonade-Quencher.webp',
       'Pineapple Dragon Fruit Sparkling Quencher': '030-Pineapple-Dragon-Fruit-Sparkling-Quencher.webp',
+      'Raspberry Mojito Protein Quencher': '032-Raspberry-Mojito-Protein-Quencher.webp',
+      'Strawberry Watermelon Frozen Quencher': '033-Strawberry-Watermelon-Frozen-Quencher.webp',
+      'Strawberry Watermelon Lemonade Quencher': '034-Strawberry-Watermelon-Lemonade-Quencher.webp',
+      'Strawberry Watermelon Sparkling Quencher': '036-Strawberry-Watermelon-Sparkling-Quencher.webp',
       'Frozen Lemonade': '001-Frozen-Lemonade.webp',
       'Mango Frozen Lemonade': '002-Mango-Frozen-Lemonade.webp',
       'Strawberry Frozen Lemonade': '003-Strawberry-Frozen-Lemonade.webp',
@@ -1095,10 +1105,8 @@
       'Winter Blend Coffee Bag': '009-Winter-Blend-Coffee-Bag.webp',
 
       // Merchandise
-      '16oz Ceramic Mug - Alberta': '002-16oz-Ceramic-Mug-Alberta.webp',
-      '16oz Ceramic Mug – Alberta': '002-16oz-Ceramic-Mug-Alberta.webp',
-      '16oz Ceramic Mug - Canada': '003-16oz-Ceramic-Mug-Canada.webp',
-      '16oz Ceramic Mug – Canada': '003-16oz-Ceramic-Mug-Canada.webp',
+      '16oz Ceramic Mug - Alberta': '035-Alberta-Ceramic-Mug-16oz.webp',
+      '16oz Ceramic Mug – Alberta': '035-Alberta-Ceramic-Mug-16oz.webp',
       '16oz Ceramic Mug - Manitoba': '004-16oz-Ceramic-Mug-Manitoba.webp',
       '16oz Ceramic Mug – Manitoba': '004-16oz-Ceramic-Mug-Manitoba.webp',
       '16oz Ceramic Mug - Ontario': '005-16oz-Ceramic-Mug-Ontario.webp',
@@ -1216,7 +1224,6 @@
         category: 'harry-potter',
         price: 2.79,
         cals: 290,
-        image: './images/gryffindor-strawberry-cheesecake-donut.jpg',
         description: 'Harry Potter Collection: Rich yeast donut with strawberry cheesecake filling, crimson glaze, and golden sprinkles.',
         badge: '⚡ Wizard Special',
         badgeColor: 'bg-amber-600',
@@ -1239,7 +1246,6 @@
         category: 'harry-potter',
         price: 2.79,
         cals: 300,
-        image: './images/timhortonsRavenclawBlueberryDonut.avif',
         description: 'Harry Potter Collection: Fluffy yeast donut infused with real Canadian blueberry glaze and shimmer sugar.',
         badge: '⚡ Wizard Special',
         badgeColor: 'bg-blue-700',
