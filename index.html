@@ -86,48 +86,104 @@
         </div>
       </a>
 
-      <!-- Desktop Navigation Links (Search removed, new pages added) -->
-      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-stone-700">
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-5 xl:gap-6 text-sm font-semibold text-stone-700">
         <a href="#categories-nav" onclick="showPageView('home')" class="hover:text-tims-red transition-colors flex items-center gap-1.5">
           <span>All Menus</span>
         </a>
-        <button onclick="showPageView('allergens')" class="hover:text-tims-red transition-colors font-semibold">
-          Allergens
-        </button>
-        <button onclick="showPageView('hours')" class="hover:text-tims-red transition-colors font-semibold">
-          Hours
-        </button>
-        <button onclick="showPageView('locations')" class="hover:text-tims-red transition-colors font-semibold">
-          Locations
-        </button>
 
-        <!-- Legal Pages Dropdown -->
+        <!-- About Us Dropdown -->
         <div class="relative group">
           <button class="flex items-center gap-1 py-2 text-stone-700 group-hover:text-tims-red font-semibold transition-colors focus:outline-none">
-            <span>Legal Pages</span>
+            <span>About Us</span>
             <svg class="w-4 h-4 text-stone-400 group-hover:text-tims-red transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
           
-          <!-- Dropdown Menu -->
-          <div class="absolute right-0 top-full hidden group-hover:block w-56 pt-2 z-50">
+          <!-- About Us Dropdown Menu -->
+          <div class="absolute left-0 top-full hidden group-hover:block w-48 pt-2 z-50">
             <div class="bg-white rounded-2xl shadow-xl border border-stone-200 py-2 divide-y divide-stone-100">
               <div class="py-1">
-                <button onclick="showPageView('disclaimer')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition flex items-center justify-between">
-                  <span>Disclaimer</span>
-                  <span class="text-[10px] bg-red-100 text-tims-red px-1.5 py-0.5 rounded font-bold">Important</span>
+                <button onclick="showPageView('about')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition">
+                  About Us
                 </button>
-                <button onclick="showPageView('privacy')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
-                  Privacy Policy
-                </button>
-                <button onclick="showPageView('terms')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
-                  Terms of Use
-                </button>
-                <button onclick="showPageView('cookie')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
-                  Cookie Policy
+                <button onclick="showPageView('contact')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition flex items-center justify-between">
+                  <span>Contact Us</span>
+                  <span class="text-[10px] bg-red-100 text-tims-red px-1.5 py-0.5 rounded font-bold">Support</span>
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <button onclick="showPageView('allergens')" class="hover:text-tims-red transition-colors font-semibold">
+          Allergens
+        </button>
+        <button onclick="showPageView('locations')" class="hover:text-tims-red transition-colors font-semibold">
+          Locations
+        </button>
+        <button onclick="showPageView('blog')" class="hover:text-tims-red transition-colors font-semibold">
+          Blog
+        </button>
+
+        <!-- Hours Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 py-2 text-stone-700 group-hover:text-tims-red font-semibold transition-colors focus:outline-none">
+            <span>Hours</span>
+            <svg class="w-4 h-4 text-stone-400 group-hover:text-tims-red transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          
+          <!-- Hours Dropdown Menu -->
+          <div class="absolute left-0 top-full hidden group-hover:block w-48 pt-2 z-50">
+            <div class="bg-white rounded-2xl shadow-xl border border-stone-200 py-2 divide-y divide-stone-100">
+              <div class="py-1">
+                <button onclick="showPageView('hours')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition flex items-center justify-between">
+                  <span>Store Hours</span>
+                  <span class="text-[10px] text-stone-400 font-normal">All</span>
+                </button>
+                <button onclick="showPageView('breakfast-hours')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition">
+                  Breakfast Hours
+                </button>
+                <button onclick="showPageView('lunch-hours')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition">
+                  Lunch Hours
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#calculator" onclick="showPageView('home')" class="hover:text-tims-red transition-colors font-semibold">
+          Calculator
+        </a>
+
+        <!-- Legal Pages Dedicated Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 py-2 text-stone-700 group-hover:text-tims-red font-semibold transition-colors focus:outline-none">
+            <span>Legal</span>
+            <svg class="w-4 h-4 text-stone-400 group-hover:text-tims-red transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          
+          <!-- Legal Dropdown Menu -->
+          <div class="absolute right-0 top-full hidden group-hover:block w-52 pt-2 z-50">
+            <div class="bg-white rounded-2xl shadow-xl border border-stone-200 py-2">
+              <button onclick="showPageView('disclaimer')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition flex items-center justify-between">
+                <span>Disclaimer</span>
+                <span class="text-[10px] bg-red-100 text-tims-red px-1.5 py-0.5 rounded font-bold">Notice</span>
+              </button>
+              <button onclick="showPageView('privacy')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
+                Privacy Policy
+              </button>
+              <button onclick="showPageView('terms')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
+                Terms of Use
+              </button>
+              <button onclick="showPageView('cookie')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
+                Cookie Policy
+              </button>
             </div>
           </div>
         </div>
@@ -145,12 +201,35 @@
     <!-- Mobile Drawer Links -->
     <div id="mobileMenuLinks" class="hidden lg:hidden border-t border-stone-200 bg-white px-4 py-3 space-y-2">
       <a href="#categories-nav" onclick="showPageView('home'); toggleMobileMenu()" class="block py-2 text-stone-700 font-semibold hover:text-tims-red">All Menus</a>
-      <button onclick="showPageView('allergens'); toggleMobileMenu()" class="block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Allergens Guide</button>
-      <button onclick="showPageView('hours'); toggleMobileMenu()" class="block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Breakfast & Store Hours</button>
-      <button onclick="showPageView('locations'); toggleMobileMenu()" class="block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Canada Locations</button>
+
+      <!-- About Us Section in Mobile -->
+      <div class="py-1">
+        <span class="text-[11px] font-bold text-stone-400 uppercase tracking-wider block px-1 mb-1">About</span>
+        <div class="pl-3 space-y-1 border-l-2 border-stone-200 ml-1">
+          <button onclick="showPageView('about'); toggleMobileMenu()" class="block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">About Us</button>
+          <button onclick="showPageView('contact'); toggleMobileMenu()" class="block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">Contact Us</button>
+        </div>
+      </div>
+
+      <button onclick="showPageView('allergens'); toggleMobileMenu()" class="block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Allergens</button>
+      <button onclick="showPageView('locations'); toggleMobileMenu()" class="block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Locations</button>
+      <button onclick="showPageView('blog'); toggleMobileMenu()" class="block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Blog</button>
       
+      <!-- Hours Section in Mobile -->
+      <div class="py-1">
+        <span class="text-[11px] font-bold text-stone-400 uppercase tracking-wider block px-1 mb-1">Hours</span>
+        <div class="pl-3 space-y-1 border-l-2 border-stone-200 ml-1">
+          <button onclick="showPageView('hours'); toggleMobileMenu()" class="block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">Store Hours</button>
+          <button onclick="showPageView('breakfast-hours'); toggleMobileMenu()" class="block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">Breakfast Hours</button>
+          <button onclick="showPageView('lunch-hours'); toggleMobileMenu()" class="block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">Lunch Hours</button>
+        </div>
+      </div>
+
+      <a href="#calculator" onclick="showPageView('home'); toggleMobileMenu()" class="block py-2 text-stone-700 font-semibold hover:text-tims-red">Calculator</a>
+      
+      <!-- Legal Section in Mobile -->
       <div class="pt-2 border-t border-stone-100 space-y-1">
-        <span class="text-[11px] font-bold text-stone-400 uppercase tracking-wider block px-1">Legal Pages</span>
+        <span class="text-[11px] font-bold text-stone-400 uppercase tracking-wider block px-1">Legal</span>
         <button onclick="showPageView('disclaimer'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-xs text-tims-red font-bold hover:underline">● Disclaimer</button>
         <button onclick="showPageView('privacy'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-xs text-stone-600 hover:text-stone-900">Privacy Policy</button>
         <button onclick="showPageView('terms'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-xs text-stone-600 hover:text-stone-900">Terms of Use</button>
@@ -556,6 +635,8 @@
         <div>
           <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-3">Quick Pages</h4>
           <ul class="text-xs space-y-2 text-stone-400">
+            <li><button onclick="showPageView('about')" class="hover:text-white transition">About Us</button></li>
+            <li><button onclick="showPageView('contact')" class="hover:text-white transition">Contact Us</button></li>
             <li><button onclick="showPageView('allergens')" class="hover:text-white transition">Allergens & Dietary</button></li>
             <li><button onclick="showPageView('hours')" class="hover:text-white transition">Store & Breakfast Hours</button></li>
             <li><button onclick="showPageView('locations')" class="hover:text-white transition">Canada Locations</button></li>
@@ -615,6 +696,43 @@
   </button>
 
   <script>
+    // Global image fallback handler attached directly to window to avoid scope ReferenceError in inline onerror attributes
+    window.handleImageError = function(imgElement, fallbackEmoji) {
+      if (!imgElement) return;
+
+      // Avoid infinite loop if secondary attempt also fails
+      if (imgElement.dataset.fallbackAttempted === 'true') {
+        const parent = imgElement.parentElement;
+        if (parent) {
+          parent.innerHTML = `
+            <span class="text-6xl filter drop-shadow-sm select-none">
+              ${fallbackEmoji || '🍁'}
+            </span>
+          `;
+        }
+        return;
+      }
+
+      imgElement.dataset.fallbackAttempted = 'true';
+
+      const currentSrc = imgElement.getAttribute('src') || '';
+      // If path used ./images/ try ./image/ or vice-versa
+      if (currentSrc.includes('/images/')) {
+        imgElement.src = currentSrc.replace('/images/', '/image/');
+      } else if (currentSrc.includes('/image/')) {
+        imgElement.src = currentSrc.replace('/image/', '/images/');
+      } else {
+        const parent = imgElement.parentElement;
+        if (parent) {
+          parent.innerHTML = `
+            <span class="text-6xl filter drop-shadow-sm select-none">
+              ${fallbackEmoji || '🍁'}
+            </span>
+          `;
+        }
+      }
+    };
+
     // Flat image lookup map matching the exact uploaded files in GitHub images/ folder
     const itemImageMap = {
       // Harry Potter
@@ -4415,7 +4533,7 @@
             alt="${item.name}" 
             loading="lazy"
             class="max-h-full max-w-full object-contain mx-auto my-auto block group-hover:scale-105 transition-transform duration-300 drop-shadow-sm select-none"
-            onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\\'text-6xl filter drop-shadow-sm group-hover:scale-110 transition-transform duration-300 select-none\\'>${itemEmoji}</span>';"
+            onerror="handleImageError(this, '${itemEmoji}')"
           />
         </div>
       ` : `
@@ -4918,6 +5036,23 @@
       if (pageContainer) pageContainer.classList.remove('hidden');
 
       const pages = {
+        'about': {
+          badge: 'About Us',
+          html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">About Us</h1>
+                 <p class="text-stone-600 leading-relaxed">Welcome to our independent Tim Hortons Canada menu and nutrition resource. We are committed to providing Canadians with accurate, verified prices, allergen data, calorie information, and menu updates across all provinces.</p>
+                 <div class="p-5 bg-stone-50 rounded-2xl border border-stone-200 text-xs text-stone-600 leading-relaxed">
+                   <em>Content for this page can be updated and expanded anytime.</em>
+                 </div>`
+        },
+        'contact': {
+          badge: 'Contact Us',
+          html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Contact Us</h1>
+                 <p class="text-stone-600 leading-relaxed">Have a correction, feedback, or a menu update for a Canadian location? We'd love to hear from you!</p>
+                 <div class="p-6 bg-stone-50 rounded-2xl border border-stone-200 text-sm text-stone-700 space-y-3">
+                   <p class="font-semibold text-stone-900">Get in touch:</p>
+                   <p class="text-xs text-stone-500">You can reach out with questions, updates, or price adjustments. You can customize this section anytime with your email or contact form.</p>
+                 </div>`
+        },
         'allergens': {
           badge: 'Allergen Information',
           html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Allergen & Nutritional Information</h1>
@@ -4926,13 +5061,60 @@
         },
         'hours': {
           badge: 'Operating Hours',
-          html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Breakfast & Store Hours</h1>
-                 <p class="text-stone-600">Standard Canadian breakfast hours run from opening (typically 5:00 AM or 6:00 AM) until 11:00 AM or 12:00 PM, with select items served all day.</p>`
+          html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Tim Hortons Store & Operating Hours</h1>
+                 <p class="text-stone-600 leading-relaxed">Most Tim Hortons locations in Canada operate from <strong>5:00 AM or 6:00 AM to 10:00 PM or 11:00 PM</strong> daily, with numerous high-traffic highway and urban outlets open 24/7 for drive-thru and takeout.</p>
+                 <div class="mt-4 grid sm:grid-cols-2 gap-4">
+                   <div class="p-4 bg-stone-50 rounded-2xl border border-stone-200">
+                     <span class="font-bold text-stone-900 block mb-1">Standard Dine-in</span>
+                     <span class="text-xs text-stone-600">Mon - Sun: 5:00 AM – 10:00 PM</span>
+                   </div>
+                   <div class="p-4 bg-stone-50 rounded-2xl border border-stone-200">
+                     <span class="font-bold text-stone-900 block mb-1">Drive-Thru</span>
+                     <span class="text-xs text-stone-600">Mon - Sun: 5:00 AM – 11:00 PM / 24 Hours</span>
+                   </div>
+                 </div>`
+        },
+        'breakfast-hours': {
+          badge: 'Breakfast Hours',
+          html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Tim Hortons Breakfast Hours Canada</h1>
+                 <p class="text-stone-600 leading-relaxed">Tim Hortons Canada typically serves its full traditional breakfast menu starting from store opening at <strong>5:00 AM (or 6:00 AM Sundays) until 11:00 AM</strong>. After 11:00 AM, restaurants switch to the lunch menu, though select locations offer an all-day breakfast selection subject to local bakery availability.</p>
+                 <div class="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-2xl text-xs text-amber-900 space-y-1">
+                   <span class="font-bold block">Breakfast Timings:</span>
+                   <p>• Monday – Saturday: 5:00 AM – 11:00 AM</p>
+                   <p>• Sunday: 6:00 AM – 11:00 AM</p>
+                 </div>`
+        },
+        'lunch-hours': {
+          badge: 'Lunch Hours',
+          html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Tim Hortons Lunch Hours Canada</h1>
+                 <p class="text-stone-600 leading-relaxed">Lunch service officially begins immediately when the breakfast window concludes at <strong>11:00 AM and runs through 4:00 PM</strong>, transitioning into dinner offerings. Popular lunch selections include Flatbread Pizzas, Loaded Bowls, Craveable Wraps, Soups, and Chili.</p>
+                 <div class="mt-4 p-4 bg-red-50 border border-red-200 rounded-2xl text-xs text-tims-red space-y-1">
+                   <span class="font-bold block text-stone-900">Lunch Timings:</span>
+                   <p class="text-stone-700">• Daily: 11:00 AM – 4:00 PM</p>
+                   <p class="text-stone-500 text-[11px]">*Wraps, sandwiches, soups, and chili often remain available well after 4:00 PM until closing.</p>
+                 </div>`
         },
         'locations': {
           badge: 'Canada Locations',
           html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Tim Hortons Locations Across Canada</h1>
                  <p class="text-stone-600">With over 4,000 restaurants across all 10 provinces and 3 territories, Tim Hortons serves Canadians from coast to coast.</p>`
+        },
+        'blog': {
+          badge: 'News & Guides',
+          html: `<h1 class="text-3xl font-display font-extrabold text-stone-900">Tim Hortons Canada Blog & News</h1>
+                 <p class="text-stone-600">Stay informed with the latest Canadian menu rollouts, Roll Up To Win updates, seasonal specialty drinks, and money-saving hacks.</p>
+                 <div class="mt-6 grid sm:grid-cols-2 gap-4">
+                   <div class="p-5 bg-stone-50 rounded-2xl border border-stone-200">
+                     <span class="text-xs uppercase font-bold text-tims-red">Latest Guide</span>
+                     <h3 class="font-display font-bold text-base text-stone-900 mt-1">Roll Up To Win: Canadian Prizes & Rules</h3>
+                     <p class="text-xs text-stone-500 mt-1">How digital roll tracking works in the Tims App and prize redemptions.</p>
+                   </div>
+                   <div class="p-5 bg-stone-50 rounded-2xl border border-stone-200">
+                     <span class="text-xs uppercase font-bold text-amber-600">Seasonal Special</span>
+                     <h3 class="font-display font-bold text-base text-stone-900 mt-1">New Limited-Edition Drinks & Treats</h3>
+                     <p class="text-xs text-stone-500 mt-1">Full pricing, calories, and review of this season's hottest releases.</p>
+                   </div>
+                 </div>`
         },
         'disclaimer': {
           badge: 'Legal Disclaimer',
