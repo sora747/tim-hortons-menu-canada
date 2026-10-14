@@ -102,9 +102,9 @@
   <link rel="stylesheet" href="/assets/css/styles.css">
 
 </head>
+
 <body class="bg-tims-cream text-stone-800 font-sans antialiased min-h-screen flex flex-col">
 
-  <!-- Top Banner / Alert -->
   <aside class="bg-stone-900 text-stone-300 text-xs py-2 px-4 text-center border-b border-stone-800 flex items-center justify-center gap-2">
     <span>Unofficial fan guide for informational and educational purposes only. Not affiliated with Tim Hortons Canada.</span>
   </aside>
@@ -114,7 +114,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between gap-4 py-3">
       
       <!-- Brand Logo -->
-      <a href="#" onclick="showPageView('home'); return false;" class="flex items-center gap-3 group focus:outline-none">
+      <a href="/" class="flex items-center gap-3 group focus:outline-none">
         <div class="w-10 h-10 rounded-xl bg-tims-red flex items-center justify-center text-white shadow-md shadow-red-500/20 group-hover:scale-105 transition-transform">
           <!-- Maple Cup Icon -->
           <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -131,7 +131,7 @@
 
       <!-- Desktop Navigation Links -->
       <nav class="hidden lg:flex items-center gap-5 xl:gap-6 text-sm font-semibold text-stone-700">
-        <a href="#categories-nav" onclick="showPageView('home')" class="hover:text-tims-red transition-colors flex items-center gap-1.5">
+        <a href="/#categories-nav" class="hover:text-tims-red transition-colors flex items-center gap-1.5">
           <span>All Menus</span>
         </a>
 
@@ -148,27 +148,27 @@
           <div class="absolute left-0 top-full hidden group-hover:block w-48 pt-2 z-50">
             <div class="bg-white rounded-2xl shadow-xl border border-stone-200 py-2 divide-y divide-stone-100">
               <div class="py-1">
-                <button onclick="showPageView('about')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition">
+                <a href="/about-us" class="block w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition">
                   About Us
-                </button>
-                <button onclick="showPageView('contact')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition flex items-center justify-between">
+                </a>
+                <a href="/contact-us" class="block w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition flex items-center justify-between">
                   <span>Contact Us</span>
                   <span class="text-[10px] bg-red-100 text-tims-red px-1.5 py-0.5 rounded font-bold">Support</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <button onclick="showPageView('allergens')" class="hover:text-tims-red transition-colors font-semibold">
+        <a href="/allergens" class="block hover:text-tims-red transition-colors font-semibold">
           Allergens
-        </button>
-        <button onclick="showPageView('locations')" class="hover:text-tims-red transition-colors font-semibold">
+        </a>
+        <a href="/locations" class="block hover:text-tims-red transition-colors font-semibold">
           Locations
-        </button>
-        <button onclick="showPageView('blog')" class="hover:text-tims-red transition-colors font-semibold">
+        </a>
+        <a href="/blog" class="block hover:text-tims-red transition-colors font-semibold">
           Blog
-        </button>
+        </a>
 
         <!-- Hours Dropdown -->
         <div class="relative group">
@@ -183,22 +183,22 @@
           <div class="absolute left-0 top-full hidden group-hover:block w-48 pt-2 z-50">
             <div class="bg-white rounded-2xl shadow-xl border border-stone-200 py-2 divide-y divide-stone-100">
               <div class="py-1">
-                <button onclick="showPageView('hours')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition flex items-center justify-between">
+                <a href="/hours" class="block w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition flex items-center justify-between">
                   <span>Store Hours</span>
                   <span class="text-[10px] text-stone-400 font-normal">All</span>
-                </button>
-                <button onclick="showPageView('breakfast-hours')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition">
+                </a>
+                <a href="/breakfast-hours" class="block w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition">
                   Breakfast Hours
-                </button>
-                <button onclick="showPageView('lunch-hours')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition">
+                </a>
+                <a href="/lunch-hours" class="block w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition">
                   Lunch Hours
-                </button>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <a href="#calculator" onclick="showPageView('home')" class="hover:text-tims-red transition-colors font-semibold">
+        <a href="/#calculator" class="hover:text-tims-red transition-colors font-semibold">
           Calculator
         </a>
 
@@ -214,19 +214,19 @@
           <!-- Legal Dropdown Menu -->
           <div class="absolute right-0 top-full hidden group-hover:block w-52 pt-2 z-50">
             <div class="bg-white rounded-2xl shadow-xl border border-stone-200 py-2">
-              <button onclick="showPageView('disclaimer')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition flex items-center justify-between">
+              <a href="/disclaimer" class="block w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-red-50 hover:text-tims-red transition flex items-center justify-between">
                 <span>Disclaimer</span>
                 <span class="text-[10px] bg-red-100 text-tims-red px-1.5 py-0.5 rounded font-bold">Notice</span>
-              </button>
-              <button onclick="showPageView('privacy')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
+              </a>
+              <a href="/privacy-policy" class="block w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
                 Privacy Policy
-              </button>
-              <button onclick="showPageView('terms')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
-                Terms of Use
-              </button>
-              <button onclick="showPageView('cookie')" class="w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
+              </a>
+              <a href="/terms-and-conditions" class="block w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
+                Terms &amp; Conditions
+              </a>
+              <a href="/cookie-policy" class="block w-full text-left px-4 py-2.5 text-xs font-semibold text-stone-700 hover:bg-stone-50 hover:text-tims-red transition">
                 Cookie Policy
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -243,60 +243,44 @@
 
     <!-- Mobile Drawer Links -->
     <div id="mobileMenuLinks" class="hidden lg:hidden border-t border-stone-200 bg-white px-4 py-3 space-y-2">
-      <a href="#categories-nav" onclick="showPageView('home'); toggleMobileMenu()" class="block py-2 text-stone-700 font-semibold hover:text-tims-red">All Menus</a>
+      <a href="/#categories-nav" onclick="toggleMobileMenu()" class="block py-2 text-stone-700 font-semibold hover:text-tims-red">All Menus</a>
 
       <!-- About Us Section in Mobile -->
       <div class="py-1">
         <span class="text-[11px] font-bold text-stone-400 uppercase tracking-wider block px-1 mb-1">About</span>
         <div class="pl-3 space-y-1 border-l-2 border-stone-200 ml-1">
-          <button onclick="showPageView('about'); toggleMobileMenu()" class="block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">About Us</button>
-          <button onclick="showPageView('contact'); toggleMobileMenu()" class="block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">Contact Us</button>
+          <a href="/about-us" class="block block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">About Us</a>
+          <a href="/contact-us" class="block block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">Contact Us</a>
         </div>
       </div>
 
-      <button onclick="showPageView('allergens'); toggleMobileMenu()" class="block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Allergens</button>
-      <button onclick="showPageView('locations'); toggleMobileMenu()" class="block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Locations</button>
-      <button onclick="showPageView('blog'); toggleMobileMenu()" class="block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Blog</button>
+      <a href="/allergens" class="block block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Allergens</a>
+      <a href="/locations" class="block block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Locations</a>
+      <a href="/blog" class="block block w-full text-left py-2 text-stone-700 font-semibold hover:text-tims-red">Blog</a>
       
       <!-- Hours Section in Mobile -->
       <div class="py-1">
         <span class="text-[11px] font-bold text-stone-400 uppercase tracking-wider block px-1 mb-1">Hours</span>
         <div class="pl-3 space-y-1 border-l-2 border-stone-200 ml-1">
-          <button onclick="showPageView('hours'); toggleMobileMenu()" class="block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">Store Hours</button>
-          <button onclick="showPageView('breakfast-hours'); toggleMobileMenu()" class="block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">Breakfast Hours</button>
-          <button onclick="showPageView('lunch-hours'); toggleMobileMenu()" class="block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">Lunch Hours</button>
+          <a href="/hours" class="block block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">Store Hours</a>
+          <a href="/breakfast-hours" class="block block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">Breakfast Hours</a>
+          <a href="/lunch-hours" class="block block w-full text-left py-1 text-xs text-stone-700 hover:text-tims-red font-semibold">Lunch Hours</a>
         </div>
       </div>
 
-      <a href="#calculator" onclick="showPageView('home'); toggleMobileMenu()" class="block py-2 text-stone-700 font-semibold hover:text-tims-red">Calculator</a>
+      <a href="/#calculator" onclick="toggleMobileMenu()" class="block py-2 text-stone-700 font-semibold hover:text-tims-red">Calculator</a>
       
       <!-- Legal Section in Mobile -->
       <div class="pt-2 border-t border-stone-100 space-y-1">
         <span class="text-[11px] font-bold text-stone-400 uppercase tracking-wider block px-1">Legal</span>
-        <button onclick="showPageView('disclaimer'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-xs text-tims-red font-bold hover:underline">● Disclaimer</button>
-        <button onclick="showPageView('privacy'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-xs text-stone-600 hover:text-stone-900">Privacy Policy</button>
-        <button onclick="showPageView('terms'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-xs text-stone-600 hover:text-stone-900">Terms of Use</button>
-        <button onclick="showPageView('cookie'); toggleMobileMenu()" class="block w-full text-left py-1.5 text-xs text-stone-600 hover:text-stone-900">Cookie Policy</button>
+        <a href="/disclaimer" class="block block w-full text-left py-1.5 text-xs text-tims-red font-bold hover:underline">● Disclaimer</a>
+        <a href="/privacy-policy" class="block block w-full text-left py-1.5 text-xs text-stone-600 hover:text-stone-900">Privacy Policy</a>
+        <a href="/terms-and-conditions" class="block block w-full text-left py-1.5 text-xs text-stone-600 hover:text-stone-900">Terms &amp; Conditions</a>
+        <a href="/cookie-policy" class="block block w-full text-left py-1.5 text-xs text-stone-600 hover:text-stone-900">Cookie Policy</a>
       </div>
     </div>
   </header>
 
-  <!-- Interactive Static Page Overlays / Views (Allergens, Hours, Locations, Disclaimer, Legal) -->
-  <section id="customPageViewContainer" class="hidden max-w-5xl mx-auto px-4 sm:px-6 py-10 w-full">
-    <div class="bg-white rounded-3xl p-6 sm:p-10 border border-stone-200 shadow-xl">
-      <div class="flex items-center justify-between pb-6 border-b border-stone-200">
-        <button onclick="showPageView('home')" class="inline-flex items-center gap-2 text-xs font-bold text-stone-500 hover:text-tims-red bg-stone-100 hover:bg-stone-200 px-3 py-1.5 rounded-lg transition">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
-          Back to Menu Home
-        </button>
-        <span id="pageViewBadge" class="text-xs uppercase font-bold text-tims-red bg-red-50 border border-red-200 px-3 py-1 rounded-full">Guide</span>
-      </div>
-
-      <div id="pageViewContent" class="mt-8 space-y-6 text-stone-700">
-        <!-- Injected dynamically -->
-      </div>
-    </div>
-  </section>
 
   <div id="homePageSections">
   <!-- Hero Section -->
@@ -645,6 +629,8 @@
     </div>
   </section>
 
+  </div>
+
   <!-- Footer -->
   <footer class="bg-tims-darkCoffee text-stone-300 pt-12 pb-8 border-t-4 border-tims-red">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -668,11 +654,11 @@
         <div>
           <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-3">Menu Directory</h4>
           <ul class="text-xs space-y-2 text-stone-400">
-            <li><a href="#categories-nav" onclick="showPageView('home'); filterCategory('hot-drinks')" class="hover:text-white transition">Brewed Coffee & Roasts</a></li>
-            <li><a href="#categories-nav" onclick="showPageView('home'); filterCategory('hot-drinks')" class="hover:text-white transition">French Vanilla & Specialty</a></li>
-            <li><a href="#categories-nav" onclick="showPageView('home'); filterCategory('cold-drinks')" class="hover:text-white transition">Iced Capps & Cold Brews</a></li>
-            <li><a href="#categories-nav" onclick="showPageView('home'); filterCategory('baked-goods')" class="hover:text-white transition">Donuts & Timbits® Packs</a></li>
-            <li><a href="#categories-nav" onclick="showPageView('home'); filterCategory('lunch-dinner')" class="hover:text-white transition">Crave Burgers & Nuggets</a></li>
+            <li><a href="/#categories-nav" onclick="if(window.filterCategory){filterCategory('hot-drinks');return false;}" class="hover:text-white transition">Brewed Coffee & Roasts</a></li>
+            <li><a href="/#categories-nav" onclick="if(window.filterCategory){filterCategory('hot-drinks');return false;}" class="hover:text-white transition">French Vanilla & Specialty</a></li>
+            <li><a href="/#categories-nav" onclick="if(window.filterCategory){filterCategory('cold-drinks');return false;}" class="hover:text-white transition">Iced Capps & Cold Brews</a></li>
+            <li><a href="/#categories-nav" onclick="if(window.filterCategory){filterCategory('baked-goods');return false;}" class="hover:text-white transition">Donuts & Timbits® Packs</a></li>
+            <li><a href="/#categories-nav" onclick="if(window.filterCategory){filterCategory('lunch-dinner');return false;}" class="hover:text-white transition">Crave Burgers & Nuggets</a></li>
           </ul>
         </div>
 
@@ -680,12 +666,12 @@
         <div>
           <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-3">Quick Pages</h4>
           <ul class="text-xs space-y-2 text-stone-400">
-            <li><button onclick="showPageView('about')" class="hover:text-white transition">About Us</button></li>
-            <li><button onclick="showPageView('contact')" class="hover:text-white transition">Contact Us</button></li>
-            <li><button onclick="showPageView('allergens')" class="hover:text-white transition">Allergens & Dietary</button></li>
-            <li><button onclick="showPageView('hours')" class="hover:text-white transition">Store & Breakfast Hours</button></li>
-            <li><button onclick="showPageView('locations')" class="hover:text-white transition">Canada Locations</button></li>
-            <li><a href="#calculator" onclick="showPageView('home')" class="hover:text-white transition">Calorie Calculator</a></li>
+            <li><a href="/about-us" class="block hover:text-white transition">About Us</a></li>
+            <li><a href="/contact-us" class="block hover:text-white transition">Contact Us</a></li>
+            <li><a href="/allergens" class="block hover:text-white transition">Allergens & Dietary</a></li>
+            <li><a href="/hours" class="block hover:text-white transition">Store & Breakfast Hours</a></li>
+            <li><a href="/locations" class="block hover:text-white transition">Canada Locations</a></li>
+            <li><a href="/#calculator" class="hover:text-white transition">Calorie Calculator</a></li>
           </ul>
         </div>
 
@@ -693,10 +679,10 @@
         <div>
           <h4 class="font-display font-bold text-sm text-white uppercase tracking-wider mb-3">Legal & Compliance</h4>
           <ul class="text-xs space-y-2 text-stone-400">
-            <li><button onclick="showPageView('disclaimer')" class="text-amber-300 hover:text-white font-semibold transition flex items-center gap-1.5"><span>●</span> Disclaimer Notice</button></li>
-            <li><button onclick="showPageView('privacy')" class="hover:text-white transition">Privacy Policy</button></li>
-            <li><button onclick="showPageView('terms')" class="hover:text-white transition">Terms of Service</button></li>
-            <li><button onclick="showPageView('cookie')" class="hover:text-white transition">Cookie Policy</button></li>
+            <li><a href="/disclaimer" class="block text-amber-300 hover:text-white font-semibold transition flex items-center gap-1.5"><span>●</span> Disclaimer Notice</a></li>
+            <li><a href="/privacy-policy" class="block hover:text-white transition">Privacy Policy</a></li>
+            <li><a href="/terms-and-conditions" class="block hover:text-white transition">Terms &amp; Conditions</a></li>
+            <li><a href="/cookie-policy" class="block hover:text-white transition">Cookie Policy</a></li>
           </ul>
         </div>
 
@@ -710,16 +696,15 @@
         <div class="flex flex-col sm:flex-row justify-between items-center text-stone-400 text-[11px] pt-2 border-t border-stone-800">
           <span>© 2026 Tim Hortons Menu Guide Canada. All rights reserved.</span>
           <div class="flex flex-wrap gap-4 mt-2 sm:mt-0 font-medium">
-            <button onclick="showPageView('disclaimer')" class="text-amber-400 hover:underline">Disclaimer</button>
-            <button onclick="showPageView('privacy')" class="hover:text-stone-300">Privacy Policy</button>
-            <button onclick="showPageView('terms')" class="hover:text-stone-300">Terms of Use</button>
-            <button onclick="showPageView('cookie')" class="hover:text-stone-300">Cookie Settings</button>
+            <a href="/disclaimer" class="block text-amber-400 hover:underline">Disclaimer</a>
+            <a href="/privacy-policy" class="block hover:text-stone-300">Privacy Policy</a>
+            <a href="/terms-and-conditions" class="block hover:text-stone-300">Terms &amp; Conditions</a>
+            <a href="/cookie-policy" class="block hover:text-stone-300">Cookie Policy</a>
           </div>
         </div>
       </div>
     </div>
   </footer>
-  </div>
 
   <!-- Toast Notification Box (Never uses alert()) -->
   <div id="toastNotification" class="fixed bottom-5 right-5 z-50 hidden bg-stone-900 text-white px-4 py-3 rounded-2xl shadow-xl border border-stone-700 flex items-center gap-3 transition-all duration-300">
@@ -740,6 +725,8 @@
     </svg>
   </button>
 
+
+  <script src="/assets/js/site.js" defer></script>
   <script src="/assets/js/app.js" defer></script>
 </body>
 </html>

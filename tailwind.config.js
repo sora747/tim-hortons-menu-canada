@@ -2,7 +2,15 @@
  *  Rebuild stylesheet after markup/class changes:  npm run build:css
  */
 module.exports = {
-  content: ['./index.html', './assets/js/app.js', './src/home.template.html'],
+  content: [
+    './index.html',
+    './assets/js/app.js',
+    './assets/js/site.js',
+    './src/home.template.html',
+    './src/page.template.html',
+    './src/partials/*.html',
+    './data/pages.json',
+  ],
   theme: {
     extend: {
       fontFamily: {

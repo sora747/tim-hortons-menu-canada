@@ -1,16 +1,23 @@
-// tools/build.mjs — regenerates index.html from src/home.template.html + data/menu.json.
-// The menu catalog is baked into STATIC HTML so crawlers see the content without
-// rendering JavaScript, and the browser paints the grid immediately.
+// tools/build.mjs — static site generator for tim-hortons-menu-canada.
+// Reads data/menu.json + data/pages.json + shared templates/partials and writes:
+//   index.html            (homepage with the full baked menu grid)
+//   <slug>/index.html     (one file per entry in data/pages.json)
+//   sitemap.xml           (every real URL on the site)
 //
-// Usage:  node tools/build.mjs
-// CSS:    npm run build:css   (after any markup/class change)
+// Usage:  node tools/build.mjs     (or: npm run build — also rebuilds CSS)
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const SITE_URL = 'https://timhortons-menu.vercel.app';
+
 const menu = JSON.parse(fs.readFileSync(path.join(root, 'data', 'menu.json'), 'utf8'));
-const template = fs.readFileSync(path.join(root, 'src', 'home.template.html'), 'utf8');
+const pagesData = JSON.parse(fs.readFileSync(path.join(root, 'data', 'pages.json'), 'utf8'));
+const homeTemplate = fs.readFileSync(path.join(root, 'src', 'home.template.html'), 'utf8');
+const pageTemplate = fs.readFileSync(path.join(root, 'src', 'page.template.html'), 'utf8');
+const headerPartial = fs.readFileSync(path.join(root, 'src', 'partials', 'header.html'), 'utf8');
+const footerPartial = fs.readFileSync(path.join(root, 'src', 'partials', 'footer.html'), 'utf8');
 
 /* ---------- helpers ---------- */
 
@@ -20,14 +27,16 @@ function escText(s) {
 function escAttr(s) {
   return escText(s).replace(/"/g, '&quot;');
 }
+function applyChrome(html) {
+  return html.split('{{HEADER}}').join(headerPartial).split('{{FOOTER}}').join(footerPartial);
+}
 
 const CATEGORY_EMOJI = menu.categoryEmoji;
 
-// Emoji fallback per item (verbatim behaviour of the legacy page).
+// Emoji fallback per item (same behaviour the original page used).
 function getItemEmoji(item) {
   const name = (item.name || '').toLowerCase();
   const cat = (item.category || '').toLowerCase();
-  const sub = (item.subSection || '').toLowerCase();
 
   if (name.includes('timbit')) return '🧆';
   if (name.includes('donut') || name.includes('fritter') || name.includes('eclair') || name.includes('cruller')) return '🍩';
@@ -77,7 +86,7 @@ function getItemEmoji(item) {
   return CATEGORY_EMOJI[cat] || '🍁';
 }
 
-/* ---------- card template (mirrors the legacy buildCardHtml) ---------- */
+/* ---------- homepage card + section templates (unchanged design) ---------- */
 
 function buildCardHtml(item) {
   const itemEmoji = item.emoji || getItemEmoji(item);
@@ -145,8 +154,6 @@ ${mediaHtml}
         </div>`;
 }
 
-/* ---------- section builder (mirrors the legacy renderCategorySection) ---------- */
-
 function subSectionKey(catDef, item) {
   if (item.subSection) return item.subSection;
   if (catDef.id === 'hot-drinks') return 'Hot Drinks';
@@ -160,20 +167,19 @@ function renderCategorySection(catDef, items) {
   if (catItems.length === 0) return '';
 
   let innerContent = '';
-  const orphans = [];
 
   if (catDef.subSections && catDef.subSections.length > 0) {
     const groups = catDef.subSections.map((secTitle) => {
       const secItems =
         catDef.id === 'featured'
-          ? catItems // all featured items map to 'New and Seasonal'
+          ? catItems
           : catItems.filter((item) => subSectionKey(catDef, item) === secTitle);
       return { secTitle, secItems };
     });
 
     // Never silently drop items whose subSection is not in the config list.
     const grouped = new Set(groups.flatMap((g) => g.secItems));
-    for (const item of catItems) if (!grouped.has(item)) orphans.push(item);
+    const orphans = catItems.filter((item) => !grouped.has(item));
     if (orphans.length > 0 && catDef.id !== 'featured') {
       groups.push({ secTitle: 'More', secItems: orphans });
     }
@@ -209,21 +215,62 @@ ${innerContent}
       </section>`;
 }
 
-/* ---------- assemble ---------- */
+/* ---------- homepage ---------- */
 
 const sections = menu.categories.map((catDef) => renderCategorySection(catDef, menu.items)).filter(Boolean);
 let grid = sections.join('\n      <hr class="item-sep border-t-2 border-dashed border-stone-200 my-8" />');
-// Collapse whitespace between tags in the generated grid only (it is machine-written;
-// the hand-edited template stays pretty). Saves ~20% raw HTML at 454 cards.
 grid = grid.replace(/>\s+</g, '><');
 
-if (!template.includes('<!-- MENU_GRID -->')) throw new Error('MENU_GRID placeholder missing in template');
-const html = template.replace('<!-- MENU_GRID -->', grid);
+if (!homeTemplate.includes('<!-- MENU_GRID -->')) throw new Error('MENU_GRID placeholder missing in home template');
+const homeHtml = applyChrome(homeTemplate.replace('<!-- MENU_GRID -->', grid));
+fs.writeFileSync(path.join(root, 'index.html'), homeHtml);
+const homeCards = (grid.match(/data-item-card/g) || []).length;
 
-fs.writeFileSync(path.join(root, 'index.html'), html);
+/* ---------- inner pages ---------- */
 
-const cardCount = (grid.match(/data-item-card/g) || []).length;
-console.log(`index.html written: ${sections.length} category sections, ${cardCount} cards, ${(html.length / 1024).toFixed(0)} KB`);
-if (cardCount !== menu.items.length) {
-  console.warn(`WARNING: expected ${menu.items.length} cards, found ${cardCount} (check category/subSection config)`);
+const updated = pagesData.updatedAt;
+for (const page of pagesData.pages) {
+  const canonical = `${SITE_URL}/${page.slug}`;
+  const html = pageTemplate
+    .split('{{TITLE}}').join(escText(page.title))
+    .split('{{TITLE_JSON}}').join(escAttr(page.title))
+    .split('{{DESCRIPTION}}').join(escAttr(page.description))
+    .split('{{CANONICAL}}').join(canonical)
+    .split('{{BADGE}}').join(escText(page.badge))
+    .split('{{UPDATED}}').join(escText(updated))
+    .split('{{CONTENT}}').join(page.content);
+  const outDir = path.join(root, page.slug);
+  fs.mkdirSync(outDir, { recursive: true });
+  fs.writeFileSync(path.join(outDir, 'index.html'), applyChrome(html));
+}
+
+/* ---------- sitemap ---------- */
+
+const today = new Date().toISOString().slice(0, 10);
+const urls = [
+  { loc: `${SITE_URL}/`, freq: 'weekly', prio: '1.0' },
+  ...pagesData.pages.map((p) => ({ loc: `${SITE_URL}/${p.slug}`, freq: 'monthly', prio: '0.8' })),
+  { loc: `${SITE_URL}/gryffindor-strawberry-cheesecake`, freq: 'monthly', prio: '0.8' },
+];
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls
+  .map(
+    (u) => `  <url>
+    <loc>${u.loc}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>${u.freq}</changefreq>
+    <priority>${u.prio}</priority>
+  </url>`
+  )
+  .join('\n')}
+</urlset>
+`;
+fs.writeFileSync(path.join(root, 'sitemap.xml'), sitemap);
+
+console.log(`index.html: ${sections.length} category sections, ${homeCards} cards`);
+console.log(`pages: ${pagesData.pages.length} → ${pagesData.pages.map((p) => `/${p.slug}`).join(', ')}`);
+console.log(`sitemap.xml: ${urls.length} URLs`);
+if (homeCards !== menu.items.length) {
+  console.warn(`WARNING: expected ${menu.items.length} cards, found ${homeCards}`);
 }
