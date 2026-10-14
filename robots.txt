@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# No disallowed paths — every URL on this site is indexable.
+Sitemap: https://timhortons-menu.vercel.app/sitemap.xml
