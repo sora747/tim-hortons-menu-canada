@@ -1192,6 +1192,20 @@
       'Summer Timbits Bucket': '098-Summer-Timbits-Bucket.webp'
     };
 
+    // Dedicated item pages that have actually been generated on disk.
+    // Key = the item's unique id, Value = its URL.
+    // If an id is not listed here, the "More details" button keeps the old
+    // in-page anchor so we never link to a page that does not exist yet.
+    const generatedPages = {
+      'hp-gryffindor-donut': '/gryffindor-strawberry-cheesecake'
+    };
+
+    // Resolve the "More details" destination for an item
+    function itemPageUrl(item) {
+      if (!item) return '#';
+      return generatedPages[item.id] || `#item-${item.id}`;
+    }
+
     // Helper to resolve an item's image file path from the flat images/ folder
     function getItemImagePath(item) {
       if (!item) return null;
@@ -4624,7 +4638,7 @@
 
           <!-- More Details Link Container -->
           <div class="px-5 pb-3.5 pt-1 bg-stone-50/80">
-            <a href="#item-${item.id}" class="w-full inline-flex items-center justify-center gap-1.5 text-xs font-bold text-stone-700 hover:text-white bg-white hover:bg-stone-800 border border-stone-200 py-2 rounded-xl transition-all shadow-xs">
+            <a href="${itemPageUrl(item)}" class="w-full inline-flex items-center justify-center gap-1.5 text-xs font-bold text-stone-700 hover:text-white bg-white hover:bg-stone-800 border border-stone-200 py-2 rounded-xl transition-all shadow-xs">
               <span>More details</span>
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
